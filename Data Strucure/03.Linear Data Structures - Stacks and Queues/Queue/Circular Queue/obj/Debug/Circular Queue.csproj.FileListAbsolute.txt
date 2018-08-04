@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\Circular Queue\bin\Debug\Circular Queue.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\Circular Queue\bin\Debug\Circular Queue.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\Circular Queue\bin\Debug\Circular Queue.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\Circular Queue\obj\Debug\Circular Queue.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\Circular Queue\obj\Debug\Circular Queue.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\Circular Queue\obj\Debug\Circular Queue.pdb

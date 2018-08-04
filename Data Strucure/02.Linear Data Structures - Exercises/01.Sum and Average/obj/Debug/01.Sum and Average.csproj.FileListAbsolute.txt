@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\01.Sum and Average\bin\Debug\01.Sum and Average.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\01.Sum and Average\bin\Debug\01.Sum and Average.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\01.Sum and Average\bin\Debug\01.Sum and Average.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\01.Sum and Average\obj\Debug\01.Sum and Average.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\01.Sum and Average\obj\Debug\01.Sum and Average.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\01.Sum and Average\obj\Debug\01.Sum and Average.pdb

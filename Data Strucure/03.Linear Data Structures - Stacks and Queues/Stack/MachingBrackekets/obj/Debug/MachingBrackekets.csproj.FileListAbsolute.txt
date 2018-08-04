@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Stack\MachingBrackekets\bin\Debug\MachingBrackekets.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Stack\MachingBrackekets\bin\Debug\MachingBrackekets.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Stack\MachingBrackekets\bin\Debug\MachingBrackekets.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Stack\MachingBrackekets\obj\Debug\MachingBrackekets.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Stack\MachingBrackekets\obj\Debug\MachingBrackekets.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Stack\MachingBrackekets\obj\Debug\MachingBrackekets.pdb

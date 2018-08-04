@@ -1,0 +1,5 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\05.Count of Occurrences\bin\Debug\05.Count of Occurrences.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\05.Count of Occurrences\bin\Debug\05.Count of Occurrences.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\05.Count of Occurrences\bin\Debug\05.Count of Occurrences.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\05.Count of Occurrences\obj\Debug\05.Count of Occurrences.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\05.Count of Occurrences\obj\Debug\05.Count of Occurrences.pdb
