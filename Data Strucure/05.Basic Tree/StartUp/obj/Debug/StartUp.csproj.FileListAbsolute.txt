@@ -1,0 +1,7 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\bin\Debug\StartUp.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\bin\Debug\StartUp.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\bin\Debug\StartUp.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\obj\Debug\StartUp.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\obj\Debug\StartUp.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\obj\Debug\StartUp.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\BasicsTree\StartUp\obj\Debug\StartUp.pdb
