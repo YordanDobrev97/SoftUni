@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\02.SequenceQueue\bin\Debug\02.SequenceQueue.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\02.SequenceQueue\bin\Debug\02.SequenceQueue.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\02.SequenceQueue\bin\Debug\02.SequenceQueue.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\02.SequenceQueue\obj\Debug\02.SequenceQueue.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\02.SequenceQueue\obj\Debug\02.SequenceQueue.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\02.SequenceQueue\obj\Debug\02.SequenceQueue.pdb
