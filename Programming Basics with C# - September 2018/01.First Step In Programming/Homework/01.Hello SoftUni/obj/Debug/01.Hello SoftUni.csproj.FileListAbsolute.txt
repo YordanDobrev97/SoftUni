@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\01.Hello SoftUni\bin\Debug\01.Hello SoftUni.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\01.Hello SoftUni\bin\Debug\01.Hello SoftUni.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\01.Hello SoftUni\bin\Debug\01.Hello SoftUni.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\01.Hello SoftUni\obj\Debug\01.Hello SoftUni.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\01.Hello SoftUni\obj\Debug\01.Hello SoftUni.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\01.Hello SoftUni\obj\Debug\01.Hello SoftUni.pdb
