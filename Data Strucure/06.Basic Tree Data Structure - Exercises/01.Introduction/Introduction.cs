@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,10 +12,15 @@ namespace _01.Introduction
         static void Main()
         {
             CreateTree();
+            
             PrintDeepestNode();
+            
             PrintRoot();
+            
             PrintLeaf();
+            
             PrintMiddleNodes();
+            
             PrintLongestPath();
         }
 
