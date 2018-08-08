@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\bin\Debug\03.Print Tree.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\bin\Debug\03.Print Tree.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\bin\Debug\03.Print Tree.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\bin\Debug\01.Introduction.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\bin\Debug\01.Introduction.pdb
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\bin\Debug\01.Introduction.exe.config
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\obj\Debug\03.Print Tree.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\obj\Debug\03.Print Tree.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\obj\Debug\03.Print Tree.csproj.CopyComplete
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\obj\Debug\03.Print Tree.exe
+C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\03.Print Tree\obj\Debug\03.Print Tree.pdb

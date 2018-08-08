@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Introduction", "01.Introduction\01.Introduction.csproj", "{D5442820-5EB9-4DB1-8E15-6326E0E52CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PrintRoot", "02.PrintRoot\02.PrintRoot.csproj", "{9ED52A82-26C4-44A4-93F8-005E463091C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Print Tree", "03.Print Tree\03.Print Tree.csproj", "{C73F83E0-51FF-42E0-8B28-F348AED6D404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Leaf Nodes", "04.Leaf Nodes\04.Leaf Nodes.csproj", "{C1D22EA6-5E7B-4FBF-A6F2-FD7184F2AC54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Middle Nodes", "05.Middle Nodes\05.Middle Nodes.csproj", "{E91B59E6-BCC1-4BAA-890B-3EBAE32744AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Deepest Node", "06.Deepest Node\06.Deepest Node.csproj", "{6AEE47CD-44C2-4CAA-BA04-39AF624297D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Longest Path", "07.Longest Path\07.Longest Path.csproj", "{73C22207-EE6D-43CF-B064-61455C1EBE82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5442820-5EB9-4DB1-8E15-6326E0E52CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5442820-5EB9-4DB1-8E15-6326E0E52CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5442820-5EB9-4DB1-8E15-6326E0E52CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5442820-5EB9-4DB1-8E15-6326E0E52CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED52A82-26C4-44A4-93F8-005E463091C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED52A82-26C4-44A4-93F8-005E463091C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED52A82-26C4-44A4-93F8-005E463091C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED52A82-26C4-44A4-93F8-005E463091C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C73F83E0-51FF-42E0-8B28-F348AED6D404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73F83E0-51FF-42E0-8B28-F348AED6D404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C73F83E0-51FF-42E0-8B28-F348AED6D404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73F83E0-51FF-42E0-8B28-F348AED6D404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D22EA6-5E7B-4FBF-A6F2-FD7184F2AC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D22EA6-5E7B-4FBF-A6F2-FD7184F2AC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D22EA6-5E7B-4FBF-A6F2-FD7184F2AC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D22EA6-5E7B-4FBF-A6F2-FD7184F2AC54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91B59E6-BCC1-4BAA-890B-3EBAE32744AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91B59E6-BCC1-4BAA-890B-3EBAE32744AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91B59E6-BCC1-4BAA-890B-3EBAE32744AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91B59E6-BCC1-4BAA-890B-3EBAE32744AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AEE47CD-44C2-4CAA-BA04-39AF624297D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEE47CD-44C2-4CAA-BA04-39AF624297D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEE47CD-44C2-4CAA-BA04-39AF624297D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEE47CD-44C2-4CAA-BA04-39AF624297D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C22207-EE6D-43CF-B064-61455C1EBE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C22207-EE6D-43CF-B064-61455C1EBE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C22207-EE6D-43CF-B064-61455C1EBE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C22207-EE6D-43CF-B064-61455C1EBE82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5DA725C-EE9E-49C3-AC2F-8144C2B98C30}
+	EndGlobalSection
+EndGlobal
