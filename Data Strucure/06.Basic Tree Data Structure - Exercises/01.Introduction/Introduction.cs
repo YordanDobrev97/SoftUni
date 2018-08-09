@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,16 +12,109 @@ namespace _01.Introduction
         static void Main()
         {
             CreateTree();
-            
+
+            int sum = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Paths of sum {sum}:");
+            AllPathsWithGiveSum(sum);
+
             PrintDeepestNode();
-            
             PrintRoot();
-            
             PrintLeaf();
-            
             PrintMiddleNodes();
-            
             PrintLongestPath();
+            AllSubtreesGiveSum(sum);
+
+        }
+
+        public static void AllSubtreesGiveSum(int sum)
+        {
+            Console.WriteLine($"Subtrees of sum {sum}:");
+            var collection = new List<Tree<int>>();
+            var root = parentsNodes.Values.FirstOrDefault();
+            DFSInSubtree(root, sum, 0, collection);
+
+            PrintPreOrder(collection);
+            Console.WriteLine();
+        }
+
+        private static void PrintPreOrder(List<Tree<int>> collection)
+        {
+            foreach (var item in collection)
+            {
+                Console.Write(item.Node + " ");
+                PrintPreOrder(item.Children);
+            }
+        }
+
+        private static int DFSInSubtree(Tree<int> root, int sum, 
+            int currentSum, List<Tree<int>> collection)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            currentSum = root.Node;
+            foreach (var item in root.Children)
+            {
+               currentSum += DFSInSubtree(item, sum, currentSum, collection);   
+            }
+
+            if (currentSum == sum)
+            {
+                collection.Add(root);
+            }
+            return currentSum;
+        }
+
+        private static void Print(Tree<int> leaf)
+        {
+            Stack<int> path = new Stack<int>();
+            var current = leaf;
+
+            while (current != null)
+            {
+                path.Push(current.Node);
+                current = current.Parent;
+            }
+            Console.WriteLine(string.Join(" ", path.ToArray()));
+        }
+
+        public static void AllPathsWithGiveSum(int sum = 0)
+        {
+            var root = parentsNodes.Values.FirstOrDefault();
+            var collection = new List<Tree<int>>();
+            DFS(root, 0, sum, collection);
+
+            PathGiveSum(sum, collection);
+        }
+
+        private static void PathGiveSum(int sum, List<Tree<int>> collection)
+        {
+            foreach (var item in collection)
+            {
+                Print(item);
+            }
+        }
+
+        private static void DFS(Tree<int> node,int currentSum, int sum, List<Tree<int>> collection)
+        {
+            if (node == null)
+            {
+                return;
+            }
+            currentSum += node.Node;
+
+            if (currentSum == sum && node.Children.Count == 0)
+            {
+                collection.Add(node);
+                return;
+            }
+
+            foreach (var item in node.Children)
+            {
+                DFS(item, currentSum,sum, collection);
+            }
         }
 
         public static void PrintLongestPath()
