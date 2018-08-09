@@ -12,25 +12,30 @@ namespace _01.Introduction
         static void Main()
         {
             CreateTree();
-
             int sum = int.Parse(Console.ReadLine());
             Console.WriteLine($"Paths of sum {sum}:");
             AllPathsWithGiveSum(sum);
 
             PrintDeepestNode();
+            
             PrintRoot();
+            
             PrintLeaf();
+            
             PrintMiddleNodes();
+            
             PrintLongestPath();
+            
             AllSubtreesGiveSum(sum);
-
         }
 
         public static void AllSubtreesGiveSum(int sum)
         {
             Console.WriteLine($"Subtrees of sum {sum}:");
+            
             var collection = new List<Tree<int>>();
             var root = parentsNodes.Values.FirstOrDefault();
+            
             DFSInSubtree(root, sum, 0, collection);
 
             PrintPreOrder(collection);
@@ -55,6 +60,7 @@ namespace _01.Introduction
             }
 
             currentSum = root.Node;
+            
             foreach (var item in root.Children)
             {
                currentSum += DFSInSubtree(item, sum, currentSum, collection);   
@@ -64,6 +70,7 @@ namespace _01.Introduction
             {
                 collection.Add(root);
             }
+            
             return currentSum;
         }
 
@@ -77,6 +84,7 @@ namespace _01.Introduction
                 path.Push(current.Node);
                 current = current.Parent;
             }
+            
             Console.WriteLine(string.Join(" ", path.ToArray()));
         }
 
@@ -84,6 +92,7 @@ namespace _01.Introduction
         {
             var root = parentsNodes.Values.FirstOrDefault();
             var collection = new List<Tree<int>>();
+            
             DFS(root, 0, sum, collection);
 
             PathGiveSum(sum, collection);
@@ -103,6 +112,7 @@ namespace _01.Introduction
             {
                 return;
             }
+            
             currentSum += node.Node;
 
             if (currentSum == sum && node.Children.Count == 0)
@@ -122,6 +132,7 @@ namespace _01.Introduction
             var collection = new List<int>();
             var root = parentsNodes.Values.First().Node;
             collection.Add(root);
+            
             DFS(parentsNodes.Values.FirstOrDefault(), collection);
 
             Console.WriteLine($"Longest path: {string.Join(" ", collection)}");
@@ -137,6 +148,7 @@ namespace _01.Introduction
                     collection.Add(item.Node);
                     return;
                 }
+                
                 collection.Add(item.Node);
                 DFS(item, collection);
                 return;
@@ -207,6 +219,7 @@ namespace _01.Introduction
             {
                 parentsNodes.Add(parent, new Tree<int>(parent));
             }
+            
             return parentsNodes[parent];
         }
 
