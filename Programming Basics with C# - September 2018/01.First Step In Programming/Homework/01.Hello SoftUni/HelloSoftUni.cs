@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+
 class HelloSoftUni
 {
     static void Main()
