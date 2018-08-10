@@ -8,6 +8,7 @@ public class BinarySearchTree<T> where T : IComparable
         {
             this.Value = value;
         }
+        
         public T Value { get; set; }
         public Node Left{ get; set; }
         public Node Right { get; set; }
@@ -18,7 +19,7 @@ public class BinarySearchTree<T> where T : IComparable
     {
 
     }
-
+    
     private BinarySearchTree(Node node)
     {
         Copy(node);
@@ -30,6 +31,7 @@ public class BinarySearchTree<T> where T : IComparable
         {
             return;
         }
+        
         Insert(node.Value);
         Copy(node.Left);
         Copy(node.Right);
@@ -45,6 +47,7 @@ public class BinarySearchTree<T> where T : IComparable
         {
             var current = this.root;
             Node parent = null;
+            
             while (current != null)
             {
                 parent = current;
@@ -61,6 +64,7 @@ public class BinarySearchTree<T> where T : IComparable
                     break;
                 }
             }
+            
             current = new Node(item);
             if (parent.Value.CompareTo(item) > 0)
             {
@@ -92,6 +96,7 @@ public class BinarySearchTree<T> where T : IComparable
                 break;
             }
         }
+        
         return new BinarySearchTree<T>(current);
     }
 
@@ -129,6 +134,7 @@ public class BinarySearchTree<T> where T : IComparable
         {
             return;
         }
+        
         EachOrder(this.root.Left, action);
         action(root.Value);
         EachOrder(this.root.Right, action);
