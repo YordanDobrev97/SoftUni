@@ -1,5 +1,5 @@
 # SoftUni
 Courses in SoftUni
 
-![softuni logo](https://user-images.githubusercontent.com/42092212/43676866-9c83debe-9801-11e8-88c9-16cd85c7b370.jpg)
+![softuni-default-og](https://user-images.githubusercontent.com/42092212/43975289-bcb38200-9ce5-11e8-915d-cddaf99b3e4a.png)
 
