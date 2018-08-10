@@ -7,7 +7,6 @@ public class BinaryTree<T>
     public BinaryTree<T> LeftChild { get; set; }
     public BinaryTree<T> RigthChild { get; set; }
 
-
     public BinaryTree(T value, 
         BinaryTree<T> leftChild = null, 
         BinaryTree<T> rightChild = null)
@@ -28,6 +27,7 @@ public class BinaryTree<T>
         {
             return;
         }
+        
         Each(action, tree.LeftChild);
         action(tree.Root);
         Each(action, tree.RigthChild);
@@ -58,6 +58,7 @@ public class BinaryTree<T>
         {
             return;
         }
+        
         Each(action, tree.LeftChild);
         Each(action, tree.RigthChild);
         action(tree.Root);
