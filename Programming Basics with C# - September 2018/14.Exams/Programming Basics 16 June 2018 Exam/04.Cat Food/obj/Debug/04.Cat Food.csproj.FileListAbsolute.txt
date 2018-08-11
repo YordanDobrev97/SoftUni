@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basics 16 June 2018 Exam\04.Cat Food\bin\Debug\04.Cat Food.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basics 16 June 2018 Exam\04.Cat Food\bin\Debug\04.Cat Food.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basics 16 June 2018 Exam\04.Cat Food\bin\Debug\04.Cat Food.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basics 16 June 2018 Exam\04.Cat Food\obj\Debug\04.Cat Food.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basics 16 June 2018 Exam\04.Cat Food\obj\Debug\04.Cat Food.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basics 16 June 2018 Exam\04.Cat Food\obj\Debug\04.Cat Food.pdb
