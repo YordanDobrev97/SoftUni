@@ -135,8 +135,8 @@ public class BinarySearchTree<T> where T : IComparable
             return;
         }
         
-        EachOrder(this.root.Left, action);
+        EachOrder(root.Left, action);
         action(root.Value);
-        EachOrder(this.root.Right, action);
+        EachOrder(root.Right, action);
     }
 }
