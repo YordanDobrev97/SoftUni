@@ -39,6 +39,7 @@ namespace _06.HappyCat_Parking
             {
                 Console.WriteLine($"Day: {kvp.Key} - {kvp.Value:f2} leva");
             }
+            
             var sum = pairs.Values.Sum();
             Console.WriteLine($"Total: {sum:f2} leva");
         }
