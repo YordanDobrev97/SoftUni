@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${file}",
+            "runtimeExecutable": "C:\\Windows\\System32\\cmd.exe /k \"C:\\Program Files\nodejs\nodevars.bat",
+            "outFiles": []
+        },
+        {
+            "request": "attach",
+            "type": "node",
+            "name": "Attach to Process",
+            "address": "localhost",
+            "port": 5858,
+            "outFiles": []
+        }
+    ]
+}
