@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\04.Print Number With Words\bin\Debug\04.Print Number With Words.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\04.Print Number With Words\bin\Debug\04.Print Number With Words.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\04.Print Number With Words\bin\Debug\04.Print Number With Words.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\04.Print Number With Words\obj\Debug\04.Print Number With Words.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\04.Print Number With Words\obj\Debug\04.Print Number With Words.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\04.Print Number With Words\obj\Debug\04.Print Number With Words.pdb

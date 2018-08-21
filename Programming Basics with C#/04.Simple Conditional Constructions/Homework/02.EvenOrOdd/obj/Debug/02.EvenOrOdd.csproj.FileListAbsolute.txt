@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\02.EvenOrOdd\bin\Debug\02.EvenOrOdd.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\02.EvenOrOdd\bin\Debug\02.EvenOrOdd.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\02.EvenOrOdd\bin\Debug\02.EvenOrOdd.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\02.EvenOrOdd\obj\Debug\02.EvenOrOdd.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\02.EvenOrOdd\obj\Debug\02.EvenOrOdd.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\02.EvenOrOdd\obj\Debug\02.EvenOrOdd.pdb

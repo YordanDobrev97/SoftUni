@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\14.Equal Numbers\bin\Debug\14.Equal Numbers.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\14.Equal Numbers\bin\Debug\14.Equal Numbers.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\14.Equal Numbers\bin\Debug\14.Equal Numbers.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\14.Equal Numbers\obj\Debug\14.Equal Numbers.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\14.Equal Numbers\obj\Debug\14.Equal Numbers.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\04.Simple Conditional Constructions\Homework\14.Equal Numbers\obj\Debug\14.Equal Numbers.pdb
