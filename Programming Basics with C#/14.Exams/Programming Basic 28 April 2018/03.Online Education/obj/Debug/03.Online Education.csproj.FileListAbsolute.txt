@@ -1,0 +1,7 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\bin\Debug\03.Online Education.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\bin\Debug\03.Online Education.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\bin\Debug\03.Online Education.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\obj\Debug\03.Online Education.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\obj\Debug\03.Online Education.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\obj\Debug\03.Online Education.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\03.Online Education\obj\Debug\03.Online Education.pdb

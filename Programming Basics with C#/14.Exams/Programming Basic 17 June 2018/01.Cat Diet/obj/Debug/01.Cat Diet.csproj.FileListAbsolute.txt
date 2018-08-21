@@ -1,0 +1,7 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\bin\Debug\01.Cat Diet.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\bin\Debug\01.Cat Diet.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\bin\Debug\01.Cat Diet.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\obj\Debug\01.Cat Diet.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\obj\Debug\01.Cat Diet.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\obj\Debug\01.Cat Diet.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 17 June 2018\01.Cat Diet\obj\Debug\01.Cat Diet.pdb

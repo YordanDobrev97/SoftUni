@@ -1,0 +1,6 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\02.Expression\bin\Debug\02.Expression.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\02.Expression\bin\Debug\02.Expression.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\02.Expression\bin\Debug\02.Expression.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\02.Expression\obj\Debug\02.Expression.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\02.Expression\obj\Debug\02.Expression.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\01.First Step In Programming\Homework\02.Expression\obj\Debug\02.Expression.pdb
