@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\06.Sum And Product\bin\Debug\06.Sum And Product.exe.config
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\06.Sum And Product\bin\Debug\06.Sum And Product.exe
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\06.Sum And Product\bin\Debug\06.Sum And Product.pdb
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\06.Sum And Product\obj\Debug\06.Sum And Product.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\06.Sum And Product\obj\Debug\06.Sum And Product.exe
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\Programming Basic 28 April 2018\06.Sum And Product\obj\Debug\06.Sum And Product.pdb

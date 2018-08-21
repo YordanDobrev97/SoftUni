@@ -1,5 +1,0 @@
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\11.USD to BGN\bin\Debug\11.USD to BGN.exe.config
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\11.USD to BGN\bin\Debug\11.USD to BGN.exe
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\11.USD to BGN\bin\Debug\11.USD to BGN.pdb
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\11.USD to BGN\obj\Debug\11.USD to BGN.exe
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\11.USD to BGN\obj\Debug\11.USD to BGN.pdb

@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\14.Time For Party\bin\Debug\14.Time For Party.exe.config
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\14.Time For Party\bin\Debug\14.Time For Party.exe
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\14.Time For Party\bin\Debug\14.Time For Party.pdb
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\14.Time For Party\obj\Debug\14.Time For Party.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\14.Time For Party\obj\Debug\14.Time For Party.exe
-C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\02.Simple Calculations\Homework\14.Time For Party\obj\Debug\14.Time For Party.pdb
