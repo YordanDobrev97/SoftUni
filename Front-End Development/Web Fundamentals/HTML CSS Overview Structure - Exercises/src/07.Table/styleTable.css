@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px 20px 5px 3px
+}
+#special-color{
+   background-color:  #90b4d6;
+   color: white;
+}
+.first-color{
+    background-color: darkkhaki;
+}
+.second-color{
+    background-color: lightcoral;
+}
