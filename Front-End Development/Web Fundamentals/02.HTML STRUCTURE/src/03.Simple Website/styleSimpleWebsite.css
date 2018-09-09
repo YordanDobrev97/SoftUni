@@ -1,0 +1,31 @@
+nav{
+    text-align: center;
+    background-color: slategrey;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+#italicID{
+    font-style: italic;   
+}
+footer{
+    text-align: center;
+    background-color: grey;
+    color:white;
+}
