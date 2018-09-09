@@ -1,0 +1,12 @@
+div{
+    background-color:#f7f381;
+    padding: 24px;
+    width: 500px;
+    
+}
+.my-list p{
+    text-align: center
+}
+.my-list ol{
+    margin: 12px;
+}
