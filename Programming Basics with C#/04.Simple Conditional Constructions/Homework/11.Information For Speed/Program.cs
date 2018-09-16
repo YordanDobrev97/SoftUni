@@ -20,7 +20,7 @@ namespace _11.Information_For_Speed
             {
                 Console.WriteLine("fast");
             }
-            else if(speed > 150 && speed < 1000)
+            else if(speed > 150 && speed <=1000)
             {
                 Console.WriteLine("ultra fast");
             }

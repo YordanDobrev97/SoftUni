@@ -16,7 +16,15 @@ namespace _06.Sum_Seconds
 
             if (seconds >= 0 && seconds <= 59)
             {
-                Console.WriteLine($"0:{seconds}");
+                if (seconds < 9)
+                {
+                    Console.WriteLine($"0:0{seconds}");
+                }
+                else
+                {
+                    Console.WriteLine($"0:{seconds}");
+                }
+                
             }
             else if (seconds >= 60 && seconds <= 119)
             {
