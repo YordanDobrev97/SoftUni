@@ -1,0 +1,7 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\bin\Debug\01.Stadium Income.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\bin\Debug\01.Stadium Income.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\bin\Debug\01.Stadium Income.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\obj\Debug\01.Stadium Income.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\obj\Debug\01.Stadium Income.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\obj\Debug\01.Stadium Income.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\01.Stadium Income\obj\Debug\01.Stadium Income.pdb

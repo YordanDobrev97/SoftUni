@@ -1,0 +1,7 @@
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\bin\Debug\06.Substitute.exe.config
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\bin\Debug\06.Substitute.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\bin\Debug\06.Substitute.pdb
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\obj\Debug\06.Substitute.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\obj\Debug\06.Substitute.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\obj\Debug\06.Substitute.exe
+C:\Users\DELL\Documents\СофтУни\Programming Basics with C# - September 2018\14.Exams\PB Exam 28 and 29 July\06.Substitute\obj\Debug\06.Substitute.pdb
