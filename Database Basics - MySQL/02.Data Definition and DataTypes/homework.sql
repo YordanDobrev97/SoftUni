@@ -1,0 +1,1 @@
+ALTER TABLE `month_salary` ADD cents DECIMAL;
