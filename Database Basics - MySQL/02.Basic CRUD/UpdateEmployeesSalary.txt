@@ -1,0 +1,3 @@
+UPDATE employees
+SET salary = salary * 0.10
+WHERE job_title='Therapist'; 

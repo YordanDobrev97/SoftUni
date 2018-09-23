@@ -1,0 +1,1 @@
+UPDATE salary WHERE job_title='Therapist';
