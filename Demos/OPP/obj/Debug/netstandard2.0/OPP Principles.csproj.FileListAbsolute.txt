@@ -1,0 +1,4 @@
+C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP Principles.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP Principles.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP Principles.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP Principles.AssemblyInfo.cs

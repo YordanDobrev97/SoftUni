@@ -1,0 +1,7 @@
+C:\Users\DELL\Desktop\Demo\Conversion\bin\Debug\Conversion.exe.config
+C:\Users\DELL\Desktop\Demo\Conversion\bin\Debug\Conversion.exe
+C:\Users\DELL\Desktop\Demo\Conversion\bin\Debug\Conversion.pdb
+C:\Users\DELL\Desktop\Demo\Conversion\obj\Debug\Conversion.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Demo\Conversion\obj\Debug\Conversion.exe
+C:\Users\DELL\Desktop\Demo\Conversion\obj\Debug\Conversion.pdb
+C:\Users\DELL\Desktop\Demo\Conversion\obj\Debug\Conversion.csprojAssemblyReference.cache
