@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 
-public class Family:PersonalData
+public class Family
 {
-    private Father father;
-    private Mother mother;
-    private List<Children> children;
+    public string Name { get; set; }
 
-    public string Name(string name)
-    {
-        return "";
-    }
+    public Mother Mother { get; set; }
+
+    public Father Father { get; set; }
+
+    public List<Child> Children { get; set; }
 }

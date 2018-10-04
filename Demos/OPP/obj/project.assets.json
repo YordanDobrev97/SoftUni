@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Demo\\OPP\\OPP Principles.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\SoftUni\\Demos\\OPP\\OPP Principles.csproj",
       "projectName": "OPP Principles",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\Demo\\OPP\\OPP Principles.csproj",
+      "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\SoftUni\\Demos\\OPP\\OPP Principles.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\Demo\\OPP\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\SoftUni\\Demos\\OPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
