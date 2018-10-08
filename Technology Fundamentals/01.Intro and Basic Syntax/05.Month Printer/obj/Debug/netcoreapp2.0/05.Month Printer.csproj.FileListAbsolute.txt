@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\bin\Debug\netcoreapp2.0\05.Month Printer.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\bin\Debug\netcoreapp2.0\05.Month Printer.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\bin\Debug\netcoreapp2.0\05.Month Printer.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\bin\Debug\netcoreapp2.0\05.Month Printer.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\bin\Debug\netcoreapp2.0\05.Month Printer.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\obj\Debug\netcoreapp2.0\05.Month Printer.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\obj\Debug\netcoreapp2.0\05.Month Printer.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\obj\Debug\netcoreapp2.0\05.Month Printer.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\obj\Debug\netcoreapp2.0\05.Month Printer.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\obj\Debug\netcoreapp2.0\05.Month Printer.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\05.Month Printer\obj\Debug\netcoreapp2.0\05.Month Printer.pdb

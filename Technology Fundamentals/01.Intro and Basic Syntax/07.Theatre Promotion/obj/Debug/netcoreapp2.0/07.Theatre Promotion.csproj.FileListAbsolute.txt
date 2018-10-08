@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\bin\Debug\netcoreapp2.0\07.Theatre Promotion.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\bin\Debug\netcoreapp2.0\07.Theatre Promotion.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\bin\Debug\netcoreapp2.0\07.Theatre Promotion.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\bin\Debug\netcoreapp2.0\07.Theatre Promotion.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\bin\Debug\netcoreapp2.0\07.Theatre Promotion.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\obj\Debug\netcoreapp2.0\07.Theatre Promotion.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\obj\Debug\netcoreapp2.0\07.Theatre Promotion.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\obj\Debug\netcoreapp2.0\07.Theatre Promotion.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\obj\Debug\netcoreapp2.0\07.Theatre Promotion.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\obj\Debug\netcoreapp2.0\07.Theatre Promotion.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\07.Theatre Promotion\obj\Debug\netcoreapp2.0\07.Theatre Promotion.pdb

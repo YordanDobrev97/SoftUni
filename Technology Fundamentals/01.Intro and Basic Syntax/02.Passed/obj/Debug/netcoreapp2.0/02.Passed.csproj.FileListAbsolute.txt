@@ -1,0 +1,10 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\bin\Debug\netcoreapp2.0\02.Passed.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\bin\Debug\netcoreapp2.0\02.Passed.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\bin\Debug\netcoreapp2.0\02.Passed.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\bin\Debug\netcoreapp2.0\02.Passed.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\bin\Debug\netcoreapp2.0\02.Passed.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\obj\Debug\netcoreapp2.0\02.Passed.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\obj\Debug\netcoreapp2.0\02.Passed.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\obj\Debug\netcoreapp2.0\02.Passed.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\obj\Debug\netcoreapp2.0\02.Passed.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\02.Passed\obj\Debug\netcoreapp2.0\02.Passed.pdb

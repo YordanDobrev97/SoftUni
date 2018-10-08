@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\bin\Debug\netcoreapp2.0\06.Foreign Languages.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\bin\Debug\netcoreapp2.0\06.Foreign Languages.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\bin\Debug\netcoreapp2.0\06.Foreign Languages.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\bin\Debug\netcoreapp2.0\06.Foreign Languages.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\bin\Debug\netcoreapp2.0\06.Foreign Languages.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\obj\Debug\netcoreapp2.0\06.Foreign Languages.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\obj\Debug\netcoreapp2.0\06.Foreign Languages.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\obj\Debug\netcoreapp2.0\06.Foreign Languages.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\obj\Debug\netcoreapp2.0\06.Foreign Languages.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\obj\Debug\netcoreapp2.0\06.Foreign Languages.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\01.Intro and Basic Syntax\06.Foreign Languages\obj\Debug\netcoreapp2.0\06.Foreign Languages.pdb
