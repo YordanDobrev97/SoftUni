@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\bin\Debug\netcoreapp2.0\07.Vending Machine.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\bin\Debug\netcoreapp2.0\07.Vending Machine.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\bin\Debug\netcoreapp2.0\07.Vending Machine.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\bin\Debug\netcoreapp2.0\07.Vending Machine.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\bin\Debug\netcoreapp2.0\07.Vending Machine.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\obj\Debug\netcoreapp2.0\07.Vending Machine.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\obj\Debug\netcoreapp2.0\07.Vending Machine.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\obj\Debug\netcoreapp2.0\07.Vending Machine.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\obj\Debug\netcoreapp2.0\07.Vending Machine.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\obj\Debug\netcoreapp2.0\07.Vending Machine.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\07.Vending Machine\obj\Debug\netcoreapp2.0\07.Vending Machine.pdb

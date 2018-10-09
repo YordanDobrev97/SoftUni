@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\bin\Debug\netcoreapp2.0\10.Rage Expenses.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\bin\Debug\netcoreapp2.0\10.Rage Expenses.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\bin\Debug\netcoreapp2.0\10.Rage Expenses.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\bin\Debug\netcoreapp2.0\10.Rage Expenses.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\bin\Debug\netcoreapp2.0\10.Rage Expenses.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\obj\Debug\netcoreapp2.0\10.Rage Expenses.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\obj\Debug\netcoreapp2.0\10.Rage Expenses.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\obj\Debug\netcoreapp2.0\10.Rage Expenses.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\obj\Debug\netcoreapp2.0\10.Rage Expenses.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\obj\Debug\netcoreapp2.0\10.Rage Expenses.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\10.Rage Expenses\obj\Debug\netcoreapp2.0\10.Rage Expenses.pdb

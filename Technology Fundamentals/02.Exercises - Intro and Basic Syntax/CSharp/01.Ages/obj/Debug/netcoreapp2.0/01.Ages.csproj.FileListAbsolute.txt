@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\bin\Debug\netcoreapp2.0\01.Ages.deps.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\bin\Debug\netcoreapp2.0\01.Ages.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\bin\Debug\netcoreapp2.0\01.Ages.runtimeconfig.dev.json
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\bin\Debug\netcoreapp2.0\01.Ages.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\bin\Debug\netcoreapp2.0\01.Ages.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\obj\Debug\netcoreapp2.0\01.Ages.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\obj\Debug\netcoreapp2.0\01.Ages.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\obj\Debug\netcoreapp2.0\01.Ages.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\obj\Debug\netcoreapp2.0\01.Ages.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\obj\Debug\netcoreapp2.0\01.Ages.dll
+C:\Users\DELL\Documents\GitHub\SoftUni\Technology Fundamentals\02.Exercises - Intro and Basic Syntax\CSharp\Exercises Basic Syntax\01.Ages\obj\Debug\netcoreapp2.0\01.Ages.pdb
