@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/login.js"
+            "program": "${workspaceFolder}/bitcoin.js"
         }
     ]
 }
