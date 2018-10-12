@@ -6,10 +6,6 @@ namespace _01.Ages
     {
         static void Main(string[] args)
         {
-            int y = 4;
-            Console.WriteLine(y *=2);
-            Console.WriteLine(y);
-
             int age = int.Parse(Console.ReadLine());
 
             if (age >= 0 && age <=2)
