@@ -1,50 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace _13.Equal_Pairs
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        int number = int.Parse(Console.ReadLine());
+
+        int firstNumber = int.Parse(Console.ReadLine());
+        int secondNumber = int.Parse(Console.ReadLine());
+
+        int sum = firstNumber + secondNumber;
+
+        int maxDiff = 0;
+        for (int i = 0; i < number - 1; i++)
         {
-            int n = int.Parse(Console.ReadLine());
+            int firstCurrentNumber = int.Parse(Console.ReadLine());
+            int secondCurrentNumber = int.Parse(Console.ReadLine());
 
-            int value = 0;
-            bool hasEqualPairs = true;
-            var values = new HashSet<int>();
-            for (int i = 0; i < n; i++)
+            int currentSum = firstCurrentNumber + secondCurrentNumber;
+            if (currentSum == sum)
             {
-                int num1 = int.Parse(Console.ReadLine());
-                int num2 = int.Parse(Console.ReadLine());
-
-                if (value == 0)
-                {
-                    value = num1 + num2;
-                    values.Add(value);
-                }
-                else
-                {
-                    int sum = num1 + num2;
-                    if (value != sum)
-                    {
-                        hasEqualPairs = false;
-                        values.Add(sum);
-                    }
-                }
-            }
-
-            if (hasEqualPairs)
-            {
-                Console.WriteLine($"Yes, value={value}");
+                continue;
             }
             else
             {
-                int min = values.Min();
-                int max = values.Max();
-                int diff = Math.Abs(max - min);
-                Console.WriteLine($"No, maxdiff={diff}");
+                var diff = Math.Abs(sum - currentSum);
+                if (currentSum != 0 && diff >=maxDiff)
+                {
+                    maxDiff += diff;
+                }
             }
+        }
+
+        if (maxDiff == 0)
+        {
+            Console.WriteLine("Yes, value={0}", sum);
+        }
+        else
+        {
+            Console.WriteLine("No, maxdiff={0}", maxDiff);
         }
     }
 }
