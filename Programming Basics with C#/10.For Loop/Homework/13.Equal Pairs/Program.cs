@@ -11,6 +11,7 @@ class Program
 
         int sum = firstNumber + secondNumber;
 
+		var diff = 0;
         int maxDiff = 0;
         for (int i = 0; i < number - 1; i++)
         {
@@ -24,15 +25,17 @@ class Program
             }
             else
             {
-                var diff = Math.Abs(sum - currentSum);
-                if (currentSum != 0 && diff >=maxDiff)
+                diff = Math.Abs(sum - currentSum);
+                if (maxDiff < diff)
                 {
-                    maxDiff += diff;
+                        maxDiff = diff;
+                            
                 }
+				sum=currentSum;
             }
         }
 
-        if (maxDiff == 0)
+        if (diff == 0)
         {
             Console.WriteLine("Yes, value={0}", sum);
         }
