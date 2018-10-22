@@ -5,41 +5,59 @@ class Program
     {
         int fishCount = int.Parse(Console.ReadLine());
 
-        int count = 1;
+        bool isDailyQuota = false;
         double loseMoney = 0;
+        double earnedMoney = 0;
 
-        double price = 0;
-        for (int i = 1; i <=fishCount; i++)
+        int count = 1;
+        int countFish = 0;
+        while (true)
         {
             string nameFish = Console.ReadLine();
             if (nameFish == "Stop")
             {
                 break;
             }
-            double killos = double.Parse(Console.ReadLine());
+            double killosFish = double.Parse(Console.ReadLine());
 
-            int sumAsciiNameFish = 0;
-            for (int j = 0; j < nameFish.Length; j++)
+            int sum = 0;
+            for (int i = 0; i < nameFish.Length; i++)
             {
-                int value = nameFish[j];
-                sumAsciiNameFish += value;
+                sum += nameFish[i];
             }
-            double averageSum = Math.Round(sumAsciiNameFish / killos,2);
+            double price = sum / killosFish;
 
-            if (i % 3 == 0)
+            if (count % 3 == 0)
             {
-                price += averageSum;
+                earnedMoney += price;
             }
             else
             {
-                loseMoney += averageSum;
+                loseMoney += price;
             }
+
+            countFish++;
+            if (count == fishCount)
+            {
+                isDailyQuota = true;
+                break;
+            }
+            count++;
+            
         }
 
-        if (price <= loseMoney)
+        if (isDailyQuota)
         {
-            Console.WriteLine("Lyubo fulfilled the quota! Lyubo's profit from 3 fishes is 6.21 leva.");
+            Console.WriteLine("Lyubo fulfilled the quota!");
+        }
+
+        if (earnedMoney >= loseMoney)
+        {
+            Console.WriteLine($"Lyubo's profit from {countFish} fishes is {(earnedMoney - loseMoney):f2} leva.");
+        }
+        else
+        {
+            Console.WriteLine($"Lyubo lost {(loseMoney - earnedMoney):f2} leva today.");
         }
     }
 }
-
