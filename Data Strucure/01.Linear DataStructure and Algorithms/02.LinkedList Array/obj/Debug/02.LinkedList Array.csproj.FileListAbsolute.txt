@@ -1,0 +1,7 @@
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\bin\Debug\02.LinkedList Array.exe.config
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\bin\Debug\02.LinkedList Array.exe
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\bin\Debug\02.LinkedList Array.pdb
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\obj\Debug\02.LinkedList Array.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\obj\Debug\02.LinkedList Array.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\obj\Debug\02.LinkedList Array.exe
+C:\Users\DELL\Documents\GitHub\SoftUni\Data Strucure\01.Linear DataStructure and Algorithms\02.LinkedList Array\obj\Debug\02.LinkedList Array.pdb
