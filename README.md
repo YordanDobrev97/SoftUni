@@ -5,4 +5,4 @@ Courses in SoftUni
 
 |**Course**|**Link**| 
 |---|---|
-|<a href="https://softuni.bg/certificates/details/59017/2085b1a5" > Programming Basics with C# </a>   | <a href="https://softuni.bg/certificates/details/15409/8d5c6577"> Link</a> |
+|<a href="https://softuni.bg/trainings/2073/programming-basics-with-csharp-september-2018" > Programming Basics with C# </a>   | <a href="https://softuni.bg/certificates/details/59017/2085b1a5"> Link</a> |
