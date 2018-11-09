@@ -8,9 +8,19 @@ class Program
         int distance = int.Parse(Console.ReadLine());
         int exhaustionFactor = int.Parse(Console.ReadLine());
 
-        while (power <= distance)
+        int countTarget = 0;
+        int half = power / 2;
+        while (power >= distance)
         {
-            //TODO...
+            power = power - distance;
+            countTarget++;
+            
+            if (half == power && exhaustionFactor > 0)
+            {
+                power = power / exhaustionFactor;
+            }
         }
+        Console.WriteLine(power);
+        Console.WriteLine(countTarget);
     }
 }

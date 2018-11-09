@@ -8,6 +8,7 @@ class Program
 
         double pounds = dollars * 1.31;
 
-        Console.WriteLine($"{pounds:f3}");
+        string format = String.Format("{0:f3}", pounds);
+        Console.WriteLine(format);
     }
 }
