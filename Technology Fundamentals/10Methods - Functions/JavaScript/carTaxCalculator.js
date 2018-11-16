@@ -1,21 +1,33 @@
-function solve(powerKW) {
+function solve(powerKW, age) {
     powerKW = Number(powerKW);
+    age = Number(age);
 
-    let power = calculate(powerKW);
-    console.log(`${power.toFixed(2)} lv.`);
+    let power = calculateTax(powerKW);
+    let result = calculateCoefficient(age, power);
 
-    function calculate(powerKW){
-        if(powerKW < 37){
+    console.log(`${result.toFixed(2)} lv.`);
+
+    function calculateCoefficient(age, result){
+        if(age < 5){
+            result *= 2.80;
+        }else if(age < 14){
+            result *=1.50;
+        }else{
+            result *= 1.00;
+        }
+        return result;
+    }
+    function calculateTax(powerKW){
+        if(powerKW <=37){
             return powerKW * 0.43;
-        }else if(powerKW > 37.01 && powerKW <55){
+        }else if(powerKW <=55){
             return powerKW * 0.50;
-        }else if(powerKW > 55.01 && powerKW < 74.00){
+        }else if(powerKW <=74.00){
             return powerKW * 0.68;
-        }else if(powerKW > 74.01 && powerKW < 110){
+        }else if(powerKW <=110){
             return powerKW * 1.38;
         }else{
             return powerKW * 1.54;
         }
     }
 }
-solve(57.50);
