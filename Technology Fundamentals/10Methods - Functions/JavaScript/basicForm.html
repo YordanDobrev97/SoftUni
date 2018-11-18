@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        First name:<br>
+        <input type="text"  id="firstName" name="firstname" value="">
+        <br>
+        Last name:<br>
+        <input type="text" id="lastName" name="lastname" value=""><br>
+
+        Gender:
+        <input type="checkbox" id="male" name="gender"  checked> male
+        <input type="checkbox" id="female"  name="gender" checked> female<br>
+
+        Email<input type="text" id="email" value=""><br>
+        Password<input type="password" id="password" name="password" value=""><br>
+        
+        <input type="submit" onclick="validation()" value="Submit">
+      </form>
+
+      <div id="result"></div>
+
+      <script>
+          function validation(){
+              let firstName = document.getElementById('firstName').value;
+              let lastName = document.getElementById('lastName').value;
+              let gender = document.getElementById('male').value;
+              let email = document.getElementById('email').value;
+              let password = document.getElementById('password').value;
+
+              let isAllCorrectly = true;
+              
+              if(firstName == ''){
+                errorMessage('firstName');
+              }
+              if(lastName == ''){
+                errorMessage('lastName');
+              }
+
+              function errorMessage(currentName){
+                document.getElementById('result').textContent = `${currentName} name cannot be empty`;
+              }
+              
+          }
+      </script>
+</body>
+</html>
