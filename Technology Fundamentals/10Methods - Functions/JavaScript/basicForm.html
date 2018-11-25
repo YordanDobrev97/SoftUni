@@ -22,8 +22,6 @@
         <input type="submit" onclick="validation()" value="Submit">
       </form>
 
-      <div id="result"></div>
-
       <script>
           function validation(){
               let firstName = document.getElementById('firstName').value;
@@ -35,10 +33,25 @@
               let isAllCorrectly = true;
               
               if(firstName == ''){
-                errorMessage('firstName');
+                let div = document.createElement('p')
+                div.setAttribute('id', 'result')
+                document.body.appendChild(div)
+                document.getElementById('result').innerHTML = 'First name cannot be empty';
+                
               }
               if(lastName == ''){
-                errorMessage('lastName');
+                let div = document.createElement('p')
+                div.setAttribute('id', 'result2')
+                document.body.appendChild(div)
+                document.getElementById('result2').innerHTML = 'Second name cannot be empty';
+              }
+
+              if (password.length < 6){
+                console.log('Password should be at least 6 symbols');
+                let div = document.createElement('p')
+                div.setAttribute('id', 'result3')
+                document.body.appendChild(div)
+                document.getElementById('result3').innerHTML = 'Password should be at least 6 symbols';
               }
 
               function errorMessage(currentName){
