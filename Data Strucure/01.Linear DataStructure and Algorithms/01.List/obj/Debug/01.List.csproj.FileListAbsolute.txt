@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\01.Linear DataStructure and Algorithms\01.List\bin\Debug\01.List.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\01.Linear DataStructure and Algorithms\01.List\bin\Debug\01.List.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\01.Linear DataStructure and Algorithms\01.List\bin\Debug\01.List.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\01.Linear DataStructure and Algorithms\01.List\obj\Debug\01.List.csprojResolveAssemblyReference.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\01.Linear DataStructure and Algorithms\01.List\obj\Debug\01.List.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\01.Linear DataStructure and Algorithms\01.List\obj\Debug\01.List.pdb
