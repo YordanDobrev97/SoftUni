@@ -1,12 +1,12 @@
 import java.util.Iterator;
 
-public class ArrayList<T> implements Iterable<T> {
+public class CustomArrayList<T> implements Iterable<T> {
     private int capacity = 4;
     private T[] array;
     private int count;
     private int index;
 
-    public ArrayList(){
+    public CustomArrayList(){
         this.array = (T[]) new Object[capacity];
     }
 
@@ -18,6 +18,21 @@ public class ArrayList<T> implements Iterable<T> {
         this.array[index] = element;
         this.count++;
         this.index++;
+    }
+
+    public T removeAt(int index){
+        T item = this.array[index];
+
+        for(int i = index; i < this.array.length - 1; i++){
+            this.array[i] = this.array[i + 1];
+        }
+
+        this.count--;
+        return item;
+    }
+
+    public int count(){
+        return this.count;
     }
 
     public T get(int index){
