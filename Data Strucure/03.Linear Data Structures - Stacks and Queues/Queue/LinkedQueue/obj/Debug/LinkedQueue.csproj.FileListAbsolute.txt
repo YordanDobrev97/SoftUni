@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\LinkedQueue\bin\Debug\LinkedQueue.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\LinkedQueue\bin\Debug\LinkedQueue.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\LinkedQueue\bin\Debug\LinkedQueue.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\LinkedQueue\obj\Debug\LinkedQueue.csprojResolveAssemblyReference.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\LinkedQueue\obj\Debug\LinkedQueue.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\03.Linear Data Structures - Stacks and Queues\Queue\LinkedQueue\obj\Debug\LinkedQueue.pdb
