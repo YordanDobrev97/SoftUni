@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BasicOperationStack", "01.BasicOperationStack\01.BasicOperationStack.csproj", "{443C54FE-F91C-4F3D-8F1B-33B7091FE7BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.BasicOperationStack", "01.BasicOperationStack\01.BasicOperationStack.csproj", "{443C54FE-F91C-4F3D-8F1B-33B7091FE7BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BasicOperationQueues", "02.BasicOperationQueues\02.BasicOperationQueues.csproj", "{171F1D13-EA8F-4B49-B623-043072126923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.BasicOperationQueues", "02.BasicOperationQueues\02.BasicOperationQueues.csproj", "{171F1D13-EA8F-4B49-B623-043072126923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MaxMinElement", "03.MaxMinElement\03.MaxMinElement.csproj", "{F329E98D-9BAB-4497-B71A-9CFB66271F48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.MaxMinElement", "03.MaxMinElement\03.MaxMinElement.csproj", "{F329E98D-9BAB-4497-B71A-9CFB66271F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FastFood", "04.FastFood\04.FastFood.csproj", "{C5E3A206-ACD1-428D-8607-D02D9FC4A539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.FastFood", "04.FastFood\04.FastFood.csproj", "{C5E3A206-ACD1-428D-8607-D02D9FC4A539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.FashionBoutique", "05.FashionBoutique\05.FashionBoutique.csproj", "{3044F459-E9FF-4169-B97B-DDD053206912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.AutoRepairAndService", "06.AutoRepairAndService\06.AutoRepairAndService.csproj", "{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C5E3A206-ACD1-428D-8607-D02D9FC4A539}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5E3A206-ACD1-428D-8607-D02D9FC4A539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E3A206-ACD1-428D-8607-D02D9FC4A539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3044F459-E9FF-4169-B97B-DDD053206912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3044F459-E9FF-4169-B97B-DDD053206912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3044F459-E9FF-4169-B97B-DDD053206912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3044F459-E9FF-4169-B97B-DDD053206912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
