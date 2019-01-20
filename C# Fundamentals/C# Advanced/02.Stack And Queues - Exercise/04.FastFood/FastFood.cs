@@ -26,6 +26,7 @@ namespace _04.FastFood
             int max = queue.Max();
 
             Console.WriteLine(max);
+
             if (quantityFood > 0)
             {
                 Console.WriteLine("Orders complete");

@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.MaxMinElement", "03.MaxM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.FastFood", "04.FastFood\04.FastFood.csproj", "{C5E3A206-ACD1-428D-8607-D02D9FC4A539}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.FashionBoutique", "05.FashionBoutique\05.FashionBoutique.csproj", "{3044F459-E9FF-4169-B97B-DDD053206912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.FashionBoutique", "05.FashionBoutique\05.FashionBoutique.csproj", "{3044F459-E9FF-4169-B97B-DDD053206912}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.AutoRepairAndService", "06.AutoRepairAndService\06.AutoRepairAndService.csproj", "{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.AutoRepairAndService", "06.AutoRepairAndService\06.AutoRepairAndService.csproj", "{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.BalancedParentheses", "08.BalancedParentheses\08.BalancedParentheses.csproj", "{36851009-586E-4936-90E1-976DBB102958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SimpleTextEditor", "09.SimpleTextEditor\09.SimpleTextEditor.csproj", "{6F426F84-0B21-489F-9CD7-96CAF92D0F43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B88B957-F3BE-4FDF-9B32-4C279C31F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36851009-586E-4936-90E1-976DBB102958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36851009-586E-4936-90E1-976DBB102958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36851009-586E-4936-90E1-976DBB102958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36851009-586E-4936-90E1-976DBB102958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F426F84-0B21-489F-9CD7-96CAF92D0F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F426F84-0B21-489F-9CD7-96CAF92D0F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F426F84-0B21-489F-9CD7-96CAF92D0F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F426F84-0B21-489F-9CD7-96CAF92D0F43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

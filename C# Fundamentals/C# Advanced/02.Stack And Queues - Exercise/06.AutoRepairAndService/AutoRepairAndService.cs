@@ -29,9 +29,12 @@ namespace _06.AutoRepairAndService
                 switch (elements[0])
                 {
                     case "Service":
-                        string currentCar = cars.Dequeue();
-                        Console.WriteLine($"Vehicle {currentCar} got served.");
-                        servedVehicles.Push(currentCar);
+                        if (cars.Count > 0)
+                        {
+                            string currentCar = cars.Dequeue();
+                            Console.WriteLine($"Vehicle {currentCar} got served.");
+                            servedVehicles.Push(currentCar);
+                        }
                         break;
                     case "CarInfo":
                         string car = elements[1];
@@ -52,8 +55,10 @@ namespace _06.AutoRepairAndService
 
                 command = Console.ReadLine();
             }
-
-            Console.WriteLine($"Vehicles for service: {string.Join(", ", cars)}");
+            if (cars.Count > 0)
+            {
+                Console.WriteLine($"Vehicles for service: {string.Join(", ", cars)}");
+            }
             Console.WriteLine($"Served vehicles: {string.Join(", ", servedVehicles)}");
         }
     }

@@ -38,32 +38,59 @@ namespace _03.MaxMinElement
                         }
                         else
                         {
-                            AddingNewValueInStack(maxNumbers, minNumbers, value);
+                            AddingNewValueInStack(maxNumbers, 
+                                minNumbers, value);
                         }
                         break;
                     case "2":
-                        numbers.Dequeue();
-                        maxNumbers.Pop();
-                        minNumbers.Pop();
+                        if (numbers.Count > 0)
+                        {
+                            numbers.Dequeue();
+                        }
+
+                        if (maxNumbers.Count > 0)
+                        {
+                            maxNumbers.Pop();
+                        }
+
+                        if (minNumbers.Count > 0)
+                        {
+                            minNumbers.Pop();
+                        }
                         break;
                     case "3":
-                        Console.WriteLine(maxNumbers.Peek());
+                        if (maxNumbers.Count > 0)
+                        {
+                            Console.WriteLine(maxNumbers.Peek());
+                        }
+                       
                         break;
                     case "4":
-                        Console.WriteLine(minNumbers.Peek());
+                        if (minNumbers.Count > 0)
+                        {
+                            Console.WriteLine(minNumbers.Peek());
+                        }
+                        
                         break;
                 }
             }
 
-            Console.WriteLine(string.Join(" ", numbers.Reverse()));
+            Console.WriteLine(string.Join(", ", numbers.Reverse()));
         }
 
         private static void AddingNewValueInStack(Stack<int> stackMaxNumbers, Stack<int> stackMinNumbers, int value)
         {
-            int lastElementMax = stackMaxNumbers.Peek();
-            int lastElementMin = stackMinNumbers.Peek();
-            Max(stackMaxNumbers, value, lastElementMax);
-            Min(stackMinNumbers, value, lastElementMin);
+            if (stackMaxNumbers.Count > 0)
+            {
+                int lastElementMax = stackMaxNumbers.Peek();
+                Max(stackMaxNumbers, value, lastElementMax);
+            }
+
+            if (stackMinNumbers.Count > 0)
+            {
+                int lastElementMin = stackMinNumbers.Peek();
+                Min(stackMinNumbers, value, lastElementMin);
+            }
         }
 
         private static void Min(Stack<int> stack, int value, int lastElement)
