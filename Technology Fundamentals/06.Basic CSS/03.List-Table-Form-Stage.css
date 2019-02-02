@@ -1,0 +1,21 @@
+h1{
+    color: blue;
+}
+div p{
+    color: darkviolet;
+}
+.nestedContainer ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 1px;
+}
+.nestedContainerP,.ContainerForm{
+    color: black;
+}
+.lists{
+    border: dotted; 
+    color: darkcyan;
+}
+body{
+    background-color: cadetblue;
+}
