@@ -1,0 +1,1889 @@
+[
+    {
+        "_id": "5c5adb0045e75e68f279f154",
+        "name": "Snuff",
+        "album": "All Hope Is Gone",
+        "artist": "Slipknot",
+        "time": "4:36",
+        "year": "2008",
+        "_acl": {
+            "creator": "kid_S1rDXLP4N"
+        },
+        "_kmd": {
+            "lmt": "2019-02-06T13:02:56.888Z",
+            "ect": "2019-02-06T13:02:56.888Z"
+        }
+    },
+    {
+        "_id": "5c5adb0045e75e68f279f155",
+        "name": "Locked Out of Heaven",
+        "album": "Unorthodox Jukebox",
+        "artist": "Bruno Mars",
+        "time": "3:54",
+        "year": "2012",
+        "_acl": {
+            "creator": "kid_S1rDXLP4N"
+        },
+        "_kmd": {
+            "lmt": "2019-02-06T13:02:56.911Z",
+            "ect": "2019-02-06T13:02:56.911Z"
+        }
+    },
+    {
+        "_id": "5c5adb003e3275660dc9f8ca",
+        "name": "Song #3",
+        "album": "Hydrograd",
+        "artist": "Stone Sour",
+        "time": "4:16",
+        "year": "2017",
+        "_acl": {
+            "creator": "kid_S1rDXLP4N"
+        },
+        "_kmd": {
+            "lmt": "2019-02-06T13:02:56.894Z",
+            "ect": "2019-02-06T13:02:56.894Z"
+        }
+    },
+    {
+        "_id": "5c5da8e445e75e68f28d7ce9",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T16:05:56.650Z",
+            "ect": "2019-02-08T16:05:56.650Z"
+        }
+    },
+    {
+        "_id": "5c5dce9f3e3275660ddead3e",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:46:55.514Z",
+            "ect": "2019-02-08T18:46:55.514Z"
+        }
+    },
+    {
+        "_id": "5c5dcea5a26b847c28965ac0",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:47:00.979Z",
+            "ect": "2019-02-08T18:47:00.979Z"
+        }
+    },
+    {
+        "_id": "5c5dced906715b6608c0bfc7",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:47:53.376Z",
+            "ect": "2019-02-08T18:47:53.376Z"
+        }
+    },
+    {
+        "_id": "5c5dcef5a26b847c28965d98",
+        "name": "3.10.10",
+        "album": "Hi Evelin",
+        "artist": "My App",
+        "time": "Eve Lin",
+        "year": "",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:48:21.168Z",
+            "ect": "2019-02-08T18:48:21.168Z"
+        }
+    },
+    {
+        "_id": "5c5dcf0645e75e68f28e90e4",
+        "name": "Back in Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:48:38.315Z",
+            "ect": "2019-02-08T18:48:38.315Z"
+        }
+    },
+    {
+        "_id": "5c5dcf19c341455f556c0baf",
+        "name": "Back in Black",
+        "Album": "Back in Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:48:57.320Z",
+            "ect": "2019-02-08T18:48:57.320Z"
+        }
+    },
+    {
+        "_id": "5c5dcf2f2ae0685cf03030ca",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:49:19.403Z",
+            "ect": "2019-02-08T18:49:19.403Z"
+        }
+    },
+    {
+        "_id": "5c5dcf35c341455f556c0d23",
+        "name": "Back in Black",
+        "Album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:49:25.149Z",
+            "ect": "2019-02-08T18:49:25.149Z"
+        }
+    },
+    {
+        "_id": "5c5dcf7306715b6608c0c4ab",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:50:27.619Z",
+            "ect": "2019-02-08T18:50:27.619Z"
+        }
+    },
+    {
+        "_id": "5c5dcfd63e3275660ddeb60d",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:52:06.123Z",
+            "ect": "2019-02-08T18:52:06.123Z"
+        }
+    },
+    {
+        "_id": "5c5dd04aa26b847c2896660d",
+        "name": "3.10.10",
+        "album": "Hi Evelin",
+        "artist": "My App",
+        "time": "Eve Lin",
+        "year": "",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:54:02.054Z",
+            "ect": "2019-02-08T18:54:02.054Z"
+        }
+    },
+    {
+        "_id": "5c5dd06006715b6608c0cac8",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:54:24.395Z",
+            "ect": "2019-02-08T18:54:24.395Z"
+        }
+    },
+    {
+        "_id": "5c5dd1f41be4947c2a09d7fc",
+        "name": "novemberrain",
+        "album": "use your illiusion 1",
+        "artist": "Guns and Roses",
+        "year": "1991",
+        "ganre": "rock",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:17:43.916Z",
+            "ect": "2019-02-08T19:05:35.445Z"
+        }
+    },
+    {
+        "_id": "5c5dd36c45e75e68f28eb2b8",
+        "name": "TATI(feat.DJ SPINKING)",
+        "album": "6ix9ine 2018",
+        "artist": "6ix9ine",
+        "time": "2:35",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:07:24.313Z",
+            "ect": "2019-02-08T19:07:24.313Z"
+        }
+    },
+    {
+        "_id": "5c5dd406c374695ed1bfa8a5",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:09:58.333Z",
+            "ect": "2019-02-08T19:09:58.333Z"
+        }
+    },
+    {
+        "_id": "5c5dd41c45e75e68f28eb7ce",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:10:20.695Z",
+            "ect": "2019-02-08T19:10:20.695Z"
+        }
+    },
+    {
+        "_id": "5c5dd5e045e75e68f28ec335",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:17:52.929Z",
+            "ect": "2019-02-08T19:17:52.929Z"
+        }
+    },
+    {
+        "_id": "5c5dd632c892215f50d24b68",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:19:14.772Z",
+            "ect": "2019-02-08T19:19:14.772Z"
+        }
+    },
+    {
+        "_id": "5c5dd76d1be4947c2a09fccd",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:24:29.845Z",
+            "ect": "2019-02-08T19:24:29.845Z"
+        }
+    },
+    {
+        "_id": "5c5dd07e1be4947c2a09ca34",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:54:54.524Z",
+            "ect": "2019-02-08T18:54:54.524Z"
+        }
+    },
+    {
+        "_id": "5c5dd14345e75e68f28ea14e",
+        " {\n        \"_id\": \"5c5adb00c892215f50bd6761\",\n        \"name\": \"Test name\",\n        \"Album\": \"Test album\",\n        \"artist\": \"test/test\",\n        \"time\": \"4:15\",\n        \"year\": \"1980\",\n        \"_acl\": {\n            \"creator\": \"kid_S1rDXLP4N\"\n        }": "",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:58:11.246Z",
+            "ect": "2019-02-08T18:58:11.246Z"
+        }
+    },
+    {
+        "_id": "5c5dd14345e75e68f28ea152",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:58:11.338Z",
+            "ect": "2019-02-08T18:58:11.338Z"
+        }
+    },
+    {
+        "_id": "5c5dd15bc341455f556c1ca0",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:58:35.173Z",
+            "ect": "2019-02-08T18:58:35.173Z"
+        }
+    },
+    {
+        "_id": "5c5dd15c1be4947c2a09d0fc",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:58:36.227Z",
+            "ect": "2019-02-08T18:58:36.227Z"
+        }
+    },
+    {
+        "_id": "5c5dd15ca26b847c28966e47",
+        " {\n        \"_id\": \"5c5adb00c892215f50bd6761\",\n        \"name\": \"Test name\",\n        \"Album\": \"Test album\",\n        \"artist\": \"test/test\",\n        \"time\": \"4:15\",\n        \"year\": \"1980\",\n        \"_acl\": {\n            \"creator\": \"kid_S1rDXLP4N\"\n        }": "",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:58:36.779Z",
+            "ect": "2019-02-08T18:58:36.779Z"
+        }
+    },
+    {
+        "_id": "5c5dd16f2ae0685cf03030fa",
+        "name": "dwddf",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:58:55.672Z",
+            "ect": "2019-02-08T18:58:55.672Z"
+        }
+    },
+    {
+        "_id": "5c5dd17d571f445ed0c0dac7",
+        "name": "Before I Forget",
+        "album": "Forsaken",
+        "artist": "Slipknot",
+        "time": "3:45",
+        "year": "1999",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:59:09.057Z",
+            "ect": "2019-02-08T18:59:09.057Z"
+        }
+    },
+    {
+        "_id": "5c5dd19d45e75e68f28ea2fb",
+        "name": "Back in black",
+        "album": "Back in black",
+        "artist": "ac/dc",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T18:59:41.553Z",
+            "ect": "2019-02-08T18:59:41.553Z"
+        }
+    },
+    {
+        "_id": "5c5dd1b4a26b847c2896702b",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:00:04.528Z",
+            "ect": "2019-02-08T19:00:04.528Z"
+        }
+    },
+    {
+        "_id": "5c5dd1b81be4947c2a09d37b",
+        "name": "Back In BLack",
+        "album": "Back In BLack",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:00:08.861Z",
+            "ect": "2019-02-08T19:00:08.861Z"
+        }
+    },
+    {
+        "_id": "5c5dd1d445e75e68f28ea866",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:00:36.347Z",
+            "ect": "2019-02-08T19:00:36.347Z"
+        }
+    },
+    {
+        "_id": "5c5dd1d806715b6608c0d80f",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AD/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:00:40.526Z",
+            "ect": "2019-02-08T19:00:40.526Z"
+        }
+    },
+    {
+        "_id": "5c5dd20945e75e68f28ea98b",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:01:29.859Z",
+            "ect": "2019-02-08T19:01:29.859Z"
+        }
+    },
+    {
+        "_id": "5c5dd22a7a9c0c68f727bb71",
+        "name": "Black In Black",
+        "album": "Black In Black",
+        "artist": "AC/DC",
+        "time ": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:02.652Z",
+            "ect": "2019-02-08T19:02:02.652Z"
+        }
+    },
+    {
+        "_id": "5c5dd232c892215f50d2317b",
+        "name\n": "gucci gangerino\n",
+        "album": "gucci geng",
+        "artist": "elton jonny",
+        "time": "4:20",
+        "year": "1939",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:09.967Z",
+            "ect": "2019-02-08T19:02:09.967Z"
+        }
+    },
+    {
+        "_id": "5c5dd2381be4947c2a09d96a",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:16.866Z",
+            "ect": "2019-02-08T19:02:16.866Z"
+        }
+    },
+    {
+        "_id": "5c5dd241a26b847c289676e9",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:25.585Z",
+            "ect": "2019-02-08T19:02:25.585Z"
+        }
+    },
+    {
+        "_id": "5c5dd24a06715b6608c0da5f",
+        "AC/DC": "4.21",
+        "asd": "2.12",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:34.562Z",
+            "ect": "2019-02-08T19:02:34.562Z"
+        }
+    },
+    {
+        "_id": "5c5dd24bc341455f556c251e",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:35.878Z",
+            "ect": "2019-02-08T19:02:35.878Z"
+        }
+    },
+    {
+        "_id": "5c5dd25ba26b847c28967710",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:51.885Z",
+            "ect": "2019-02-08T19:02:51.885Z"
+        }
+    },
+    {
+        "_id": "5c5dd25cc892215f50d23198",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "Nirvana",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:02:52.322Z",
+            "ect": "2019-02-08T19:02:52.322Z"
+        }
+    },
+    {
+        "_id": "5c5dd26f45e75e68f28eab8c",
+        "name": "Black In Black",
+        "album": "Black In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "data": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:03:11.915Z",
+            "ect": "2019-02-08T19:03:11.915Z"
+        }
+    },
+    {
+        "_id": "5c5dd28506715b6608c0dba6",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:03:33.915Z",
+            "ect": "2019-02-08T19:03:33.915Z"
+        }
+    },
+    {
+        "_id": "5c5dd2ae7a9c0c68f727bea1",
+        "name": "TATI(feat.DJ SPINKING)",
+        "album": "6ix9ine 2018",
+        "artist": "6ix9ine",
+        "time": "2:35",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:04:14.623Z",
+            "ect": "2019-02-08T19:04:14.623Z"
+        }
+    },
+    {
+        "_id": "5c5dd2ca45e75e68f28ead66",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:04:42.249Z",
+            "ect": "2019-02-08T19:04:42.249Z"
+        }
+    },
+    {
+        "_id": "5c5dd2d245e75e68f28ead68",
+        "name": "TATI(feat.DJ SPINKING)",
+        "album": "6ix9ine 2018",
+        "artist": "6ix9ine",
+        "time": "2:35",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:04:50.789Z",
+            "ect": "2019-02-08T19:04:50.789Z"
+        }
+    },
+    {
+        "_id": "5c5dd2fa7a9c0c68f727c177",
+        "name": "Back In Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:05:30.474Z",
+            "ect": "2019-02-08T19:05:30.474Z"
+        }
+    },
+    {
+        "_id": "5c5dd31045e75e68f28eafba",
+        "name": "Black In Black",
+        "album": "Black In Black",
+        "artist": "AC/DC",
+        "time ": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:05:51.999Z",
+            "ect": "2019-02-08T19:05:51.999Z"
+        }
+    },
+    {
+        "_id": "5c5dd31045e75e68f28eafbb",
+        "name": "When It Comes To You",
+        "album": "On Every Street",
+        "artist": "Dire Straits",
+        "genre": "Soft Rock",
+        "year": "1991",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:05:52.415Z",
+            "ect": "2019-02-08T19:05:52.415Z"
+        }
+    },
+    {
+        "_id": "5c5dd36506715b6608c0e27c",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:07:17.474Z",
+            "ect": "2019-02-08T19:07:17.474Z"
+        }
+    },
+    {
+        "_id": "5c5dd371a26b847c28967f60",
+        "name": "Black in Black",
+        "album": "Black in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:07:29.171Z",
+            "ect": "2019-02-08T19:07:29.171Z"
+        }
+    },
+    {
+        "_id": "5c5dd37545e75e68f28eb2d4",
+        "name": "TATI(feat.DJ SPINKING)",
+        "album": "6ix9ine 2018",
+        "artist": "6ix9ine",
+        "time": "2:35",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:07:33.117Z",
+            "ect": "2019-02-08T19:07:33.117Z"
+        }
+    },
+    {
+        "_id": "5c5dd3773e3275660dded249",
+        "name": "Black In Black",
+        "album": "Black In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:07:35.008Z",
+            "ect": "2019-02-08T19:07:35.008Z"
+        }
+    },
+    {
+        "_id": "5c5dd33b45e75e68f28eb113",
+        "name\n": "rap god\n",
+        "album": "the crew",
+        "artist": "bonjonny",
+        "time": "4:659",
+        "year": "1945",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:07:43.640Z",
+            "ect": "2019-02-08T19:07:43.640Z"
+        }
+    },
+    {
+        "_id": "5c5dd3a1c341455f556c2f5a",
+        "name": "Back In Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:08:17.368Z",
+            "ect": "2019-02-08T19:08:17.368Z"
+        }
+    },
+    {
+        "_id": "5c5dd3b206715b6608c0e437",
+        "name": "When It Comes To You",
+        "album": "On Every Street",
+        "artist": "Dire Straits",
+        "genre": "Soft Rock",
+        "year": "1991",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:08:34.761Z",
+            "ect": "2019-02-08T19:08:34.761Z"
+        }
+    },
+    {
+        "_id": "5c5dd3d47a9c0c68f727c6ec",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:09:08.603Z",
+            "ect": "2019-02-08T19:09:08.603Z"
+        }
+    },
+    {
+        "_id": "5c5dd3e0c341455f556c30c6",
+        "name": "Back in Back",
+        "album": "Back in Back",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:09:20.671Z",
+            "ect": "2019-02-08T19:09:20.671Z"
+        }
+    },
+    {
+        "_id": "5c5dd3e21be4947c2a09e490",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:09:22.679Z",
+            "ect": "2019-02-08T19:09:22.679Z"
+        }
+    },
+    {
+        "_id": "5c5dd4127a9c0c68f727c843",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:10:10.180Z",
+            "ect": "2019-02-08T19:10:10.180Z"
+        }
+    },
+    {
+        "_id": "5c5dd41fa26b847c2896846f",
+        "name": "Black in Black",
+        "album": "Black in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:10:23.320Z",
+            "ect": "2019-02-08T19:10:23.320Z"
+        }
+    },
+    {
+        "_id": "5c5dd4383e3275660dded797",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:10:48.648Z",
+            "ect": "2019-02-08T19:10:48.648Z"
+        }
+    },
+    {
+        "_id": "5c5dd445c341455f556c331d",
+        "name": "TATI(feat.DJ SPINKING)",
+        "album": "6ix9ine 2018",
+        "artist": "6ix9ine",
+        "time": "2:35",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:11:01.938Z",
+            "ect": "2019-02-08T19:11:01.938Z"
+        }
+    },
+    {
+        "_id": "5c5dd44ac341455f556c33c0",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:11:06.329Z",
+            "ect": "2019-02-08T19:11:06.329Z"
+        }
+    },
+    {
+        "_id": "5c5dd44cc892215f50d23f5e",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:11:08.855Z",
+            "ect": "2019-02-08T19:11:08.855Z"
+        }
+    },
+    {
+        "_id": "5c5dd4593e3275660dded8d2",
+        "name": "Black In Black",
+        "album": "Black In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:11:21.007Z",
+            "ect": "2019-02-08T19:11:21.007Z"
+        }
+    },
+    {
+        "_id": "5c5dd47606715b6608c0e8ee",
+        "name": "Back in Black",
+        "album": "Black in black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:11:50.844Z",
+            "ect": "2019-02-08T19:11:50.844Z"
+        }
+    },
+    {
+        "_id": "5c5dd4903e3275660ddeda5e",
+        "name": "Back in Black",
+        "album": "Black in black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:12:16.659Z",
+            "ect": "2019-02-08T19:12:16.659Z"
+        }
+    },
+    {
+        "_id": "5c5dd4a2c341455f556c3610",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:12:34.776Z",
+            "ect": "2019-02-08T19:12:34.776Z"
+        }
+    },
+    {
+        "_id": "5c5dd4bea26b847c289687ee",
+        "name": "Back in Back",
+        "album": "Back in Back",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:13:02.134Z",
+            "ect": "2019-02-08T19:13:02.134Z"
+        }
+    },
+    {
+        "_id": "5c5dd4c0a26b847c2896885b",
+        "name": "When It Comes To You",
+        "album": "On Every Street",
+        "artist": "Dire Straits",
+        "genre": "Soft Rock",
+        "year": "1991",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:13:04.386Z",
+            "ect": "2019-02-08T19:13:04.386Z"
+        }
+    },
+    {
+        "_id": "5c5dd4dec892215f50d242f3",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:13:34.256Z",
+            "ect": "2019-02-08T19:13:34.256Z"
+        }
+    },
+    {
+        "_id": "5c5dd4f106715b6608c0ec0b",
+        "name": "Back in Black",
+        "album": "Black in black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:13:53.315Z",
+            "ect": "2019-02-08T19:13:53.315Z"
+        }
+    },
+    {
+        "_id": "5c5dd5071be4947c2a09ec1c",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:14:15.283Z",
+            "ect": "2019-02-08T19:14:15.283Z"
+        }
+    },
+    {
+        "_id": "5c5dd53aa26b847c28968b80",
+        "name": "Back in Black",
+        "album": "Black in black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:15:06.159Z",
+            "ect": "2019-02-08T19:15:06.159Z"
+        }
+    },
+    {
+        "_id": "5c5dd562a26b847c28968ca2",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:15:46.795Z",
+            "ect": "2019-02-08T19:15:46.795Z"
+        }
+    },
+    {
+        "_id": "5c5dd567571f445ed0c0dd60",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:15:51.048Z",
+            "ect": "2019-02-08T19:15:51.048Z"
+        }
+    },
+    {
+        "_id": "5c5dd56e7a9c0c68f727d13e",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:15:58.327Z",
+            "ect": "2019-02-08T19:15:58.327Z"
+        }
+    },
+    {
+        "_id": "5c5dd2cec341455f556c27f8",
+        "name": "Dani California",
+        "artist": "Red Hot Chili Peppers",
+        "album": "Stadium Arcadium",
+        "time": "4:43",
+        "year": "2006",
+        "genre": "Rock",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:16:10.319Z",
+            "ect": "2019-02-08T19:16:10.319Z"
+        }
+    },
+    {
+        "_id": "5c5dd5ef06715b6608c0f34a",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:18:07.168Z",
+            "ect": "2019-02-08T19:18:07.168Z"
+        }
+    },
+    {
+        "_id": "5c5dd5fec892215f50d24b17",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "04:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:18:22.529Z",
+            "ect": "2019-02-08T19:18:22.529Z"
+        }
+    },
+    {
+        "_id": "5c5dd60306715b6608c0f3fc",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:18:27.482Z",
+            "ect": "2019-02-08T19:18:27.482Z"
+        }
+    },
+    {
+        "_id": "5c5dd61aa26b847c28969115",
+        "name": "Hostage",
+        "album": "Don't Smile at Me",
+        "artist": "Billie Eilish",
+        "time": "3:55",
+        "year": "2017",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:18:50.838Z",
+            "ect": "2019-02-08T19:18:50.838Z"
+        }
+    },
+    {
+        "_id": "5c5dd64845e75e68f28ec651",
+        "name": "Hostage",
+        "album": "Don't Smile at Me",
+        "artist": "Billie Eilish",
+        "time": "3:55",
+        "year": "2017",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:19:36.410Z",
+            "ect": "2019-02-08T19:19:36.410Z"
+        }
+    },
+    {
+        "_id": "5c5dd6a445e75e68f28ec934",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "04:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:21:08.616Z",
+            "ect": "2019-02-08T19:21:08.616Z"
+        }
+    },
+    {
+        "_id": "5c5dd6be7a9c0c68f727da51",
+        "name": "TATI(feat.DJ SPINKING)",
+        "album": "6ix9ine 2018",
+        "artist": "6ix9ine",
+        "time": "2:35",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:21:34.370Z",
+            "ect": "2019-02-08T19:21:34.370Z"
+        }
+    },
+    {
+        "_id": "5c5dd6bf06715b6608c0f922",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:21:35.095Z",
+            "ect": "2019-02-08T19:21:35.095Z"
+        }
+    },
+    {
+        "_id": "5c5dd70b3e3275660ddeeaaf",
+        "name": "Hostage",
+        "album": "Don't Smile at Me",
+        "artist": "Billie Eilish",
+        "time": "3:55",
+        "year": "2017",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:22:51.602Z",
+            "ect": "2019-02-08T19:22:51.602Z"
+        }
+    },
+    {
+        "_id": "5c5dd78506715b6608c0fe21",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:24:53.303Z",
+            "ect": "2019-02-08T19:24:53.303Z"
+        }
+    },
+    {
+        "_id": "5c5dd8143e3275660ddef226",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:27:16.598Z",
+            "ect": "2019-02-08T19:27:16.598Z"
+        }
+    },
+    {
+        "_id": "5c5dd87d7a9c0c68f727e58e",
+        "name": "My test",
+        "album": "test",
+        "artist": "Bruno Test",
+        "time": "3:54",
+        "year": "2012",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:29:01.136Z",
+            "ect": "2019-02-08T19:29:01.136Z"
+        }
+    },
+    {
+        "_id": "5c5dd8ae1be4947c2a0a04d4",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:29:50.525Z",
+            "ect": "2019-02-08T19:29:50.525Z"
+        }
+    },
+    {
+        "_id": "5c5dd8b21be4947c2a0a04d7",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:29:54.350Z",
+            "ect": "2019-02-08T19:29:54.350Z"
+        }
+    },
+    {
+        "_id": "5c5dd8c1c892215f50d25d3c",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:30:09.435Z",
+            "ect": "2019-02-08T19:30:09.435Z"
+        }
+    },
+    {
+        "_id": "5c5dd9281be4947c2a0a0b4f",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:31:52.756Z",
+            "ect": "2019-02-08T19:31:52.756Z"
+        }
+    },
+    {
+        "_id": "5c5dd95506715b6608c10dc7",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:32:37.213Z",
+            "ect": "2019-02-08T19:32:37.213Z"
+        }
+    },
+    {
+        "_id": "5c5dd96606715b6608c10dcb",
+        "name": "metalika",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:32:54.882Z",
+            "ect": "2019-02-08T19:32:54.882Z"
+        }
+    },
+    {
+        "_id": "5c5adb00c892215f50bd6761",
+        "name": "Dani California",
+        "album": "Stadium Arcadium",
+        "time": "4:43",
+        "year": "2006",
+        "genre": "Rock",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T17:32:46.272Z",
+            "ect": "2019-02-09T16:43:00.357Z"
+        }
+    },
+    {
+        "_id": "5c5dd9e1c341455f556c5c60",
+        "name\n": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:34:57.035Z",
+            "ect": "2019-02-08T19:34:57.035Z"
+        }
+    },
+    {
+        "_id": "5c5dd9f97a9c0c68f727f420",
+        "name": "Black",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:35:21.850Z",
+            "ect": "2019-02-08T19:35:21.850Z"
+        }
+    },
+    {
+        "_id": "5c5ddc3306715b6608c1202e",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:44:51.336Z",
+            "ect": "2019-02-08T19:44:51.336Z"
+        }
+    },
+    {
+        "_id": "5c5ddc6d7a9c0c68f7280319",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:45:49.319Z",
+            "ect": "2019-02-08T19:45:49.319Z"
+        }
+    },
+    {
+        "_id": "5c5ddcd97a9c0c68f72805d5",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:47:37.544Z",
+            "ect": "2019-02-08T19:47:37.544Z"
+        }
+    },
+    {
+        "_id": "5c5ddd5c1be4947c2a0a2749",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:49:48.581Z",
+            "ect": "2019-02-08T19:49:48.581Z"
+        }
+    },
+    {
+        "_id": "5c5dde7e1be4947c2a0a2e8f",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:54:38.124Z",
+            "ect": "2019-02-08T19:54:38.124Z"
+        }
+    },
+    {
+        "_id": "5c5ddf1445e75e68f28f0471",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC / DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T19:57:08.226Z",
+            "ect": "2019-02-08T19:57:08.226Z"
+        }
+    },
+    {
+        "_id": "5c5ddff7571f445ed0c0e396",
+        "name": "Black in Black",
+        "album": "Black in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-08T20:00:55.729Z",
+            "ect": "2019-02-08T20:00:55.729Z"
+        }
+    },
+    {
+        "_id": "5c5e9f02e360305ceb255abe",
+        "name": "Black in Black",
+        "album": "Black in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T09:36:02.147Z",
+            "ect": "2019-02-09T09:36:02.147Z"
+        }
+    },
+    {
+        "_id": "5c5ea9653e3275660de49472",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T10:20:21.243Z",
+            "ect": "2019-02-09T10:20:21.243Z"
+        }
+    },
+    {
+        "_id": "5c5ea9eec341455f5571f382",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T10:22:38.111Z",
+            "ect": "2019-02-09T10:22:38.111Z"
+        }
+    },
+    {
+        "_id": "5c5eaa583e3275660de499bd",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T10:24:24.722Z",
+            "ect": "2019-02-09T10:24:24.722Z"
+        }
+    },
+    {
+        "_id": "5c5eba9a06715b6608c7274e",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T11:33:46.144Z",
+            "ect": "2019-02-09T11:33:46.144Z"
+        }
+    },
+    {
+        "_id": "5c5f0118c892215f50da4f9a",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T16:34:32.553Z",
+            "ect": "2019-02-09T16:34:32.553Z"
+        }
+    },
+    {
+        "_id": "5c5f02143e3275660de6efe5",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T16:38:44.240Z",
+            "ect": "2019-02-09T16:38:44.240Z"
+        }
+    },
+    {
+        "_id": "5c5f0806c892215f50da7ec1",
+        "name": "I want out",
+        "album": "I want out",
+        "artist": "Halloween",
+        "time": "4:23",
+        "year": "1982",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T17:04:06.731Z",
+            "ect": "2019-02-09T17:04:06.731Z"
+        }
+    },
+    {
+        "_id": "5c5f08641be4947c2a12367a",
+        "name": "I want out",
+        "album": "I want out",
+        "artist": "Halloween",
+        "time": "4:23",
+        "year": "1982",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T17:05:40.586Z",
+            "ect": "2019-02-09T17:05:40.586Z"
+        }
+    },
+    {
+        "_id": "5c5f08be1be4947c2a1238e1",
+        "name": "I want out",
+        "album": "I want out",
+        "artist": "Halloween",
+        "time": "4:23",
+        "year": "1982",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T17:07:09.995Z",
+            "ect": "2019-02-09T17:07:09.995Z"
+        }
+    },
+    {
+        "_id": "5c5f0902c341455f55747cb2",
+        "name": "I want out",
+        "album": "I want out",
+        "artist": "Halloween",
+        "time": "4:23",
+        "year": "1982",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T17:08:18.206Z",
+            "ect": "2019-02-09T17:08:18.206Z"
+        }
+    },
+    {
+        "_id": "5c5f093ca26b847c289ed2ae",
+        "name": "I want out",
+        "album": "I want out",
+        "artist": "Halloween",
+        "time": "4:23",
+        "year": "1982",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T17:09:16.871Z",
+            "ect": "2019-02-09T17:09:16.871Z"
+        }
+    },
+    {
+        "_id": "5c5f579e1be4947c2a146054",
+        "name": "Back in Black",
+        "album": "Back in Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T22:43:42.187Z",
+            "ect": "2019-02-09T22:43:42.187Z"
+        }
+    },
+    {
+        "_id": "5c5f60d106715b6608cba329",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:22:57.854Z",
+            "ect": "2019-02-09T23:22:57.854Z"
+        }
+    },
+    {
+        "_id": "5c5f60d6c892215f50dce5d6",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:23:02.167Z",
+            "ect": "2019-02-09T23:23:02.167Z"
+        }
+    },
+    {
+        "_id": "5c5f6121571f445ed0c1e753",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:24:17.618Z",
+            "ect": "2019-02-09T23:24:17.618Z"
+        }
+    },
+    {
+        "_id": "5c5f613fc341455f5576e48f",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:24:47.678Z",
+            "ect": "2019-02-09T23:24:47.678Z"
+        }
+    },
+    {
+        "_id": "5c5f61b2c892215f50dcebbc",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:26:42.298Z",
+            "ect": "2019-02-09T23:26:42.298Z"
+        }
+    },
+    {
+        "_id": "5c5f61bf1be4947c2a14a41b",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:26:55.383Z",
+            "ect": "2019-02-09T23:26:55.383Z"
+        }
+    },
+    {
+        "_id": "5c5f625845e75e68f2997756",
+        "name": "Back in Black",
+        "album": "Back in black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980\n",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:29:27.966Z",
+            "ect": "2019-02-09T23:29:27.966Z"
+        }
+    },
+    {
+        "_id": "5c5f62757a9c0c68f73267ba",
+        "name": "Back in Black",
+        "album": "Back in black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-09T23:29:57.129Z",
+            "ect": "2019-02-09T23:29:57.129Z"
+        }
+    },
+    {
+        "_id": "5c5fdb25c341455f557a25c8",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T08:04:53.765Z",
+            "ect": "2019-02-10T08:04:53.765Z"
+        }
+    },
+    {
+        "_id": "5c5ff991a26b847c28a55030",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:14:41.177Z",
+            "ect": "2019-02-10T10:14:41.177Z"
+        }
+    },
+    {
+        "_id": "5c5ffa0a7a9c0c68f7366e54",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:16:42.026Z",
+            "ect": "2019-02-10T10:16:42.026Z"
+        }
+    },
+    {
+        "_id": "5c5ffa0d3e3275660ded98ec",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:16:45.757Z",
+            "ect": "2019-02-10T10:16:45.757Z"
+        }
+    },
+    {
+        "_id": "5c5ffa2cc892215f50e0ff49",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:17:16.192Z",
+            "ect": "2019-02-10T10:17:16.192Z"
+        }
+    },
+    {
+        "_id": "5c5ffb32c341455f557afc2c",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:21:38.141Z",
+            "ect": "2019-02-10T10:21:38.141Z"
+        }
+    },
+    {
+        "_id": "5c5ffc001be4947c2a18c54f",
+        "name\n": "Summer Special",
+        "album": "DanceHouse",
+        "artist\n": "DanceHit",
+        "time\n": "3:18",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:25:04.566Z",
+            "ect": "2019-02-10T10:25:04.566Z"
+        }
+    },
+    {
+        "_id": "5c5ffde606715b6608cfdbaa",
+        "name\n": "Summer Special",
+        "album": "DanceHouse",
+        "artist\n": "DanceHit",
+        "time\n": "3:18",
+        "year": "2018",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T10:33:10.904Z",
+            "ect": "2019-02-10T10:33:10.904Z"
+        }
+    },
+    {
+        "_id": "5c601264a26b847c28a5ff43",
+        "name": "Black in Black",
+        "album": "Black in Black",
+        "artist": "AC/DC",
+        "time": "1:04",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T12:00:36.113Z",
+            "ect": "2019-02-10T12:00:36.113Z"
+        }
+    },
+    {
+        "_id": "5c6012b8c341455f557ba1b9",
+        "name": "Black in Black",
+        "album": "Black in Black",
+        "artist": "AC/DC",
+        "time": "1:04",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T12:02:00.900Z",
+            "ect": "2019-02-10T12:02:00.900Z"
+        }
+    },
+    {
+        "_id": "5c601328571f445ed0c25f6a",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T12:03:52.738Z",
+            "ect": "2019-02-10T12:03:52.738Z"
+        }
+    },
+    {
+        "_id": "postId.",
+        "name": "\"Dani California\"",
+        "album": "\"Stadium Arcadium\"",
+        "time": "\"4:43\"",
+        "year": "\"2006\"",
+        "genre": "\"Rock\"",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T12:22:56.200Z",
+            "ect": "2019-02-10T12:22:56.200Z"
+        }
+    },
+    {
+        "_id": "5c6038c906715b6608d172bf",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T14:44:24.981Z",
+            "ect": "2019-02-10T14:44:24.981Z"
+        }
+    },
+    {
+        "_id": "5c603918c341455f557ca5c7",
+        "name": "Back In Black",
+        "album": "Back In Black",
+        "artist": "AC/DC",
+        "time": "4:15",
+        "year": "1980",
+        "_acl": {
+            "creator": "5c59d66206715b6608a4d80d"
+        },
+        "_kmd": {
+            "lmt": "2019-02-10T14:45:44.151Z",
+            "ect": "2019-02-10T14:45:44.151Z"
+        }
+    }
+]

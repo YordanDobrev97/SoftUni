@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="register-form">
+        <div class="form">
+            <form class="form-register">
+                <input type="text" placeholder="name" name="name">
+                <input type="password" placeholder="password">
+                <input type="text" placeholder="email">
+                <button id="registerUser()">Регистрация</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function registerUser(){
+            document.getElementById('registerUser').addEventListener('click', ()=>{
+                console.log('event');
+                let name = document.getElementsByClassName('form-register');
+                console.log(name);
+            });
+        }
+    </script>
+</body>
+</html>
