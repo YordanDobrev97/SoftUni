@@ -1,0 +1,10 @@
+{
+    "version": "3.10.21",
+   
+     "kinvey": "hello SoftUni",
+   
+     "appName": "SoftUni",
+    
+     "environmentName": "Development"
+
+}
