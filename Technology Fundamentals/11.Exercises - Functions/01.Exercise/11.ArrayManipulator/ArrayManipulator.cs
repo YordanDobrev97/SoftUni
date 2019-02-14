@@ -5,6 +5,15 @@ namespace _11.ArrayManipulator
 {
     public class ArrayManipulator
     {
+        public static int[] Filter(int[] array, string criteria)
+        {
+            if (criteria == "even")
+            {
+                return array.Where(x => x % 2 == 0).ToArray();
+            }
+            return array.Where(x => x % 2 == 1).ToArray();
+        }
+
         public static void Main()
         {
             int[] numbers = Console.ReadLine()
@@ -54,26 +63,183 @@ namespace _11.ArrayManipulator
                     case "max":
                         if (arguments[1] == "odd")
                         {
-                            int[] oddNums = numbers.Where(x => x % 2 == 1).ToArray();
-                            int maxElement = oddNums.Max();
-                            int indexMaxElement = Array.IndexOf(numbers, maxElement);
-                            Console.WriteLine(indexMaxElement);
+                            int[] oddNums = Filter(numbers, "odd");
+                            if (oddNums.Length == 0)
+                            {
+                                PrintMessageNotMatches();
+                            }
+                            else
+                            {
+                                int maxElement = oddNums.Max();
+                                int indexMaxElement = Array.LastIndexOf(numbers, maxElement);
+                                Console.WriteLine(indexMaxElement);
+                            }
+
                         }
                         else
                         {
-                            int[] evenNums = numbers.Where(x => x % 2 == 0).ToArray();
+                            int[] evenNums = Filter(numbers, "even");
                             int maxElement = evenNums.Max();
-                            int indexMaxElement = Array.IndexOf(numbers, maxElement);
+                            int indexMaxElement = Array.LastIndexOf(numbers, maxElement);
                             Console.WriteLine(indexMaxElement);
                         }
                         break;
                     case "min":
-                        //TODO...
+                        if (arguments[1] == "even")
+                        {
+                            int[] evenNums = Filter(numbers, "even");
+                            if (evenNums.Length == 0)
+                            {
+                                PrintMessageNotMatches();
+                            }
+                            else
+                            {
+                                int minElement = evenNums.Min();
+                                int minElementIndex = Array.LastIndexOf(numbers, minElement);
+                                Console.WriteLine(minElementIndex);
+                            }
+                        }
+                        else
+                        {
+                            int[] oddNums = Filter(numbers, "odd");
+                            int minElement = oddNums.Min();
+                            int minElementIndex = Array.LastIndexOf(numbers, minElement);
+                            Console.WriteLine(minElementIndex);
+                        }
+                        break;
+                    case "first":
+                        {
+                            int count = int.Parse(arguments[1]);
+                            if (InvalidCount(count, numbers))
+                            {
+                                Console.WriteLine("Invalid count");
+                            }
+                            else
+                            {
+                                string criteria = arguments[2];
+                                if (criteria == "even")
+                                {
+                                    int[] evenNumbers = Filter(numbers, "even");
+                                    PrintNumbers(evenNumbers, count);
+                                }
+                                else
+                                {
+                                    int[] oddNumbers = Filter(numbers, "odd");
+                                    PrintNumbers(oddNumbers, count);
+                                }
+                            }
+                        }
+                        break;
+                    case "last":
+                        {
+                            int count = int.Parse(arguments[1]);
+                            if (InvalidCount(count, numbers))
+                            {
+                                Console.WriteLine("Invalid count");
+                            }
+                            else
+                            {
+                                string criteria = arguments[2];
+
+                                if (criteria == "even")
+                                {
+                                    int[] evenNums = Filter(numbers, "even");
+                                    if (EmptyArray(evenNums))
+                                    {
+                                        PrintEmptyBrackets();
+                                    }
+                                    else
+                                    {
+                                        PrintNumbers(count, evenNums);
+                                    }
+                                }
+                                else
+                                {
+                                    int[] oddNums = Filter(numbers, "odd");
+                                    if (EmptyArray(oddNums))
+                                    {
+                                        PrintEmptyBrackets();
+                                    }
+                                    else
+                                    {
+                                        PrintNumbers(count, oddNums);
+                                    }
+                                }
+                            }
+                        }
                         break;
                 }
 
                 line = Console.ReadLine();
             }
+            Console.WriteLine($"[{string.Join(", ", numbers)}]");
+        }
+
+        private static bool InvalidCount(int count, int[] numbers)
+        {
+            return count > numbers.Length;
+        }
+
+        static void PrintNumbers(int count, int[] evenNums)
+        {
+            if (OneElement(evenNums))
+            {
+                Console.WriteLine($"[{evenNums[0]}]");
+            }
+            else
+            {
+                Console.Write("[");
+                for (int i = evenNums.Length - 1; i > count; i--)
+                {
+                    Console.Write($"{evenNums[i]} ");
+                }
+                Console.WriteLine("]");
+            }
+        }
+
+        static void PrintNumbers(int[] nums, int count)
+        {
+            if (OneElement(nums))
+            {
+                Console.WriteLine($"[{nums[0]}]");
+            }
+            else
+            {
+                Console.Write("[");
+                for (int i = 0; i < count; i++)
+                {
+                    if (i == count - 1)
+                    {
+                        Console.Write($"{nums[i]}");
+                    }
+                    else
+                    {
+                        Console.Write($"{nums[i]}, ");
+                    }
+                }
+                Console.WriteLine("]");
+            }
+
+        }
+
+        private static bool OneElement(int[] nums)
+        {
+            return nums.Length == 1;
+        }
+
+        private static bool EmptyArray(int[] evenNums)
+        {
+            return evenNums.Length == 0;
+        }
+
+        private static void PrintEmptyBrackets()
+        {
+            Console.WriteLine("[]");
+        }
+
+        private static void PrintMessageNotMatches()
+        {
+            Console.WriteLine("No matches");
         }
     }
 }
