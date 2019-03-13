@@ -6,11 +6,12 @@ namespace _02.RecursiveFactorial
     {
         static void Main()
         {
-            Console.Write("n = ");
+            //Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
 
             int factorial = GetFactorial(n);
-            Console.WriteLine($"Factorial = {factorial}");
+            //Console.WriteLine($"Factorial = {factorial}");
+			Console.WriteLine($"{factorial}");
         }
 
         public static int GetFactorial(int n)

@@ -6,7 +6,7 @@ namespace _04.GenVec01
     {
         static void Main()
         {
-            Console.Write("n = ");
+            //Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
 
             int[] array = new int[n];
@@ -21,7 +21,7 @@ namespace _04.GenVec01
             {
                 foreach (var item in array)
                 {
-                    Console.Write($"{item} ");
+                    Console.Write($"{item}");
                 }
 
                 Console.WriteLine();

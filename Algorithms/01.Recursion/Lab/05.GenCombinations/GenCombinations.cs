@@ -1,39 +1,36 @@
 ﻿using System;
+using System.Linq;
 
 namespace _05.GenCombinations
 {
     class GenCombinations
     {
-        static int getIndexNums = 0;
-        static int oldValueGetIndexNums = 0;
         static void Main(string[] args)
         {
-            int[] nums = { 1, 2, 3, 4 };
-            int k = 2;
+            int[] nums = Console.ReadLine()
+                .Split(' ')
+                .Select(int.Parse)
+                .ToArray();
+
+            int k = int.Parse(Console.ReadLine());
             int[] data = new int[k];
-            Combination(nums, k, 0,0, data);
+            Combination(nums, data, 0, -1);
         }
 
-        static void Combination(int[] nums, int k, int index,int start, int[] data)
+        static void Combination(int[] set, int[] vector, int index, int border)
         {
-            if (index == k)
+            if (index >= vector.Length)
             {
-                PrintResult(data);
+                Console.WriteLine(string.Join(" ", vector));
             }
             else
             {
-                for (int i = start; i < k; i++)
+                for (int i = border + 1; i < set.Length; i++)
                 {
-                    data[index] = nums[i];
-                    Combination(nums, k, index + 1, i + 1, data);
-                    
+                    vector[index] = set[i];
+                    Combination(set, vector, index + 1, i);
                 }
             }
-        }
-
-        private static void PrintResult(int[] data)
-        {
-            Console.WriteLine(string.Join(" ", data));
         }
     }
 }

@@ -6,7 +6,7 @@ namespace _03.RecursiveDrawing
     {
         static void Main()
         {
-            Console.Write("n = ");
+            //Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
 
             Drawing(n);
