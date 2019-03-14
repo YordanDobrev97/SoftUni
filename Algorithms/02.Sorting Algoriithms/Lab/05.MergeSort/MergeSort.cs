@@ -6,7 +6,12 @@ namespace _05.MergeSort
     {
         static void Main()
         {
-            int[] numbers = { 4, 24, 34, 56, 0, 11, 33 };
+            int[] nums = { 24, 4, 34, 56, 0, 11, 33, 2 };
+            Merge<int> merge = new Merge<int>();
+
+            merge.Sort(nums);
+
+            
         }
 
     }

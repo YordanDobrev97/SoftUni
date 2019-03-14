@@ -5,13 +5,15 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.BubbleSort", "01.BubbleSort\01.BubbleSort.csproj", "{31FFDA75-D9AE-4C40-B644-2928BC99E278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SelectionSort", "02.SelectionSort\02.SelectionSort.csproj", "{75B262F6-6B1B-4479-88FE-17893585A56A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.SelectionSort", "02.SelectionSort\02.SelectionSort.csproj", "{75B262F6-6B1B-4479-88FE-17893585A56A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.InsertionSort", "03.InsertionSort\03.InsertionSort.csproj", "{B066518D-2E59-432B-82DF-CE349942B571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.InsertionSort", "03.InsertionSort\03.InsertionSort.csproj", "{B066518D-2E59-432B-82DF-CE349942B571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FisherYatesShuffle", "04.FisherYatesShuffle\04.FisherYatesShuffle.csproj", "{63EE1167-FC49-4AED-A22C-4E1E9ABE4A18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.FisherYatesShuffle", "04.FisherYatesShuffle\04.FisherYatesShuffle.csproj", "{63EE1167-FC49-4AED-A22C-4E1E9ABE4A18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.MergeSort", "05.MergeSort\05.MergeSort.csproj", "{A501D312-5706-4A52-9B37-D543645C155D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.MergeSort", "05.MergeSort\05.MergeSort.csproj", "{A501D312-5706-4A52-9B37-D543645C155D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.CountingSort", "06.CountingSort\06.CountingSort.csproj", "{EFD0E426-A907-425C-B671-8139562DF11F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A501D312-5706-4A52-9B37-D543645C155D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A501D312-5706-4A52-9B37-D543645C155D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A501D312-5706-4A52-9B37-D543645C155D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD0E426-A907-425C-B671-8139562DF11F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD0E426-A907-425C-B671-8139562DF11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD0E426-A907-425C-B671-8139562DF11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD0E426-A907-425C-B671-8139562DF11F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
