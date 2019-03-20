@@ -3,55 +3,79 @@ using System;
 
 public class Merge<T> where T : IComparable
 {
-    public void Sort(T[] array)
+    public void Merging(int[] arr, int l, int m, int r)
     {
-        if (array.Length == 1)
+        // Find sizes of two subarrays to be merged 
+        int n1 = m - l + 1;
+        int n2 = r - m;
+
+        /* Create temp arrays */
+        int[] L = new int[n1];
+        int[] R = new int[n2];
+
+        /*Copy data to temp arrays*/
+        for (int p = 0; p < n1; p++)
         {
-            return;
+            L[p] = arr[l + p];
         }
 
-        int middle = array.Length / 2;
-        T[] left = new T[middle];
-        T[] right = new T[middle];
-
-        for (int i = 0; i < middle; i++)
+        for (int c = 0; c < n2; ++c)
         {
-            left[i] = array[i];
+            R[c] = arr[m + 1 + c];
         }
 
-        int index = 0;
+        /* Merge the temp arrays */
 
-        for (int i = middle; i < array.Length; i++)
+        // Initial indexes of first and second subarrays 
+        int i = 0, j = 0;
+
+        // Initial index of merged subarry array 
+        int k = l;
+        while (i < n1 && j < n2)
         {
-            right[index] = array[i];
-            index++;
-        }
-
-        Sort(left);
-
-        left = MergeArray(left, right);
-
-        Sort(right);
-        //Merge
-    }
-
-    private T[] MergeArray(T[] left, T[] right)
-    {
-        T[] newArray = new T[left.Length + right.Length];
-        
-        for (int i = 0; i < left.Length; i++)
-        {
-            if (left[i].CompareTo(right[i]) == 1)
+            if (L[i] <= R[j])
             {
-                newArray[i] = right[i];
+                arr[k] = L[i];
+                i++;
             }
             else
             {
-                newArray[i] = left[i];
+                arr[k] = R[j];
+                j++;
             }
+            k++;
         }
 
-        return newArray;
+        /* Copy remaining elements of L[] if any */
+        while (i < n1)
+        {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+
+        /* Copy remaining elements of R[] if any */
+        while (j < n2)
+        {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+
+    public void Sort(int[] arr, int l, int r)
+    {
+        if (l < r)
+        {
+            // Find the middle point 
+            int m = (l + r) / 2;
+
+            Sort(arr, l, m);// sort left parts
+            Sort(arr, m + 1, r); // sort right parts
+
+            // Merge the sorted halves 
+            Merging(arr, l, m, r);
+        }
     }
 }
 
