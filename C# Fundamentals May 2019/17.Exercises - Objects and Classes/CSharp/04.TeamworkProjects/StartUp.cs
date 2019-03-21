@@ -7,12 +7,10 @@ public class StartUp
     class User
     {
         public string Name { get; private set; }
-        public Team Team { get; set; }
 
-        public User(string name, Team team)
+        public User(string name)
         {
             this.Name = name;
-            this.Team = team;
         }
     }
 
@@ -29,58 +27,106 @@ public class StartUp
     public static void Main()
     {
         int countTeam = int.Parse(Console.ReadLine());
-
-        string input = Console.ReadLine();
+        
         List<User> users = new List<User>();
+        List<Team> teams = new List<Team>();
 
-        while (input != "end of assignment")
+        for (int i = 0; i < countTeam; i++)
         {
-            string[] inputParams = input.Split(new[] { "-", "->" }, 
+            string[] team = Console.ReadLine()
+                .Split('-');
+            string nameUser = team[0];
+            string nameTeam = team[1];
+
+            Team currentTeam = new Team(nameTeam);
+            User currentUser = new User(nameUser);
+
+            if (!users.Contains(currentUser))
+            {
+                users.Add(currentUser);
+            }
+
+            if (!teams.Contains(currentTeam))
+            {
+                teams.Add(currentTeam);
+                Console.WriteLine($"Team {nameTeam} has been created by {nameUser}!");
+            }
+        }
+
+        string line = Console.ReadLine();
+
+        while (line != "end of assignment")
+        {
+            string[] items = line.Split(new[] { '-', '>' },
                 StringSplitOptions.RemoveEmptyEntries);
 
-            string user = inputParams[0];
-            string team = inputParams[1];
 
-            Team currentTeam = new Team(team);
-            User currentUser = new User(user, currentTeam);
+            string nameUser = items[0];
+            string team = items[1];
 
-            if (isExistUser(currentUser, users) && isExistTeam(users, currentTeam))
+            Team newTeam = new Team(team);
+            User newUser = new User(nameUser);
+
+            if (ExistUserCheck(users, newUser) && ExistTeamCheck(teams, newTeam))
             {
-                PrintMessage($"Member {currentUser.Name} cannot join team {currentTeam.Name}");
+                Console.WriteLine($"Member {nameUser} cannot join team {team} is the best!");
             }
-            else if (isExistTeam(users, currentTeam))
+            else if (ExistTeamCheck(teams, newTeam))
             {
-                PrintMessage($"Team {currentTeam.Name} was already created!");
-            }
-            else if (isExistUser(currentUser, users) && !(isExistTeam(users, currentTeam)))
-            {
-                PrintMessage($"Team {currentTeam.Name} does not exist!");
+                Console.WriteLine($"Team {team} was already created!");
             }
             else
             {
-                if (!isExistUser(currentUser, users))
+                if (ExistUserCheck(users, newUser))
                 {
-                    users.Add(currentUser);
+                    Console.WriteLine($"Team {team} does not exist!");
+                }
+                else
+                {
+                    teams.Add(newTeam);
                 }
             }
+            
+            if (ExistUserCheck(users, newUser))
+            {
+                Console.WriteLine($"{nameUser} cannot create another team!");
 
-            input = Console.ReadLine();
+            }
+
+            line = Console.ReadLine();
+        }
+
+        foreach (var team in teams)
+        {
+            Console.WriteLine($"-{team.Name}");
+
+            foreach (var user in users)
+            {
+                Console.WriteLine($"--{user.Name}");
+            }
         }
     }
 
-    private static void PrintMessage(string message)
+    private static bool ExistUserCheck(List<User> users, User newUser)
     {
-        Console.WriteLine(message);
+        return users.Contains(newUser);
     }
 
-    private static bool isExistUser(User currentUser, List<User> users)
+    private static bool ExistTeamCheck(List<Team> teams, Team newTeam)
     {
-        return users.Exists(x => x.Name == currentUser.Name);
-    }
+        bool contains = false;
 
-    private static bool isExistTeam(List<User> users, Team currentTeam)
-    {
-       return users.Exists(x => x.Team.Name == currentTeam.Name);
+        foreach (var item in teams)
+        {
+            string name = item.Name;
+            if (name == newTeam.Name)
+            {
+                contains = true;
+                break;
+            }
+        }
+
+        return contains;
     }
 }
 
