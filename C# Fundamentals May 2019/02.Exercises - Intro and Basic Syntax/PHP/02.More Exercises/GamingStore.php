@@ -1,6 +1,5 @@
 <?php
 $balance = doubleval(readline());
-$saveBalance = $balance;
 
 $totalPrice = 0;
 while (true){
@@ -9,53 +8,42 @@ while (true){
     if ($input === "Game Time") {
         break;
     }
-
-    $game = $input;
     $gamePrice = 0;
 
-    if ($game === "OutFall 4") {
-        $totalPrice += 39.99;
+    if ($input === "OutFall 4") {
         $gamePrice = 39.99;
-    } else if ($game === "CS:OG") {
-        $totalPrice += 15.99;
+    } else if ($input === "CS: OG") {
         $gamePrice = 15.99;
-    } else if ($game === "Zplinter Zell") {
-        $totalPrice += 19.99;
+    } else if ($input === "Zplinter Zell") {
         $gamePrice = 19.99;
-    } else if ($game === "Honored 2") {
-        $totalPrice += 59.99;
+    } else if ($input === "Honored 2") {
         $gamePrice = 59.99;
-    } else if ($game === "RoverWatch") {
-        $totalPrice += 29.99;
+    } else if ($input === "RoverWatch") {
         $gamePrice = 29.99;
-    } else if ($game === "RoverWatch Origins Edition") {
-        $totalPrice += 39.99;
+    } else if ($input === "RoverWatch Origins Edition") {
         $gamePrice = 39.99;
     } else {
         echo "Not Found".PHP_EOL;
         continue;
     }
 
-    if ($gamePrice <= $balance) {
-        echo "Bought $game".PHP_EOL;
-        $balance -= $gamePrice;
-    } else {
+    if ($gamePrice > $balance) {
         echo "Too Expensive".PHP_EOL;
+        continue;
     }
+
+    $balance -= $gamePrice;
+    $totalPrice += $gamePrice;
+
+    echo "Bought $input".PHP_EOL;
 
     if ($balance === 0) {
-        echo "Out of money!";
-        break;
+        echo "Out of money!".PHP_EOL;
     }
 }
-$saveBalance -= $totalPrice;
 
-if ($saveBalance <= 0) {
-    echo "Out of money!";
-} else {
-    $totalPrice = number_format($totalPrice, 2, '.', '');
-    $saveBalance = number_format($saveBalance, 2, '.','');
+$totalPrice = number_format($totalPrice, 2, '.', '');
 
-    echo "Total spent: $$totalPrice. Remaining: $$saveBalance";
-}
+echo "Total spent: $$totalPrice. Remaining: $$balance";
+
 ?>
