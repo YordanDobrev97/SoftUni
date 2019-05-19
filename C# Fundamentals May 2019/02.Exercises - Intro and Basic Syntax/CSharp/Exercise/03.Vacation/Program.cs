@@ -70,7 +70,18 @@ namespace _03.Vacation
             }
             else if(numberStudent >= 100 && typeGroup == "Business")
             {
-                price = price - (price * 0.1);
+                if (dayOfWeek == "Friday")
+                {
+                    price = price - 10 * 10.90;
+                }
+                else if (dayOfWeek == "Saturday")
+                {
+                    price = price - 10 * 15.60;
+                }
+                else if (dayOfWeek == "Sunday")
+                {
+                    price = price - 10 * 16;
+                }
             }
 
             Console.WriteLine($"Total price: {price:f2}");
