@@ -1,3 +1,39 @@
+body{
+    background-color: rosybrown;
+}
+h1 span {
+    color: darkturquoise;
+}
 div{
     display: inline;
+}
+h1 span{
+    padding: 10px;
+    margin: 100px;
+    width: 10%;
+}
+.item {
+    color: purple;
+}
+span table {
+    color: deeppink;
+}
+p {
+    font-size: 15px;
+}
+.item{
+    display: inline;
+    max-width: 1050px;
+    
+}
+main span {
+    padding: 50px;
+    margin: 100px;
+}
+img {
+    width: 280px;
+    height: 150px;
+}
+#links a {
+    padding-left: 45px;
 }
