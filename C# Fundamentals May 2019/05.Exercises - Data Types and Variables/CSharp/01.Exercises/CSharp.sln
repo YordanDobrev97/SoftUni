@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.SumDigits", "01.SumDigits\01.SumDigits.csproj", "{600744FA-A16C-4E31-946B-1A6B6E0A52BB}"
 EndProject
@@ -9,17 +9,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.CharToString", "02.CharT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.TownInfo", "03.TownInfo\03.TownInfo.csproj", "{554F18C1-2675-4614-AB40-28838A3E3D2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.ConvertMetersKilometres", "04.ConvertMetersKilometres\04.ConvertMetersKilometres.csproj", "{FFD67DE9-C0A3-45E8-B909-0689145FAC47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.ConvertMetersKilometres", "04.ConvertMetersKilometres\04.ConvertMetersKilometres.csproj", "{FFD67DE9-C0A3-45E8-B909-0689145FAC47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.PoundsToDollars", "05.PoundsToDollars\05.PoundsToDollars.csproj", "{F3C73465-ED76-4289-AEDB-C7AC8EF417F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.PoundsToDollars", "05.PoundsToDollars\05.PoundsToDollars.csproj", "{F3C73465-ED76-4289-AEDB-C7AC8EF417F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ReversedChars", "06.ReversedChars\06.ReversedChars.csproj", "{6DEAD0B1-7911-4432-93A0-48AD8AE3BDF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.ReversedChars", "06.ReversedChars\06.ReversedChars.csproj", "{6DEAD0B1-7911-4432-93A0-48AD8AE3BDF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.LowerUpper", "07.LowerUpper\07.LowerUpper.csproj", "{410E16DD-0162-4679-8812-17FB573E6A7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.LowerUpper", "07.LowerUpper\07.LowerUpper.csproj", "{410E16DD-0162-4679-8812-17FB573E6A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Snowballs", "08.Snowballs\08.Snowballs.csproj", "{BD62323F-9593-4B10-8174-48E5401E6553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Snowballs", "08.Snowballs\08.Snowballs.csproj", "{BD62323F-9593-4B10-8174-48E5401E6553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.PokeMon", "09.PokeMon\09.PokeMon.csproj", "{0F19E8E2-9AAB-4490-A8AE-826CA58842DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.PokeMon", "09.PokeMon\09.PokeMon.csproj", "{0F19E8E2-9AAB-4490-A8AE-826CA58842DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SumOfChars", "04.SumOfChars\04.SumOfChars.csproj", "{24EAC6FF-B958-4EE3-B121-CD9BDBCDDC25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.PrintPartASCIITable", "05.PrintPartASCIITable\05.PrintPartASCIITable.csproj", "{C37FDA87-A6EC-40DE-944D-14E83F5B1129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.TriplesLatinLetters", "06.TriplesLatinLetters\06.TriplesLatinLetters.csproj", "{BA0C399E-D1B8-46F9-93A0-4901E7C86E0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.WaterOverflow", "07.WaterOverflow\07.WaterOverflow.csproj", "{830D8413-A840-4252-8321-A61AFAC9E5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.BeerKegs", "08.BeerKegs\08.BeerKegs.csproj", "{9ED48278-82F9-4787-931A-8F5390F6E073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SpiceMustFlow", "09.SpiceMustFlow\09.SpiceMustFlow.csproj", "{C24885FF-6427-495D-B6EA-39F058EF635B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +75,30 @@ Global
 		{0F19E8E2-9AAB-4490-A8AE-826CA58842DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F19E8E2-9AAB-4490-A8AE-826CA58842DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F19E8E2-9AAB-4490-A8AE-826CA58842DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EAC6FF-B958-4EE3-B121-CD9BDBCDDC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EAC6FF-B958-4EE3-B121-CD9BDBCDDC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EAC6FF-B958-4EE3-B121-CD9BDBCDDC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EAC6FF-B958-4EE3-B121-CD9BDBCDDC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37FDA87-A6EC-40DE-944D-14E83F5B1129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37FDA87-A6EC-40DE-944D-14E83F5B1129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37FDA87-A6EC-40DE-944D-14E83F5B1129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37FDA87-A6EC-40DE-944D-14E83F5B1129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0C399E-D1B8-46F9-93A0-4901E7C86E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0C399E-D1B8-46F9-93A0-4901E7C86E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0C399E-D1B8-46F9-93A0-4901E7C86E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0C399E-D1B8-46F9-93A0-4901E7C86E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830D8413-A840-4252-8321-A61AFAC9E5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830D8413-A840-4252-8321-A61AFAC9E5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830D8413-A840-4252-8321-A61AFAC9E5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830D8413-A840-4252-8321-A61AFAC9E5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED48278-82F9-4787-931A-8F5390F6E073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED48278-82F9-4787-931A-8F5390F6E073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED48278-82F9-4787-931A-8F5390F6E073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED48278-82F9-4787-931A-8F5390F6E073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24885FF-6427-495D-B6EA-39F058EF635B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24885FF-6427-495D-B6EA-39F058EF635B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24885FF-6427-495D-B6EA-39F058EF635B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24885FF-6427-495D-B6EA-39F058EF635B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

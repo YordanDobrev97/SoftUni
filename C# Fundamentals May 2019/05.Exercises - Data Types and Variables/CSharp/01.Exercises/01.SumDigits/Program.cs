@@ -4,18 +4,27 @@ class Program
 {
     static void Main()
     {
-        int number = int.Parse(Console.ReadLine());
+        string number = Console.ReadLine();
 
         int sumDigits = 0;
 
-        while (number > 0)
+        for (int i = 0; i < number.Length; i++)
         {
-            int lastDigit = number % 10;
-            sumDigits += lastDigit;
-            number /= 10;
+            int digit = number[i] - '0';
+            sumDigits += digit;
         }
 
         Console.WriteLine(sumDigits);
+        //
+
+        //while (number > 0)
+        //{
+        //    int lastDigit = number % 10;
+        //    sumDigits += lastDigit;
+        //    number /= 10;
+        //}
+
+        //Console.WriteLine(sumDigits);
     }
 }
 

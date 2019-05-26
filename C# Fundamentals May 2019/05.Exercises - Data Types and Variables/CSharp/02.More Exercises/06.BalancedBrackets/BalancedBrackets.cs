@@ -1,66 +1,34 @@
 ﻿using System;
-
-namespace _06.BalancedBrackets
+public class BalancedBrackets
 {
-    public class BalancedBrackets
+    public static void Main()
     {
-        public static void Main()
+        int numberLines = int.Parse(Console.ReadLine());
+
+        int openBracketsCount = 0;
+        int closeBracketsCount = 0;
+
+        for (int i = 0; i < numberLines; i++)
         {
-            int numberLines = int.Parse(Console.ReadLine());
-            
-            bool isBalanced = true;
+            string line = Console.ReadLine();
 
-            int counter = 1;
-            while (counter < numberLines)
+            if (line.Contains("("))
             {
-                string line = Console.ReadLine();
-
-                if (line == "(")
-                {
-                    string expression = Console.ReadLine();
-                    string closedBracket = Console.ReadLine();
-
-                    if (closedBracket == ")" && ContainsNumber(expression))
-                    {
-                        isBalanced = true;
-                    }
-                    else
-                    {
-                        isBalanced = false;
-                        break;
-                    }
-                    counter += 2;
-                }
-                else
-                {
-                    if (line == ")")
-                    {
-                        isBalanced = false;
-                        break;
-                    }
-                }
-                counter++;
+                openBracketsCount++;
             }
-
-            if (isBalanced)
+            else if (line.Contains(")"))
             {
-                Console.WriteLine("BALANCED");
-            }
-            else
-            {
-                Console.WriteLine("UNBALANCED");
+                closeBracketsCount++;
             }
         }
 
-        private static bool ContainsNumber(string expression)
+        if (openBracketsCount == closeBracketsCount)
         {
-            string[] items = expression.Split(' ');
-            int value;
-            if(int.TryParse(items[0], out value))
-            {
-                return true;
-            }
-            return false;
+            Console.WriteLine("BALANCED");
+        }
+        else
+        {
+            Console.WriteLine("UNBALANCED");
         }
     }
 }
