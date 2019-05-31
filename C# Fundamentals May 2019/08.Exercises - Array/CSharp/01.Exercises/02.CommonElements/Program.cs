@@ -11,32 +11,36 @@ class Program
         string[] secondArray = Console.ReadLine()
             .Split(' ');
 
-        List<string> commonElements = new List<string>();
+        int length = Math.Min(firstArray.Length, secondArray.Length);
 
-        for (int i = 0; i < firstArray.Length; i++)
+        string[] outputArray = new string[length];
+
+        int index = 0;
+        for (int i = 0; i < secondArray.Length; i++)
         {
-            string firstElement = firstArray[i];
+            string elementFromSecondArray = secondArray[i];
 
-            int count = 0;
-            string secondElement = string.Empty;
-            for (int j = 0; j < secondArray.Length; j++)
+            bool isEqual = false;
+            for (int j = 0; j < firstArray.Length; j++)
             {
-                secondElement = secondArray[j];
+                string elementFromFirstArray = firstArray[j];
 
-                if (firstElement == secondElement)
+                if (elementFromSecondArray == elementFromFirstArray)
                 {
-                    count++;
+                    isEqual = true;
                     break;
                 }
             }
 
-            if (count > 0)
+            if (isEqual)
             {
-                commonElements.Add(secondElement);
+                outputArray[index] = elementFromSecondArray;
+                index++;
+                isEqual = false;
             }
         }
 
-        Console.WriteLine(string.Join(" ", commonElements));
+        Console.WriteLine(string.Join(" ", outputArray));
     }
 }
 

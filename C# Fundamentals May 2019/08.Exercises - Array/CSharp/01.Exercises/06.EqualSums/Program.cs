@@ -9,47 +9,38 @@ class Program
             .Select(int.Parse)
             .ToArray();
 
-        bool foundEqualSum = false;
-        for (int i = 1; i < array.Length; i++)
-        {
-            int leftSum = LeftSum(array, i);
-            int rigthSum = RightSum(array, i);
+        bool isFoundEqualSum = false;
 
-            if (leftSum == rigthSum)
+        for (int i = 0; i < array.Length; i++)
+        {
+            // find left sum
+            int leftSum = 0;
+
+            for (int leftIndex = i - 1; leftIndex >= 0; leftIndex--)
             {
-                foundEqualSum = true;
+                leftSum += array[leftIndex];
+            }
+
+            // find right sum
+            int rightSum = 0;
+
+            for (int rightIndex = i + 1; rightIndex <array.Length; rightIndex++)
+            {
+                rightSum += array[rightIndex];
+            }
+
+            if (leftSum == rightSum)
+            {
+                isFoundEqualSum = true;
                 Console.WriteLine(i);
                 break;
             }
         }
-        if (array.Length == 1)
-        {
-            Console.WriteLine(0);
-        }
-        else if (!foundEqualSum)
+
+        if (!isFoundEqualSum)
         {
             Console.WriteLine("no");
         }
-    }
-    static int LeftSum(int[] array, int position)
-    {
-        int leftSum = 0;
-        for (int i = position; i >= 0; i--)
-        {
-            leftSum += array[i];
-        }
-        return leftSum;
-    }
-    static int RightSum(int[] array, int position)
-    {
-        int rightSum = 0;
-
-        for (int i = position; i < array.Length; i++)
-        {
-            rightSum += array[i];
-        }
-
-        return rightSum;
     }
 }
 

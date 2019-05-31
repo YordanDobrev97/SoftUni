@@ -1,43 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 class Program
 {
     static void Main()
     {
-        int[] array = Console.ReadLine().Split(' ')
+        int[] numbers = Console.ReadLine()
+            .Split()
             .Select(int.Parse)
             .ToArray();
 
-        List<int> topIntegers = new List<int>();
-        for (int i = 0; i < array.Length - 1; i++)
+        for (int i = 0; i < numbers.Length - 1; i++)
         {
-            int element = array[i];
-            bool hasBiggest = false;
-            for (int j = i + 1; j < array.Length; j++)
-            {
-                int nextElement = array[j];
+            int number = numbers[i];
+            bool isBiggestAll = false;
 
-                if (element > nextElement)
+            for (int j = i + 1; j < numbers.Length; j++)
+            {
+                int next = numbers[j];
+
+                if (number > next)
                 {
-                    hasBiggest = true;
-                    continue;
+                    isBiggestAll = true;
                 }
                 else
                 {
-                    hasBiggest = false;
+                    isBiggestAll = false;
                     break;
                 }
             }
-            if (hasBiggest)
+
+            if (isBiggestAll)
             {
-                topIntegers.Add(element);
+                Console.Write($"{number} ");
             }
         }
-        topIntegers.Add(array[array.Length - 1]);
 
-        Console.WriteLine(string.Join(" ", topIntegers));
+        Console.WriteLine(numbers[numbers.Length - 1]);
     }
 }
 

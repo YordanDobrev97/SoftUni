@@ -1,63 +1,33 @@
 ﻿using System;
-
+using System.Linq;
 class Program
 {
     static void Main()
     {
-        int arrayCount = int.Parse(Console.ReadLine());
+        int count = int.Parse(Console.ReadLine());
 
-        string[,] matrix = new string[arrayCount, 2];
-        for (int i = 0; i < arrayCount; i++)
+        int[] firstArray = new int[count];
+        int[] secondArray = new int[count];
+
+        for (int i = 0; i < count; i++)
         {
-            string[] values = Console.ReadLine()
-                .Split(' ');
+            int[] values = Console.ReadLine().Split()
+                .Select(int.Parse).ToArray();
 
-            for (int col = 0; col < matrix.GetLength(1); col++)
+            int firstValue = values[0];
+            int secondValue = values[1];
+
+            if (i % 2 == 1)
             {
-                matrix[i, col] = values[col];
+                firstValue = values[1];
+                secondValue = values[0];
             }
-        }
 
-        string[] firstArray = new string[arrayCount];
-
-        int colum = 0;
-
-        for (int i = 0; i < arrayCount; i++)
-        {
-            string value = matrix[i, colum];
-            firstArray[i] = value;
-            if ((i + 1) % 2 == 0)
-            {
-                colum--;
-            }
-            else
-            {
-                colum++;
-            }
+            firstArray[i] = firstValue;
+            secondArray[i] = secondValue;
         }
 
         Console.WriteLine(string.Join(" ", firstArray));
-
-        string[] secondArray = new string[arrayCount];
-
-        int index = 0;
-        int column = matrix.GetLength(1) - 1;
-
-        for (int row = 0; row < matrix.GetLength(0); row++)
-        {
-            string value = matrix[row, column];
-            secondArray[index] = value;
-            index++;
-
-            if ((row + 1) % 2 == 0)
-            {
-                column++;
-            }
-            else
-            {
-                column--;
-            }
-        }
         Console.WriteLine(string.Join(" ", secondArray));
     }
 }

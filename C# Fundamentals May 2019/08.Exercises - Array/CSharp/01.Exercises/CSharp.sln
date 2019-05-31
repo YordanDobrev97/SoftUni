@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Train", "01.Train\01.Train.csproj", "{5F8AED3B-6AFD-4132-AFBF-B08A71F533BF}"
 EndProject
@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.TopIntegers", "05.TopInt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.EqualSums", "06.EqualSums\06.EqualSums.csproj", "{D48BFE6B-3684-473D-A695-7F67334A1A74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.MaxSequenceEqualElements", "07.MaxSequenceEqualElements\07.MaxSequenceEqualElements.csproj", "{4F17EB5E-ED91-46D6-A5A0-62508F99BB87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.MaxSequenceEqualElements", "07.MaxSequenceEqualElements\07.MaxSequenceEqualElements.csproj", "{4F17EB5E-ED91-46D6-A5A0-62508F99BB87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.MagicSum", "08.MagicSum\08.MagicSum.csproj", "{3AE29FD7-DAE2-485C-A2CA-619BA8F3DB18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.MagicSum", "08.MagicSum\08.MagicSum.csproj", "{3AE29FD7-DAE2-485C-A2CA-619BA8F3DB18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.KaminoFactory", "09.KaminoFactory\09.KaminoFactory.csproj", "{94F37A5B-E80E-4530-AABA-C641628D0F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.LadyBugs", "10.LadyBugs\10.LadyBugs.csproj", "{ABF17D59-B73D-4291-A083-23CE97BE85F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{3AE29FD7-DAE2-485C-A2CA-619BA8F3DB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AE29FD7-DAE2-485C-A2CA-619BA8F3DB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AE29FD7-DAE2-485C-A2CA-619BA8F3DB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F37A5B-E80E-4530-AABA-C641628D0F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F37A5B-E80E-4530-AABA-C641628D0F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F37A5B-E80E-4530-AABA-C641628D0F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F37A5B-E80E-4530-AABA-C641628D0F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF17D59-B73D-4291-A083-23CE97BE85F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF17D59-B73D-4291-A083-23CE97BE85F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF17D59-B73D-4291-A083-23CE97BE85F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF17D59-B73D-4291-A083-23CE97BE85F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

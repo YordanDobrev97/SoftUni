@@ -6,36 +6,28 @@ class Program
 {
     static void Main()
     {
-        int[] array = Console.ReadLine()
-            .Split(' ')
+        int[] numbers = Console.ReadLine()
+            .Split()
             .Select(int.Parse)
             .ToArray();
 
         int sum = int.Parse(Console.ReadLine());
 
-        HashSet<int> pairs = new HashSet<int>();
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < numbers.Length; i++)
         {
-            int element = array[i];
+            int number = numbers[i];
 
-            //found pairs
-            for (int j = 0; j < array.Length; j++)
+            for (int j = i + 1; j < numbers.Length; j++)
             {
-                int currentElement = array[j];
-                int currentSum = element + currentElement;
+                int nextNumber = numbers[j];
 
-                if (currentSum == sum)
+                int sumNumbers = number + nextNumber;
+
+                if (sumNumbers == sum)
                 {
-                    pairs.Add(element);
-                    pairs.Add(currentElement);
-                    break;
+                    Console.WriteLine($"{number} {nextNumber}");
                 }
             }
-        }
-
-        for (int i = 0; i < pairs.Count; i+=2)
-        {
-            Console.WriteLine($"{pairs.ElementAt(i)} {pairs.ElementAt(i + 1)}");
         }
     }
 }
