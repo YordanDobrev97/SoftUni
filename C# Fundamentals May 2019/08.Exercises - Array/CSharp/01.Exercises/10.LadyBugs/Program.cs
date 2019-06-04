@@ -8,23 +8,22 @@ namespace _10.LadyBugs
         static void Main()
         {
             int size = int.Parse(Console.ReadLine());
-
             int[] indexes = Console.ReadLine()
                 .Split()
                 .Select(int.Parse)
                 .ToArray();
 
-            string[] fieldSize = new string[size];
+            int[] fieldSize = new int[size];
 
             for (int i = 0; i < size; i++)
             {
                 if (indexes.Contains(i))
                 {
-                    fieldSize[i] = "1";
+                    fieldSize[i] = 1;
                 }
                 else
                 {
-                    fieldSize[i] = "0";
+                    fieldSize[i] = 0;
                 }
             }
 
@@ -37,49 +36,48 @@ namespace _10.LadyBugs
                 string direction = elements[1];
                 int newDirection = int.Parse(elements[2]);
 
-                if (currentDirection < 0 || currentDirection > fieldSize.Length
-                    || newDirection < 0 || newDirection > fieldSize.Length)
+                if (currentDirection >= fieldSize.Length || currentDirection < 0)
                 {
                     line = Console.ReadLine();
                     continue;
                 }
 
-                bool isFree = fieldSize[newDirection] == "0";
-
-                if (isFree)
+                if (fieldSize[currentDirection] == 0)
                 {
-                    fieldSize[currentDirection] = "0";
-                    fieldSize[newDirection] = "1";
+                    line = Console.ReadLine();
+                    continue;
                 }
-                else
+
+                int index = currentDirection;
+                while (true)
                 {
-                    while (newDirection < fieldSize.Length)
+                    if (direction == "right")
                     {
-                        if (direction == "left")
-                        {
-                            newDirection--;
-                        }
-                        else
-                        {
-                            newDirection++;
-                        }
-                       
+                        index += newDirection;
+                    }
+                    else if (direction == "left")
+                    {
+                        index -= newDirection;
+                    }
+                    else
+                    {
+                        break;
+                    }
 
-                        if (newDirection >=fieldSize.Length || newDirection < 0)
-                        {
-                            fieldSize[currentDirection] = "0";
-                            break;
-                        }
-                        isFree = fieldSize[newDirection] == "0";
+                    if (index >= fieldSize.Length || index < 0)
+                    {
+                        fieldSize[currentDirection] = 0;
+                        break;
+                    }
 
-                        if (isFree)
-                        {
-                            fieldSize[currentDirection] = "0";
-                            fieldSize[newDirection] = "1";
-                            break;
-                        }
+                    if (fieldSize[index] == 0)
+                    {
+                        fieldSize[index] = 1;
+                        fieldSize[currentDirection] = 0;
+                        break;
                     }
                 }
+
                 line = Console.ReadLine();
             }
 
