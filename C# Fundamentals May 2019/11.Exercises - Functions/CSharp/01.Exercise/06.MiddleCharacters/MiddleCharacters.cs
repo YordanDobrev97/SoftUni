@@ -13,15 +13,16 @@ namespace _06.MiddleCharacters
 
         private static void PrintMiddleCharacter(string line)
         {
-            int middle = line.Length / 2;
-            int index = line.Length / 2 - 1;
-            if (middle % 2 == 0)
+            int firstIndex = (line.Length / 2) - 1;
+            if (line.Length % 2 == 0)
             {
-                Console.WriteLine($"{line[index]}{line[index + 1]}");
+                int secondIndex = line.Length / 2;
+
+                Console.WriteLine($"{line[firstIndex]}{line[secondIndex]}");
             }
             else
             {
-                Console.WriteLine($"{line[index + 1]}");
+                Console.WriteLine($"{line[firstIndex + 1]}");
             }
         }
     }

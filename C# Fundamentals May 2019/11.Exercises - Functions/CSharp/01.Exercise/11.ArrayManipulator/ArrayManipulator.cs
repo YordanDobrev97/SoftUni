@@ -5,21 +5,12 @@ namespace _11.ArrayManipulator
 {
     public class ArrayManipulator
     {
-        public static int[] Filter(int[] array, string criteria)
-        {
-            if (criteria == "even")
-            {
-                return array.Where(x => x % 2 == 0).ToArray();
-            }
-            return array.Where(x => x % 2 == 1).ToArray();
-        }
-
+        static bool containsEven = false;
+        static bool containsOdd = false;
+        const int DEFAULT_VALUE = -1;
         public static void Main()
         {
-            int[] numbers = Console.ReadLine()
-                .Split(' ')
-                .Select(int.Parse)
-                .ToArray();
+            int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
             string line = Console.ReadLine();
 
@@ -31,139 +22,133 @@ namespace _11.ArrayManipulator
                 switch (command)
                 {
                     case "exchange":
-                        int index = int.Parse(arguments[1]);
-                        if (index < 0 || index > numbers.Length - 1)
-                        {
-                            Console.WriteLine("Invalid index");
-                        }
-                        else
-                        {
-                            int[] exhangeItems = new int[numbers.Length - 1 - index];
-
-                            int indx = 0;
-                            for (int i = numbers.Length - 1; i > index; i--)
-                            {
-                                exhangeItems[exhangeItems.Length - 1 - indx] = numbers[i];
-                                indx++;
-                            }
-
-                            int currentIndex = index;
-                            for (int i = 0; i < numbers.Length - exhangeItems.Length; i++)
-                            {
-                                numbers[numbers.Length - 1 - i] = numbers[currentIndex];
-                                currentIndex--;
-                            }
-
-                            for (int i = 0; i < exhangeItems.Length; i++)
-                            {
-                                numbers[i] = exhangeItems[i];
-                            }
-                        }
+                        ExchangeNumbers(numbers, arguments);
                         break;
                     case "max":
-                        if (arguments[1] == "odd")
+                        if (arguments[1] == "even")
                         {
-                            int[] oddNums = Filter(numbers, "odd");
-                            if (oddNums.Length == 0)
+                            int maxIndexEven = ReturnIndexOfMaxEvenElement(numbers);
+                            if (maxIndexEven != DEFAULT_VALUE)
                             {
-                                PrintMessageNotMatches();
+                                Console.WriteLine(maxIndexEven);
                             }
                             else
                             {
-                                int maxElement = oddNums.Max();
-                                int indexMaxElement = Array.LastIndexOf(numbers, maxElement);
-                                Console.WriteLine(indexMaxElement);
+                                Console.WriteLine("No matches");
                             }
-
                         }
                         else
                         {
-                            int[] evenNums = Filter(numbers, "even");
-                            int maxElement = evenNums.Max();
-                            int indexMaxElement = Array.LastIndexOf(numbers, maxElement);
-                            Console.WriteLine(indexMaxElement);
+                            int maxIndexOdd = ReturnIndexOfMaxOddElement(numbers);
+                            if (maxIndexOdd != DEFAULT_VALUE)
+                            {
+                                Console.WriteLine(maxIndexOdd);
+                            }
+                            else
+                            {
+                                Console.WriteLine("No matches");
+                            }
                         }
                         break;
                     case "min":
                         if (arguments[1] == "even")
                         {
-                            int[] evenNums = Filter(numbers, "even");
-                            if (evenNums.Length == 0)
+                            int minIndexEven = ReturnIndexOfMinEvenElement(numbers);
+
+                            if (minIndexEven != DEFAULT_VALUE)
                             {
-                                PrintMessageNotMatches();
+                                Console.WriteLine(minIndexEven);
                             }
                             else
                             {
-                                int minElement = evenNums.Min();
-                                int minElementIndex = Array.LastIndexOf(numbers, minElement);
-                                Console.WriteLine(minElementIndex);
+                                Console.WriteLine("No matches");
                             }
                         }
                         else
                         {
-                            int[] oddNums = Filter(numbers, "odd");
-                            int minElement = oddNums.Min();
-                            int minElementIndex = Array.LastIndexOf(numbers, minElement);
-                            Console.WriteLine(minElementIndex);
-                        }
-                        break;
-                    case "first":
-                        {
-                            int count = int.Parse(arguments[1]);
-                            if (InvalidCount(count, numbers))
+                            int minIndexOdd = ReturnIndexOfMinOddElement(numbers);
+
+                            if (minIndexOdd != DEFAULT_VALUE)
                             {
-                                Console.WriteLine("Invalid count");
+                                Console.WriteLine(minIndexOdd);
                             }
                             else
                             {
-                                string criteria = arguments[2];
-                                if (criteria == "even")
+                                Console.WriteLine("No matches");
+                            }
+                        }
+                        break;
+                    case "first":
+                        int count = int.Parse(arguments[1]);
+                        if (IsCountInOutRange(numbers, count))
+                        {
+                            PrintInvalidCountMessage();
+                        }
+                        else
+                        {
+                            if (arguments[2] == "even")
+                            {
+                                int[] firstEvenElements = ReturnFirstEvenCountElements(numbers, count);
+                                if (containsEven)
                                 {
-                                    int[] evenNumbers = Filter(numbers, "even");
-                                    PrintNumbers(evenNumbers, count);
+                                    Console.WriteLine($"[{string.Join(", ", firstEvenElements)}]");
+                                    containsEven = false;
                                 }
                                 else
                                 {
-                                    int[] oddNumbers = Filter(numbers, "odd");
-                                    PrintNumbers(oddNumbers, count);
+                                    Console.WriteLine("[]");
+                                }
+                            }
+                            else
+                            {
+                                int[] firstOddElements = ReturnFirstOddCountElements(numbers, count);
+                                if (containsOdd)
+                                {
+                                    Console.WriteLine($"[{string.Join(", ", firstOddElements)}]");
+                                    containsOdd = false;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("[]");
                                 }
                             }
                         }
                         break;
                     case "last":
-                        {
-                            int count = int.Parse(arguments[1]);
-                            if (InvalidCount(count, numbers))
-                            {
-                                Console.WriteLine("Invalid count");
-                            }
-                            else
-                            {
-                                string criteria = arguments[2];
+                        count = int.Parse(arguments[1]);
 
-                                if (criteria == "even")
+                        if (IsCountInOutRange(numbers, count))
+                        {
+                            PrintInvalidCountMessage();
+                        }
+                        else
+                        {
+                            if (arguments[2] == "even")
+                            {
+                                int[] lastEvenCountElements = ReturnLastCountEvenElements(numbers, count);
+
+                                if (containsEven)
                                 {
-                                    int[] evenNums = Filter(numbers, "even");
-                                    if (EmptyArray(evenNums))
-                                    {
-                                        PrintEmptyBrackets();
-                                    }
-                                    else
-                                    {
-                                        PrintNumbers(count, evenNums);
-                                    }
+                                    Console.WriteLine($"[{string.Join(", ", lastEvenCountElements)}]");
+                                    containsOdd = false;
                                 }
                                 else
                                 {
-                                    int[] oddNums = Filter(numbers, "odd");
-                                    if (EmptyArray(oddNums))
-                                    {
-                                        PrintEmptyBrackets();
-                                    }
-                                    else
-                                    {
-                                        PrintNumbers(count, oddNums);
-                                    }
+                                    Console.WriteLine("[]");
+                                }
+                            }
+                            else
+                            {
+                                int[] lastOddCountElements = ReturnLastCountOddElements(numbers, count);
+
+                                if (containsOdd)
+                                {
+                                    Console.WriteLine($"[{string.Join(", ", lastOddCountElements)}]");
+                                    containsOdd = false;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("[]");
                                 }
                             }
                         }
@@ -172,74 +157,269 @@ namespace _11.ArrayManipulator
 
                 line = Console.ReadLine();
             }
+
             Console.WriteLine($"[{string.Join(", ", numbers)}]");
         }
 
-        private static bool InvalidCount(int count, int[] numbers)
+        private static int[] ReturnLastCountOddElements(int[] numbers, int count)
         {
-            return count > numbers.Length;
-        }
+            int countOddNumbers = 0;
 
-        static void PrintNumbers(int count, int[] evenNums)
-        {
-            if (OneElement(evenNums))
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine($"[{evenNums[0]}]");
-            }
-            else
-            {
-                Console.Write("[");
-                for (int i = evenNums.Length - 1; i > count; i--)
+                if (numbers[i] % 2 == 1)
                 {
-                    Console.Write($"{evenNums[i]} ");
+                    countOddNumbers++;
                 }
-                Console.WriteLine("]");
             }
+
+            int length = Math.Min(countOddNumbers, count);
+            int[] oddNumbers = new int[length];
+
+            int index = 0;
+            int currentCounter = 0;
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    containsOdd = true;
+                    oddNumbers[oddNumbers.Length - 1 - index] = numbers[i];
+                    currentCounter++;
+                    index++;
+                    if (currentCounter == count)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return oddNumbers;
         }
 
-        static void PrintNumbers(int[] nums, int count)
+        private static int[] ReturnLastCountEvenElements(int[] numbers, int count)
         {
-            if (OneElement(nums))
+            int countEvenNumbers = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine($"[{nums[0]}]");
+                if (numbers[i] % 2 == 0)
+                {
+                    countEvenNumbers++;
+                }
+            }
+
+            int length = Math.Min(countEvenNumbers, count);
+            int[] evenNumbers = new int[length];
+
+            int index = 0;
+            int currentCounter = 0;
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    containsEven = true;
+                    evenNumbers[evenNumbers.Length - 1 - index] = numbers[i];
+                    currentCounter++;
+                    index++;
+                    if (currentCounter == count)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return evenNumbers;
+        }
+
+        private static bool IsCountInOutRange(int[] numbers, int count)
+        {
+            return count < 0 || count > numbers.Length;
+        }
+
+        private static void PrintInvalidCountMessage()
+        {
+            Console.WriteLine("Invalid count");
+        }
+
+        private static int[] ReturnFirstOddCountElements(int[] numbers, int count)
+        {
+            int countOddElements = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    countOddElements++;
+                }
+            }
+
+            int length = Math.Min(count, countOddElements);
+            int[] oddElements = new int[length];
+
+            int index = 0;
+            int currentCount = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    containsOdd = true;
+                    currentCount++;
+                    oddElements[index] = numbers[i];
+                    index++;
+                    if (currentCount == count)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return oddElements;
+        }
+
+        private static int[] ReturnFirstEvenCountElements(int[] numbers, int count)
+        {
+            // judge would not like it
+            int countEvenElements = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    countEvenElements++;
+                }
+            }
+
+            int length = Math.Min(count, countEvenElements);
+            int[] evenElements = new int[length];
+
+            int index = 0;
+            int currentCount = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    containsEven = true;
+                    currentCount++;
+                    evenElements[index] = numbers[i];
+                    index++;
+                    if (currentCount == count)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return evenElements;
+        }
+
+        private static int ReturnIndexOfMinOddElement(int[] numbers)
+        {
+            int index = DEFAULT_VALUE;
+
+            int currentMin = int.MaxValue;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    if (numbers[i] <= currentMin)
+                    {
+                        currentMin = numbers[i];
+                        index = i;
+                    }
+                }
+            }
+
+            return index;
+        }
+
+        private static int ReturnIndexOfMinEvenElement(int[] numbers)
+        {
+            int index = DEFAULT_VALUE;
+
+            int currentMin = int.MaxValue;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    if (numbers[i] <= currentMin)
+                    {
+                        currentMin = numbers[i];
+                        index = i;
+                    }
+                }
+            }
+
+            return index;
+        }
+
+        private static int ReturnIndexOfMaxOddElement(int[] numbers)
+        {
+            int index = DEFAULT_VALUE;
+
+            int currentMax = int.MinValue;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    if (numbers[i] >= currentMax)
+                    {
+                        currentMax = numbers[i];
+                        index = i;
+                    }
+                }
+            }
+
+            return index;
+        }
+
+        private static int ReturnIndexOfMaxEvenElement(int[] numbers)
+        {
+            int index = 0;
+            int currentMax = int.MinValue;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    if (numbers[i] >= currentMax)
+                    {
+                        currentMax = numbers[i];
+                        index = i;
+                    }
+                }
+            }
+
+            return index;
+        }
+
+        private static void ExchangeNumbers(int[] numbers, string[] arguments)
+        {
+            int index = int.Parse(arguments[1]);
+            bool hasValidIndex = index >= 0 && index < numbers.Length;
+            if (!hasValidIndex)
+            {
+                Console.WriteLine("Invalid index");
             }
             else
             {
-                Console.Write("[");
+                int[] elementsAfterIndex = numbers.Skip(index + 1).Take(numbers.Length - index).ToArray();
+                int count = numbers.Length - elementsAfterIndex.Length;
+
                 for (int i = 0; i < count; i++)
                 {
-                    if (i == count - 1)
-                    {
-                        Console.Write($"{nums[i]}");
-                    }
-                    else
-                    {
-                        Console.Write($"{nums[i]}, ");
-                    }
+                    int currentElement = numbers[index - i];
+                    int backIndex = numbers.Length - 1 - i;
+
+                    numbers[backIndex] = currentElement;
                 }
-                Console.WriteLine("]");
+
+                for (int i = 0; i < elementsAfterIndex.Length; i++)
+                {
+                    numbers[i] = elementsAfterIndex[i];
+                }
             }
-
-        }
-
-        private static bool OneElement(int[] nums)
-        {
-            return nums.Length == 1;
-        }
-
-        private static bool EmptyArray(int[] evenNums)
-        {
-            return evenNums.Length == 0;
-        }
-
-        private static void PrintEmptyBrackets()
-        {
-            Console.WriteLine("[]");
-        }
-
-        private static void PrintMessageNotMatches()
-        {
-            Console.WriteLine("No matches");
         }
     }
 }
