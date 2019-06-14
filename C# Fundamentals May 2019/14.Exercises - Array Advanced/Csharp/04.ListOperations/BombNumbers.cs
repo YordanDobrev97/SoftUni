@@ -32,7 +32,7 @@ namespace _05.BombNumbers
 
                 DetonateRight(numbers, index, power);
 
-                numbers.RemoveAt(index);
+                numbers.Remove(number);
 
                 if (!numbers.Contains(number))
                 {
@@ -66,8 +66,8 @@ namespace _05.BombNumbers
         private static void DetonateLeft(List<int> numbers, int index, int power)
         {
             int counter = 0;
-            int indexLeft = index - 1;
 
+            int indexLeft = index - 1;
             while (counter < power)
             {
                 if (indexLeft < 0)
