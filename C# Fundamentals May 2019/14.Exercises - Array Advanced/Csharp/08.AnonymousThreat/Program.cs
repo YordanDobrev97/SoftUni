@@ -8,18 +8,6 @@ namespace _08.AnonymousThreat
     {
         static void Main()
         {
-            List<int> nums = new List<int>() { 1, 5, 3, 2, 0, 2, 23 };
-
-            int size = nums.Count;
-            for (int i = 0; i < size; i++)
-            {
-                if (nums[i] % 2 == 0)
-                {
-                    nums.RemoveAt(i);
-                }
-            }
-
-
             List<string> elements = Console.ReadLine()
                 .Split()
                 .ToList();
@@ -60,7 +48,28 @@ namespace _08.AnonymousThreat
                         elements.Insert(startIndex, allElements);
                         break;
                     case "divide":
-                       
+                        int index = int.Parse(parameters[1]);
+                        int partions = int.Parse(parameters[2]);
+                        string element = elements[index];
+
+                        elements.RemoveAt(index);
+
+                        int getLength = element.Length / partions;
+                        List<string> parts = new List<string>();
+                        
+                        for (int i = 0; i < partions; i++)
+                        {
+                            if (i == partions - 1)
+                            {
+                                parts.Add(element.Substring(i * getLength));
+                            }
+                            else
+                            {
+                                parts.Add(element.Substring(i * getLength, getLength));
+                            }
+                        }
+
+                        elements.InsertRange(index, parts);
 
                         break;
                 }
