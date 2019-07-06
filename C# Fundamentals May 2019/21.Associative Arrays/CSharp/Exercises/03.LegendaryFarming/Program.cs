@@ -6,140 +6,114 @@ namespace _03.LegendaryFarming
 {
     public class Program
     {
-        private const int MAX_VALUE = 255;
-        private const int MAX_MOTES = MAX_VALUE;
-        private const int MAX_FRAGMENTS = MAX_VALUE;
-        private const int MAX_SHARDS = MAX_VALUE;
-
         public static void Main()
         {
-            var input = Console.ReadLine()
-                .ToLower()
-                .Split(' ');
+            int currentShards = 0;
+            int currentFragments = 0;
+            int currentMotes = 0;
+
+            int maxQuantity = 250;
+            int maxShard = maxQuantity;
+            int maxFragments = maxQuantity;
+            int maxMotes = maxQuantity;
+
+            string winner = string.Empty;
 
             var materials = new Dictionary<string, int>();
+            materials["shards"] = 0;
+            materials["fragments"] = 0;
+            materials["motes"] = 0;
 
-            int currentMotes = 0;
-            int currentFragments = 0;
-            int currentShards = 0;
-
-            int currentQuantity = 0;
-            
-            string nameWin = string.Empty;
-            for (int i = 0; i < input.Length; i++)
+            var junks = new Dictionary<string, int>();
+            while (true)
             {
-                if (i % 2 == 0)
+                var elements = Console.ReadLine().Split(" ");
+                bool isEnd = false;
+                for (int i = 0; i < elements.Length; i += 2)
                 {
-                    int quantity = int.Parse(input[i]);
-                    currentQuantity = quantity;
-                }
-                else
-                {
-                    string material = input[i];
+                    var quantity = int.Parse(elements[i]);
+                    var item = elements[i + 1].ToLower();
 
-                    switch (material)
+                    switch (item)
                     {
-                        case "motes":
-                            currentMotes += currentQuantity;
-
-                            if (currentMotes == MAX_MOTES)
+                        case "shards":
+                            currentShards += quantity;
+                            if (!materials.ContainsKey(item))
                             {
-                                nameWin = "Dragonwrath";
-                                AddMaterial(material, materials, currentMotes);
-                                break;
+                                materials.Add(item, 0);
                             }
-                            else if (currentMotes > MAX_MOTES)
-                            {
-                                currentMotes -= MAX_MOTES;
-                                AddMaterial(material, materials, currentMotes);
-
-                                if (HasWin(materials))
-                                {
-                                    nameWin = "Dragonwrath";
-                                    break;
-                                }
-                                break;
-                            }
-                            AddMaterial(material, materials, currentQuantity);
+                            materials[item] += quantity;
                             break;
                         case "fragments":
-                            currentFragments += currentQuantity;
-
-                            if (currentFragments == MAX_FRAGMENTS)
+                            currentFragments += quantity;
+                            if (!materials.ContainsKey(item))
                             {
-                                nameWin = "Valanyr";
-                                AddMaterial(material, materials, currentQuantity);
-                                break;
+                                materials.Add(item, 0);
                             }
-                            else if(currentFragments > MAX_FRAGMENTS)
-                            {
-                                currentFragments -= currentQuantity;
-                                AddMaterial(material, materials, currentFragments);
-
-                                if (HasWin(materials))
-                                {
-                                    nameWin = "Valanyr";
-                                    break;
-                                }
-                            }
-
-                            AddMaterial(material, materials, currentQuantity);
+                            materials[item] += quantity;
                             break;
-                        case "shards":
-                            currentShards += currentQuantity;
-                            if (currentShards == MAX_SHARDS)
+                        case "motes":
+                            currentMotes += quantity;
+                            if (!materials.ContainsKey(item))
                             {
-                                nameWin = "Shadowmourne";
-                                AddMaterial(material, materials, currentQuantity);
-                                break;
+                                materials.Add(item, 0);
                             }
-                            else if(currentShards > MAX_SHARDS)
-                            {
-                                currentShards -= MAX_SHARDS;
-                                AddMaterial(material, materials, currentShards);
-
-                                if (HasWin(materials))
-                                {
-                                    nameWin = "Shadowmourne";
-                                    break;
-                                }
-                                break;
-                            }
-                            AddMaterial(material, materials, currentQuantity);
+                            materials[item] += quantity;
                             break;
                         default:
-                            AddMaterial(material, materials, currentQuantity);
+                            if (!junks.ContainsKey(item))
+                            {
+                                junks[item] = 0;
+                            }
+                            junks[item] += quantity;
                             break;
                     }
 
-                    if (HasWin(materials))
+
+                    if (currentShards >= maxShard)
                     {
+                        winner = "Shadowmourne";
+                        materials["shards"] -= maxShard;
+                        isEnd = true;
+                        break;
+                    }
+                    else if (currentFragments >= maxFragments)
+                    {
+                        winner = "Valanyr";
+                        materials["fragments"] -= maxFragments;
+                        isEnd = true;
+                        break;
+                    }
+                    else if (currentMotes >= maxMotes)
+                    {
+                        winner = "Dragonwrath";
+                        materials["motes"] -= maxMotes;
+                        isEnd = true;
                         break;
                     }
                 }
+
+                if (isEnd)
+                {
+                    break;
+                }
             }
 
-            Console.WriteLine($"{nameWin} obtained!");
-            foreach (var item in materials)
-            {
-                Console.WriteLine($"{item.Key}:{item.Value}");
-            }
-        }
+            Console.WriteLine($"{winner} obtained!");
 
-        private static bool HasWin(Dictionary<string, int> materials)
-        {
-            return materials.ContainsValue(MAX_VALUE);
-        }
-
-        private static void AddMaterial(string material, Dictionary<string, int> materials, int currentMotes)
-        {
-            if (!materials.ContainsKey(material))
+            foreach (var material in materials.OrderByDescending(x => x.Value)
+                .ThenBy(x => x.Key))
             {
-                materials.Add(material, currentMotes);
+                string key = material.Key;
+                int value = material.Value;
+                Console.WriteLine($"{key}: {value}");
             }
-            else
+
+            foreach (var item in junks.OrderBy(x => x.Key))
             {
-                materials[material] += currentMotes;
+                string key = item.Key;
+                int value = item.Value;
+                Console.WriteLine($"{key}: {value}");
             }
         }
     }
