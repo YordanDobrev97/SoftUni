@@ -6,29 +6,29 @@ namespace _05.MultiplicationSign
     {
         public static void Main()
         {
-            int firstNumber = int.Parse(Console.ReadLine());
-            int secondNumber = int.Parse(Console.ReadLine());
-            int thirdNumber = int.Parse(Console.ReadLine());
+            decimal firstNumber = decimal.Parse(Console.ReadLine());
+            decimal secondNumber = decimal.Parse(Console.ReadLine());
+            decimal thirdNumber = decimal.Parse(Console.ReadLine());
 
-            if (HasNegativeNumber(firstNumber)
-                || HasNegativeNumber(secondNumber)
-                || HasNegativeNumber(thirdNumber))
+            string message = string.Empty;
+
+            if (firstNumber == 0 || secondNumber == 0 || thirdNumber == 0)
             {
-                PrintMessage("negative");
+                message = "zero";
+            }
+            else if ((firstNumber > 0 && secondNumber > 0 && thirdNumber > 0) 
+                || (secondNumber < 0 && thirdNumber < 0 && firstNumber > 0)
+                || (firstNumber < 0 && secondNumber > 0 && thirdNumber < 0)
+                || (firstNumber > 0 && secondNumber < 0 && thirdNumber < 0))
+            {
+                message = "positive";
             }
             else
             {
-                PrintMessage("positive");
+                message = "negative";
             }
-        }
-        static void PrintMessage(string message)
-        {
-            Console.WriteLine(message);
-        }
 
-        private static bool HasNegativeNumber(int firstNumber)
-        {
-            return firstNumber < 0;
+            Console.WriteLine(message);
         }
     }
 }

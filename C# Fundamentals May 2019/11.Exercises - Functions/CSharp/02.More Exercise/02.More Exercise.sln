@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DataTypes", "01.DataTypes\01.DataTypes.csproj", "{1AB6E8F7-159E-4E51-B81F-E75629FE921C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.DataTypes", "01.DataTypes\01.DataTypes.csproj", "{1AB6E8F7-159E-4E51-B81F-E75629FE921C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CenterPoint", "02.CenterPoint\02.CenterPoint.csproj", "{87173D4C-8CA8-4D7B-BB23-4CF167901BB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.CenterPoint", "02.CenterPoint\02.CenterPoint.csproj", "{87173D4C-8CA8-4D7B-BB23-4CF167901BB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.MultiplicationSign", "05.MultiplicationSign\05.MultiplicationSign.csproj", "{2FE1EF27-1D4D-4D3B-A384-C31A0AEBCFBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.MultiplicationSign", "05.MultiplicationSign\05.MultiplicationSign.csproj", "{2FE1EF27-1D4D-4D3B-A384-C31A0AEBCFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.LongerLine", "03.LongerLine\03.LongerLine.csproj", "{955293F6-38C8-444C-A419-D3C3ECE8B39F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.TribonacciSequence", "04.TribonacciSequence\04.TribonacciSequence.csproj", "{6C92939C-506E-45C2-AB66-3434BB219F3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{2FE1EF27-1D4D-4D3B-A384-C31A0AEBCFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FE1EF27-1D4D-4D3B-A384-C31A0AEBCFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FE1EF27-1D4D-4D3B-A384-C31A0AEBCFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955293F6-38C8-444C-A419-D3C3ECE8B39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955293F6-38C8-444C-A419-D3C3ECE8B39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955293F6-38C8-444C-A419-D3C3ECE8B39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955293F6-38C8-444C-A419-D3C3ECE8B39F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C92939C-506E-45C2-AB66-3434BB219F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C92939C-506E-45C2-AB66-3434BB219F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C92939C-506E-45C2-AB66-3434BB219F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C92939C-506E-45C2-AB66-3434BB219F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
