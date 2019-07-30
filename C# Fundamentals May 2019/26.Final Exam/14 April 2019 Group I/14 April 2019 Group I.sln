@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ArrivingInKathmandu", "01.ArrivingInKathmandu\01.ArrivingInKathmandu.csproj", "{F59AC3E6-7C34-4150-9B41-CAEE718E4F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.On the WayAnnapurna", "02.On the WayAnnapurna\02.On the WayAnnapurna.csproj", "{0CE9B619-2AC0-448B-8914-2A243CAB13EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F59AC3E6-7C34-4150-9B41-CAEE718E4F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59AC3E6-7C34-4150-9B41-CAEE718E4F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59AC3E6-7C34-4150-9B41-CAEE718E4F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59AC3E6-7C34-4150-9B41-CAEE718E4F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE9B619-2AC0-448B-8914-2A243CAB13EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE9B619-2AC0-448B-8914-2A243CAB13EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE9B619-2AC0-448B-8914-2A243CAB13EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE9B619-2AC0-448B-8914-2A243CAB13EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A76067CF-1187-429A-8DFC-ADB459C4C3A0}
+	EndGlobalSection
+EndGlobal
