@@ -1,27 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Linq;
 
-namespace _02.Deciphering
+namespace _02._Deciphering
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            string firstString = Console.ReadLine();
-            string[] secondString = Console.ReadLine().Split();
+            string firstInput = Console.ReadLine();
+            var secondInput = Console.ReadLine().Split(" ").ToList();
 
-            StringBuilder newString = new StringBuilder();
+            string firstString = secondInput[0];
+            string secondString = secondInput[1];
 
-            for (int i = 0; i < firstString.Length; i++)
+            string decryptedInput = "";
+
+            Regex regex = new Regex(@"^[d-z{}\|#]+$");
+
+            var match = regex.Match(firstInput);
+
+            for (int i = 0; i < match.Length; i++)
             {
-                newString.Append((char)(firstString[i] - 3));
+                char currentChar = firstInput[i];
+                decryptedInput += ((char)(currentChar - 3));
             }
 
-            string foundString = secondString[0];
-            string replacment = secondString[1];
+            if (decryptedInput.Contains(firstString))
+            {
+                decryptedInput = decryptedInput.Replace(firstString, secondString);
 
-            newString = newString.Replace(foundString, replacment);
-            Console.WriteLine(newString);
+                Console.WriteLine(decryptedInput);
+            }
+            else
+            {
+                Console.WriteLine("This is not the book you are looking for.");
+            }
         }
     }
 }
