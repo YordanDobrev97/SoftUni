@@ -17,9 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.BombBasement", "06.BombB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.KnightGame", "07.KnightGame\07.KnightGame.csproj", "{510BA735-E3CD-4E68-8054-79F089AB1907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Bombs", "08.Bombs\08.Bombs.csproj", "{0E60C414-15A0-4CE0-89DC-98188FE0DB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Bombs", "08.Bombs\08.Bombs.csproj", "{0E60C414-15A0-4CE0-89DC-98188FE0DB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Miner", "09.Miner\09.Miner.csproj", "{6F733D77-ACF5-4CC5-8C22-91F2F8A4F535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.Miner", "09.Miner\09.Miner.csproj", "{6F733D77-ACF5-4CC5-8C22-91F2F8A4F535}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.RadioactiveMutantVampireBunnies", "10.RadioactiveMutantVampireBunnies\10.RadioactiveMutantVampireBunnies.csproj", "{FAA882C3-2C95-4131-9A9D-5DAA50C282B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.JaggedArrayManipulator", "06.JaggedArrayManipulator\06.JaggedArrayManipulator.csproj", "{80C8CF04-AEBD-4C04-9B95-CF768600A5C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{6F733D77-ACF5-4CC5-8C22-91F2F8A4F535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F733D77-ACF5-4CC5-8C22-91F2F8A4F535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F733D77-ACF5-4CC5-8C22-91F2F8A4F535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA882C3-2C95-4131-9A9D-5DAA50C282B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA882C3-2C95-4131-9A9D-5DAA50C282B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA882C3-2C95-4131-9A9D-5DAA50C282B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA882C3-2C95-4131-9A9D-5DAA50C282B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C8CF04-AEBD-4C04-9B95-CF768600A5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C8CF04-AEBD-4C04-9B95-CF768600A5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C8CF04-AEBD-4C04-9B95-CF768600A5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C8CF04-AEBD-4C04-9B95-CF768600A5C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
