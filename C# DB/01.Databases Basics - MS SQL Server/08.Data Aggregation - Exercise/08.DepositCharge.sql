@@ -1,7 +1,5 @@
-SELECT DepositGroup,
-	   MagicWandCreator, 
-		MIN(DepositCharge) 
-AS [MinDepositCharge] 
-FROM WizzardDeposits AS r
-GROUP BY r.DepositGroup, r.MagicWandCreator
-ORDER BY r.MagicWandCreator, r.DepositGroup
+SELECT wizzard.DepositGroup, wizzard.MagicWandCreator, 
+MIN(wizzard.DepositCharge) AS MinDepositCharge
+FROM WizzardDeposits AS wizzard
+GROUP BY wizzard.MagicWandCreator, wizzard.DepositGroup
+ORDER BY wizzard.MagicWandCreator, wizzard.DepositGroup
