@@ -18,7 +18,11 @@ namespace _05.SnakeMoves
         }
         public static void Main()
         {
-            int[] sizeMatrix = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            //Throw exception, don't know
+            int[] sizeMatrix = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
 
             int rows = sizeMatrix[0];
             int column = sizeMatrix[1];
@@ -29,16 +33,29 @@ namespace _05.SnakeMoves
 
             for (int row = 0; row < rows; row++)
             {
-                for (int col = 0; col < column; col++)
+                if (row % 2 == 0)
                 {
-                    if (index > snake.Length - 1)
+                    for (int col = 0; col < column; col++)
                     {
-                        index = 0;
-                    }
+                        matrix[row, col] = snake[index++];
 
-                    char symbol = snake[index];
-                    matrix[row, col] = symbol;
-                    index++;
+                        if (index == snake.Length)
+                        {
+                            index = 0;
+                        }
+                    }
+                }
+                else
+                {
+                    for (int col = column; col >= 0; col--)
+                    {
+                        matrix[row, col] = snake[index];
+
+                        if (index == snake.Length)
+                        {
+                            index = 0;
+                        }
+                    }
                 }
             }
 
