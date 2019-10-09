@@ -10,7 +10,7 @@ public class StartUp
         var currentDirectory = Environment.CurrentDirectory;
         var fileData = File.ReadAllText(currentDirectory + @"\text.txt");
 
-        var allLines = fileData.Split("\n", StringSplitOptions.RemoveEmptyEntries);
+        var allLines = fileData.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
 
         int counter = 1;
         using (var writer = new StreamWriter("output.txt"))

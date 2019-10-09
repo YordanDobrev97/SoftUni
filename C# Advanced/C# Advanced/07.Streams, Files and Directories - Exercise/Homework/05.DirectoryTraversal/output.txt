@@ -1,0 +1,7 @@
+.cs
+--StartUp.cs - 1657kb
+.csproj
+--05.DirectoryTraversal.csproj - 237kb
+.txt
+--output.txt - 96kb
+--text.txt - 14kb
