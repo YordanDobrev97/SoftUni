@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _07.TheVLogger
 {
@@ -17,11 +18,6 @@ namespace _07.TheVLogger
         public int Following { get; set; }
 
         public List<string> Vloggers { get; set; }
-
-        public void AddVlogger(string currentVlogger)
-        {
-            this.Vloggers.Add(currentVlogger);
-        }
     }
 
     public class TheVLogger
@@ -69,10 +65,30 @@ namespace _07.TheVLogger
                         {
                             vlogger.Following++;
                             vloggerFollowing.Add(secondVloggerName);
+                            vloggersFollowers[secondVloggerName].Followers++;
+
                         }
                     }
                 }
                 
+            }
+
+            Console.WriteLine($"The V-Logger has a total of {totalVloggers} vloggers in its logs.");
+
+            int counter = 1;
+            foreach (var item in vloggersFollowers.OrderByDescending(x => x.Value.Followers))
+            {
+                Console.WriteLine($"{counter}. {item.Key}: {item.Value.Followers}, {item.Value.Following}");
+
+                if (counter == 1)
+                {
+                    foreach (var topVlogger in item.Value.Vloggers)
+                    {
+                        Console.WriteLine($"*  {topVlogger}");
+                    }
+                }
+
+                counter++;
             }
         }
     }
