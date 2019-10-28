@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Recursion", "01.Recursion\01.Recursion.csproj", "{9C360FB4-AE04-46BA-9B65-226E74B8BFE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.GreedyAlgorithms", "02.GreedyAlgorithms\02.GreedyAlgorithms.csproj", "{7843F3DB-1DA7-455D-AA34-D146F1DA94D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.SortingAlgorithms", "03.SortingAlgorithms\03.SortingAlgorithms.csproj", "{844BD790-BF23-480E-8F48-9240EA624B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SearchingAlgorithms", "04.SearchingAlgorithms\04.SearchingAlgorithms.csproj", "{6D7EC4C1-71EF-471E-A8ED-80415840BABE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C360FB4-AE04-46BA-9B65-226E74B8BFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C360FB4-AE04-46BA-9B65-226E74B8BFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C360FB4-AE04-46BA-9B65-226E74B8BFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C360FB4-AE04-46BA-9B65-226E74B8BFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7843F3DB-1DA7-455D-AA34-D146F1DA94D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7843F3DB-1DA7-455D-AA34-D146F1DA94D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7843F3DB-1DA7-455D-AA34-D146F1DA94D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7843F3DB-1DA7-455D-AA34-D146F1DA94D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844BD790-BF23-480E-8F48-9240EA624B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844BD790-BF23-480E-8F48-9240EA624B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844BD790-BF23-480E-8F48-9240EA624B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844BD790-BF23-480E-8F48-9240EA624B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7EC4C1-71EF-471E-A8ED-80415840BABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7EC4C1-71EF-471E-A8ED-80415840BABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7EC4C1-71EF-471E-A8ED-80415840BABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7EC4C1-71EF-471E-A8ED-80415840BABE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36ABEED1-9844-42BB-876B-6328CB4FBC51}
+	EndGlobalSection
+EndGlobal
