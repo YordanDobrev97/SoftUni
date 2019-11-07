@@ -1,5 +1,4 @@
-﻿using System;
-namespace Person
+﻿namespace Person
 {
     public class Child : Person
     {
