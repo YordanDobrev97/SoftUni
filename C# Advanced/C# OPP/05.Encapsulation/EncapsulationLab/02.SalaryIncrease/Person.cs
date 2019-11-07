@@ -6,16 +6,11 @@
         private string lastName;
         private int age;
 
-        public Person(string firstName, string lastName, int age)
+        public Person(string firstName, string lastName, int age, decimal salary)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
             this.Age = age;
-        }
-
-        public Person(string firstName, string lastName, int age, decimal salary)
-            : this (firstName, lastName, age)
-        {
             this.Salary = salary;
         }
 
@@ -59,12 +54,20 @@
 
         public void IncreaseSalary(decimal percentage)
         {
-            this.Salary = this.Salary + (this.Salary * percentage);
+            if (this.Age < 30)
+            {
+                //increasing double salary
+                this.Salary += this.Salary * percentage / 200;
+            } 
+            else
+            {
+                this.Salary += this.Salary * percentage / 100;
+            }
         }
 
         public override string ToString()
         {
-            return $"{this.FirstName} {this.LastName} is {this.Age} years old.";
+            return $"{this.FirstName} {this.LastName} receives {Salary:F2} leva.";
         }
     }
 }
