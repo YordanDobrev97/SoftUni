@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MilitaryElite.Core;
+using MilitaryElite.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MilitaryElite
 {
@@ -6,7 +9,8 @@ namespace MilitaryElite
     {
         public static void Main()
         {
-            //TODO...
+            CommandExecutor commandExecutor = new CommandExecutor();
+            commandExecutor.Execute();
         }
     }
 }
