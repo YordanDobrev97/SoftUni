@@ -1,16 +1,16 @@
-﻿namespace Vehicles.Core
-{
-    using System;
-    using Vehicles.Models.Food;
+﻿using System;
+using Vehicles.Models.Food;
 
-    public class Car : IVehicle
+namespace Vehicles.Core
+{
+    public class Truck : IVehicle
     {
-        public Car(double fuelQuantity, double fuelConsumption, double tankCapacity)
+        public Truck(double fuelQuantity, double fuelConsumption, double tankCapacity)
         {
             this.FuelQuantity = fuelQuantity;
             this.FuelConsumption = fuelConsumption;
             this.TankCapacity = tankCapacity;
-            this.FuelConsumption += 0.9;
+            this.FuelConsumption += 1.6;
         }
 
         public double FuelQuantity { get; private set; }
@@ -26,10 +26,9 @@
             if (totalDistance <= this.FuelQuantity)
             {
                 this.FuelQuantity -= totalDistance;
-                return $"Car travelled {distance} km";
+                return $"Truck travelled {distance} km";
             }
-
-            return $"Car needs refueling";
+            return "Truck needs refueling";
         }
 
         public void Refuel(double litters)
@@ -44,8 +43,10 @@
             }
             else
             {
+                litters *= 0.95;
                 this.FuelQuantity += litters;
             }
+            
         }
     }
 }
