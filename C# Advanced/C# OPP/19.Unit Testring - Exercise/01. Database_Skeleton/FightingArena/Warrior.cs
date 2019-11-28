@@ -87,6 +87,7 @@ namespace FightingArena
 
             this.HP -= warrior.Damage;
 
+            //TODO: test 
             if (this.Damage > warrior.HP)
             {
                 warrior.HP = 0;
