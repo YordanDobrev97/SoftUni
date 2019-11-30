@@ -1,10 +1,10 @@
-﻿namespace SpaceStation.Models.Astronauts
-{
-    using SpaceStation.Models.Astronauts.Contracts;
-    using SpaceStation.Models.Bags;
-    using SpaceStation.Utilities.Messages;
-    using System;
+﻿using SpaceStation.Models.Astronauts.Contracts;
+using SpaceStation.Models.Bags;
+using SpaceStation.Utilities.Messages;
+using System;
 
+namespace SpaceStation.Models.Astronauts
+{
     public abstract class Astronaut : IAstronaut
     {
         private string name;
@@ -40,16 +40,17 @@
                 {
                     throw new ArgumentException(ExceptionMessages.InvalidOxygen);
                 }
+                this.oxygen = value;
             }
         }
 
-        public bool CanBreath => this.Oxygen > 0;
+        public bool CanBreath => this.oxygen > 0;
 
         public IBag Bag => this.bag;
 
         public virtual void Breath()
         {
-            if (CanBreath)
+            if (this.Oxygen > 0)
             {
                 this.Oxygen -= 10;
             }

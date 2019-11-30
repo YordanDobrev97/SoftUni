@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using SpaceStation.Models.Astronauts.Contracts;
 using SpaceStation.Models.Planets;
+using System.Linq;
 
 namespace SpaceStation.Models.Mission
 {

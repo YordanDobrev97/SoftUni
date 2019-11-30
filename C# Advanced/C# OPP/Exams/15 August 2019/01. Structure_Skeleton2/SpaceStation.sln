@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceStation", "SpaceStation.csproj", "{C03957A5-4A7D-4A98-9345-4EB5C5CC76C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceStation.Tests", "..\SpaceStation.Tests\SpaceStation.Tests.csproj", "{C2A89BAF-184A-4E8A-85B5-55062CBAEED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C03957A5-4A7D-4A98-9345-4EB5C5CC76C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03957A5-4A7D-4A98-9345-4EB5C5CC76C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03957A5-4A7D-4A98-9345-4EB5C5CC76C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03957A5-4A7D-4A98-9345-4EB5C5CC76C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A89BAF-184A-4E8A-85B5-55062CBAEED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A89BAF-184A-4E8A-85B5-55062CBAEED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A89BAF-184A-4E8A-85B5-55062CBAEED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A89BAF-184A-4E8A-85B5-55062CBAEED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A00A850-B986-4322-B573-4D12172CC8A8}
+	EndGlobalSection
+EndGlobal
