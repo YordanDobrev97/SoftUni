@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ViceCity.Core.Contracts;
@@ -8,19 +7,24 @@ using ViceCity.Models.Guns.Contracts;
 using ViceCity.Models.Neghbourhoods;
 using ViceCity.Models.Players;
 using ViceCity.Models.Players.Contracts;
+using ViceCity.Repositories;
+using ViceCity.Repositories.Contracts;
 
 namespace ViceCity.Core
 {
     public class Controller : IController
     {
         private List<IPlayer> players;
-        private List<IGun> gunsCollection;
+        private IPlayer mainPlayer;
+        private IRepository<IGun> gunsCollection;
         private GangNeighbourhood neighbourhood;
 
         public Controller()
         {
-            this.gunsCollection = new List<IGun>();
+            this.mainPlayer = new MainPlayer();
+            this.gunsCollection = new GunRepository();
             this.players = new List<IPlayer>();
+            this.players.Add(mainPlayer);
             this.neighbourhood = new GangNeighbourhood();
         }
 
@@ -46,17 +50,19 @@ namespace ViceCity.Core
 
         public string AddGunToPlayer(string name)
         {
-            if (this.gunsCollection.Count == 0)
+            if (this.gunsCollection.Models.Count == 0)
             {
                 return "There are no guns in the queue!";
             }
+
             if (name == "Vercetti")
             {
-                var mainPlayer = this.players.Where(x => x.Name == name && x is MainPlayer).FirstOrDefault();
-                var gun = this.gunsCollection.FirstOrDefault();
+                var mainPlayer = this.players.Where(x => x is MainPlayer).FirstOrDefault();
+                var gun = this.gunsCollection.Models.FirstOrDefault();
                 if (mainPlayer != null && gun != null)
                 {
                     mainPlayer.GunRepository.Add(gun);
+                    this.gunsCollection.Remove(gun);
                     return $"Successfully added {gun.Name} to the Main Player: Tommy Vercetti";
                 }
             }
@@ -67,7 +73,7 @@ namespace ViceCity.Core
             }
 
             var player = this.players.FirstOrDefault(x => x.Name == name);
-            var currentGun = this.gunsCollection.FirstOrDefault(x => x.CanFire);
+            var currentGun = this.gunsCollection.Models.FirstOrDefault(x => x.CanFire);
             player.GunRepository.Add(currentGun);
 
             return $"Successfully added {currentGun.Name} to the Civil Player: {player.Name}";
@@ -82,10 +88,9 @@ namespace ViceCity.Core
 
         public string Fight()
         {
-            var mainPlayer = this.players.Where(x => x is MainPlayer).FirstOrDefault();
+            var civilPlayers = this.players.Where(x => x is CivilPlayer).ToList();
             var pointsMainPlayer = mainPlayer.LifePoints;
 
-            var civilPlayers = this.players.Where(x => x is CivilPlayer).ToList();
             neighbourhood.Action(mainPlayer, civilPlayers);
 
             if (mainPlayer.LifePoints == pointsMainPlayer && civilPlayers.Any(x => x.IsAlive))

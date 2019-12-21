@@ -32,7 +32,7 @@ namespace ViceCity.Models.Guns
 
         private void Reload()
         {
-            DefaultTotalBullets -= DefaultBulletsPerBarrel;
+            this.TotalBullets -= DefaultBulletsPerBarrel;
             this.BulletsPerBarrel = DefaultBulletsPerBarrel;
         }
     }

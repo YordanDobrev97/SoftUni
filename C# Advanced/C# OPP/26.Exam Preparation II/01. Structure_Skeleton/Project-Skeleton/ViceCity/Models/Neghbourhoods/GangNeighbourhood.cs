@@ -22,8 +22,9 @@ namespace ViceCity.Models.Neghbourhoods
                 var enemyPlayer = civilPlayers.FirstOrDefault();
                 while (true)
                 {
-                    if (!gunPlayer.CanFire)
+                    if (gunPlayer.TotalBullets == 0 && gunPlayer.BulletsPerBarrel == 0)
                     {
+                        mainPlayer.GunRepository.Remove(gunPlayer);
                         break;
                     }
 
@@ -39,15 +40,21 @@ namespace ViceCity.Models.Neghbourhoods
             }
 
             bool isDeadMainPlayer = false;
+            var curentCivilPlayers = civilPlayers.FirstOrDefault();
+
+            //TODO (Infinity Loop?)
+            //if (curentCivilPlayers.GunRepository.Models.Count == 0)
+            //{
+            //    return;
+            //}
+
             while (true)
             {
-                var civilPlayer = civilPlayers.FirstOrDefault();
-
-                var gunCivilPlayer = civilPlayer.GunRepository.Models.FirstOrDefault();
+                var gunCivilPlayer = curentCivilPlayers.GunRepository.Models.FirstOrDefault();
 
                 while (true)
                 {
-                    if (!gunCivilPlayer.CanFire)
+                    if (gunCivilPlayer == null || !gunCivilPlayer.CanFire)
                     {
                         break;
                     }
