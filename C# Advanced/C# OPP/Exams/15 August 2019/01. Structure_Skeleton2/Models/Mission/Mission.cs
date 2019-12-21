@@ -22,6 +22,10 @@ namespace SpaceStation.Models.Mission
                             .Add(currentItem);
                         planet.Items.Remove(currentItem);
                     }
+                    else
+                    {
+                        break;
+                    }
                 }
             }
         }

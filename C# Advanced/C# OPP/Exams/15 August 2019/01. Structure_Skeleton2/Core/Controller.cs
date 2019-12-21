@@ -18,27 +18,30 @@ namespace SpaceStation.Core
  
         public string AddAstronaut(string type, string astronautName)
         {
-            var getNamespace = "SpaceStation.Models.Astronauts";
-            var getType = Type.GetType($"{getNamespace}.{type}");
-            var instanceAstronaut = (IAstronaut)Activator.
-                CreateInstance(getType, astronautName);
-
-            if (instanceAstronaut == null)
+            IAstronaut astronaut;
+            switch (type)
             {
-                throw new InvalidOperationException(ExceptionMessages.InvalidAstronautType);
+                case "Biologist":
+                    astronaut = new Biologist(astronautName);
+                    break;
+                case "Geodesist":
+                    astronaut = new Geodesist(astronautName);
+                    break;
+                case "Meteorologist":
+                    astronaut = new Meteorologist(astronautName);
+                    break;
+                default:
+                    throw new InvalidOperationException(ExceptionMessages.InvalidAstronautType);
             }
 
-            astronautRepository.Add(instanceAstronaut);
+            astronautRepository.Add(astronaut);
             return $"Successfully added {type}: {astronautName}!";
         }
 
         public string AddPlanet(string planetName, params string[] items)
         {
-            var getNamespace = "SpaceStation.Models.Planets";
-            var getType = Type.GetType($"{getNamespace}.Planet");
-            var instancePlanet = (IPlanet)Activator.CreateInstance(getType, items);
-
-            planetRepository.Add(instancePlanet);
+            var planet = new Planet(planetName, items);
+            planetRepository.Add(planet);
 
             return $"Successfully added Planet: {planetName}!";
         }

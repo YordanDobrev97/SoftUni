@@ -1,12 +1,15 @@
 ﻿namespace SpaceStation.Models.Astronauts
 {
     using SpaceStation.Models.Astronauts.Contracts;
+    using SpaceStation.Repositories.Contracts;
     using System.Collections.Generic;
     using System.Linq;
 
     public class AstronautRepository
     {
         private ICollection<IAstronaut> astronauts;
+
+        public IReadOnlyCollection<IAstronaut> Models => this.astronauts.ToList().AsReadOnly();
 
         public AstronautRepository()
         {
@@ -27,7 +30,7 @@
 
         public IAstronaut FindByName(string name)
         {
-            var element = this.astronauts.FirstOrDefault(x => x.Name == name);
+            var element = this.astronauts.FirstOrDefault(a => a.Name == name);
             return element;
         }
     }
