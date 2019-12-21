@@ -25,7 +25,7 @@ namespace MXGP.Models.Motorcycles
         public string Model
         {
             get => this.model;
-            private set
+            protected set
             {
                 if (string.IsNullOrWhiteSpace(value) || value.Length < 4)
                 {
@@ -39,7 +39,7 @@ namespace MXGP.Models.Motorcycles
         public int HorsePower
         {
             get => this.horsePower;
-            set
+            protected set
             {
                 if (value < this.HorsePowerMinRange || value > this.HorsePowerMaxRange)
                 {
@@ -51,9 +51,9 @@ namespace MXGP.Models.Motorcycles
 
         public double CubicCentimeters { get; private set; }
 
-        public int HorsePowerMinRange { get; set; }
+        public int HorsePowerMinRange { get; protected set; }
 
-        public int HorsePowerMaxRange { get; set; }
+        public int HorsePowerMaxRange { get; protected set; }
 
         public double CalculateRacePoints(int laps)
         {
