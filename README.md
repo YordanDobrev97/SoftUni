@@ -1,5 +1,5 @@
 # SoftUni
-Courses in SoftUni
+**Successfully taken SoftUni courses**
 
 ![softuni-default-og](https://softuni.bg/Files/Images/SoftUni-Wallpaper-1440-900.png)
 
