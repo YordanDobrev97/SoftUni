@@ -1,6 +1,6 @@
 ﻿namespace SoftUni.Models
 {
-    public class StudentsTeachers
+    public class StudentTeacher
     {
         public int StudentId { get; set; }
         public int TeacherId { get; set; }

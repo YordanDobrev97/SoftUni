@@ -1,12 +1,12 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using SoftUni.Models;
 
 namespace SoftUni.Data
 {
     public class SoftUniContext : DbContext
     {
+        private const string ConnectionString = @"Server=YORDAN\SQLEXPRESS;Database=SoftUni.Models;Integrated Security=True;";
         public SoftUniContext()
         {
         }
@@ -16,16 +16,16 @@ namespace SoftUni.Data
         {
         }
 
-        public virtual DbSet<Addresses> Addresses { get; set; }
-        public virtual DbSet<Departments> Departments { get; set; }
+        public virtual DbSet<Address> Addresses { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
-        public virtual DbSet<EmployeesProject> EmployeesProjects { get; set; }
+        public virtual DbSet<EmployeeProject> EmployeesProjects { get; set; }
         public virtual DbSet<Exam> Exams { get; set; }
         public virtual DbSet<Project> Projects { get; set; }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<StudentExam> StudentsExams { get; set; }
         public virtual DbSet<StudentSubject> StudentsSubjects { get; set; }
-        public virtual DbSet<StudentsTeachers> StudentsTeachers { get; set; }
+        public virtual DbSet<StudentTeacher> StudentsTeachers { get; set; }
         public virtual DbSet<Subject> Subjects { get; set; }
         public virtual DbSet<Teacher> Teachers { get; set; }
         public virtual DbSet<Town> Towns { get; set; }
@@ -34,7 +34,7 @@ namespace SoftUni.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=YORDAN\\SQLEXPRESS;Database=SoftUni.Models;Integrated Security=True;");
+                optionsBuilder.UseSqlServer(ConnectionString);
             }
         }
 
@@ -42,7 +42,7 @@ namespace SoftUni.Data
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
 
-            modelBuilder.Entity<Addresses>(entity =>
+            modelBuilder.Entity<Address>(entity =>
             {
                 entity.HasKey(e => e.AddressId);
 
@@ -61,7 +61,7 @@ namespace SoftUni.Data
                     .HasConstraintName("FK_Addresses_Towns");
             });
 
-            modelBuilder.Entity<Departments>(entity =>
+            modelBuilder.Entity<Department>(entity =>
             {
                 entity.HasKey(e => e.DepartmentId);
 
@@ -133,7 +133,7 @@ namespace SoftUni.Data
                     .HasConstraintName("FK_Employees_Employees");
             });
 
-            modelBuilder.Entity<EmployeesProject>(entity =>
+            modelBuilder.Entity<EmployeeProject>(entity =>
             {
                 entity.HasKey(e => new { e.EmployeeId, e.ProjectId });
 
@@ -239,7 +239,7 @@ namespace SoftUni.Data
                     .HasConstraintName("FK__StudentsS__Subje__3D5E1FD2");
             });
 
-            modelBuilder.Entity<StudentsTeachers>(entity =>
+            modelBuilder.Entity<StudentTeacher>(entity =>
             {
                 entity.HasKey(e => new { e.StudentId, e.TeacherId })
                     .HasName("CPK_StudentTeacher");

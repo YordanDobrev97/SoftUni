@@ -6,7 +6,7 @@
     {
         public Teacher()
         {
-            StudentsTeachers = new HashSet<StudentsTeachers>();
+            StudentsTeachers = new HashSet<StudentTeacher>();
         }
 
         public int Id { get; set; }
@@ -17,6 +17,6 @@
         public int SubjectId { get; set; }
 
         public virtual Subject Subject { get; set; }
-        public virtual ICollection<StudentsTeachers> StudentsTeachers { get; set; }
+        public virtual ICollection<StudentTeacher> StudentsTeachers { get; set; }
     }
 }

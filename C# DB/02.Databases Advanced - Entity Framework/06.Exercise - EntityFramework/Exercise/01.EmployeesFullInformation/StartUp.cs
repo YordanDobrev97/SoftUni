@@ -6,13 +6,14 @@ using System.Text;
 
 namespace SoftUni
 {
-    public class StartUp
+    public static class StartUp
     {
         public static string GetEmployeesFullInformation(SoftUniContext db)
         {
             StringBuilder result = new StringBuilder();
             var empoyees = db.Employees
-                  .Select(e => new Employee()
+                  .OrderBy(x => x.EmployeeId)
+                  .Select(e => new
                   {
                       FirstName = e.FirstName,
                       LastName = e.LastName,
@@ -21,7 +22,7 @@ namespace SoftUni
                       Salary = e.Salary
                   });
 
-            foreach (var employee in empoyees.OrderBy(X => X.EmployeeId))
+            foreach (var employee in empoyees)
             {
                 result.AppendLine($"{employee.FirstName} {employee.LastName} {employee.MiddleName} {employee.JobTitle} {employee.Salary:f2}");
             }
@@ -33,21 +34,7 @@ namespace SoftUni
         {
             StringBuilder sb = new StringBuilder();
 
-            var employees = db.
-                Employees
-                    .Select(e => new
-                    {
-                        FirstName = e.FirstName,
-                        Salary = e.Salary
-                    })
-                    .Where(e => e.Salary > 50000)
-                    .OrderBy(e => e.FirstName)
-                    .ToList();
-
-            foreach (var employee in employees)
-            {
-                sb.AppendLine($"{employee.FirstName}-{employee.Salary:f2}");
-            }
+            
 
             return sb.ToString();
         }
@@ -55,8 +42,12 @@ namespace SoftUni
         public static void Main()
         {
             var context = new SoftUniContext();
-            var result = GetEmployeesWithSalaryOver50000(context);
-            Console.WriteLine(result);
+            var employees = context.Employees.FirstOrDefault(i => i.EmployeeId == 3);
+
+            Console.WriteLine($"");
+
+            //var result = GetEmployeesWithSalaryOver50000(context);
+            //Console.WriteLine(result);
         }
     }
 }

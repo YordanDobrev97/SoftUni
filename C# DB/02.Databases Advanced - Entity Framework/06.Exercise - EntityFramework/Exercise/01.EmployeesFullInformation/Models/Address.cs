@@ -3,9 +3,9 @@
     using System;
     using System.Collections.Generic;
 
-    public class Addresses
+    public class Address
     {
-        public Addresses()
+        public Address()
         {
             Employees = new HashSet<Employee>();
         }

@@ -1,7 +1,13 @@
 ﻿namespace SoftUni.Models
 {
-    public class EmployeesProject
+    public class EmployeeProject
     {
+        public EmployeeProject()
+        {
+            this.Employee = new Employee();
+            this.Project = new Project();
+        }
+
         public int EmployeeId { get; set; }
         public int ProjectId { get; set; }
 

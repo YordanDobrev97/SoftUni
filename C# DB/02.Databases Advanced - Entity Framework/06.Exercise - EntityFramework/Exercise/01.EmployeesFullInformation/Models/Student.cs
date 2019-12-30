@@ -9,7 +9,7 @@
         {
             StudentsExams = new HashSet<StudentExam>();
             StudentsSubjects = new HashSet<StudentSubject>();
-            StudentsTeachers = new HashSet<StudentsTeachers>();
+            StudentsTeachers = new HashSet<StudentTeacher>();
         }
 
         public int Id { get; set; }
@@ -22,6 +22,6 @@
 
         public virtual ICollection<StudentExam> StudentsExams { get; set; }
         public virtual ICollection<StudentSubject> StudentsSubjects { get; set; }
-        public virtual ICollection<StudentsTeachers> StudentsTeachers { get; set; }
+        public virtual ICollection<StudentTeacher> StudentsTeachers { get; set; }
     }
 }

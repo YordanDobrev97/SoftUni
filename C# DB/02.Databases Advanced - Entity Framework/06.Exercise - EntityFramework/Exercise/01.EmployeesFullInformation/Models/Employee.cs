@@ -7,9 +7,9 @@
     {
         public Employee()
         {
-            Departments = new HashSet<Departments>();
-            EmployeesProjects = new HashSet<EmployeesProject>();
-            InverseManager = new HashSet<Employee>();
+            Departments = new List<Department>();
+            EmployeesProjects = new List<EmployeeProject>();
+            InverseManager = new List<Employee>();
         }
 
         public int EmployeeId { get; set; }
@@ -32,15 +32,15 @@
 
         public int? AddressId { get; set; }
 
-        public virtual Addresses Address { get; set; }
+        public virtual Address Address { get; set; }
 
-        public virtual Departments Department { get; set; }
+        public virtual Department Department { get; set; }
 
         public virtual Employee Manager { get; set; }
 
-        public virtual ICollection<Departments> Departments { get; set; }
+        public virtual ICollection<Department> Departments { get; set; }
 
-        public virtual ICollection<EmployeesProject> EmployeesProjects { get; set; }
+        public virtual ICollection<EmployeeProject> EmployeesProjects { get; set; }
 
         public virtual ICollection<Employee> InverseManager { get; set; }
     }
