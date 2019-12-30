@@ -34,8 +34,8 @@ namespace _02.Articles
 
         public override string ToString()
         {
-            string output = $"{this.Title} - {this.Content}: {this.Author}";
-            return output;
+            string output = $"{this.Title} -{this.Content}:{this.Author}";
+            return output.Trim();
         }
     }
 
@@ -78,6 +78,8 @@ namespace _02.Articles
 
         public static void Main()
         {
+            SimplyArticle();
+            /*
             int numberOfArticles = int.Parse(Console.ReadLine());
 
             List<Article> articles = new List<Article>();
@@ -113,6 +115,7 @@ namespace _02.Articles
             {
                 Console.WriteLine(article.ToString());
             }
+            */
         }
     }
 }

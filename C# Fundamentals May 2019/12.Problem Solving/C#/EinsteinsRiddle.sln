@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EinsteinsRiddle", "EinsteinsRiddle\EinsteinsRiddle.csproj", "{381F93D7-6474-4BBE-8A52-0D9A3B29E5F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{381F93D7-6474-4BBE-8A52-0D9A3B29E5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381F93D7-6474-4BBE-8A52-0D9A3B29E5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381F93D7-6474-4BBE-8A52-0D9A3B29E5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381F93D7-6474-4BBE-8A52-0D9A3B29E5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA40CBD5-563E-4368-855A-C1F2732B89C7}
+	EndGlobalSection
+EndGlobal

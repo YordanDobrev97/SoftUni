@@ -9,61 +9,60 @@ namespace _02.Problem2
     {
         static void Main()
         {
-            string[] emoji = Console.ReadLine()
+            string[] input = Console.ReadLine()
                 .Split(" ")
                 .Where(x => x.Contains(":"))
                 .ToArray();
 
-            List<string> validEmojis = new List<string>();
+            var pattern = new Regex(@":([,\.!?]*[a-z]{4,}[,\.!?]*):");
 
-            foreach (var item in emoji)
+            List<string> validEmoji = new List<string>();
+            foreach (var item in input)
             {
-                if (HasValidEmoji(item))
+                var isValid = pattern.Match(item);
+
+                if (isValid.Success)
                 {
-                    validEmojis.Add(item);
+                    if (isValid.Groups[0].Length == item.Length)
+                    {
+                        validEmoji.Add(item);
+                    }
                 }
             }
-        }
 
-        private static bool HasValidEmoji(string item)
-        {
-            bool startWithColon = IsStartWithColon(item);
-            bool anyFourCharacters = HasFourAnyCharacters(item);
-            bool endWithPossiblePunctuations = HasPossiblePunctuation(item);
+            int emojiCode = Console.ReadLine()
+                .Split(":")
+                .Select(int.Parse)
+                .ToArray()
+                .Sum();
 
-            if (startWithColon && anyFourCharacters && endWithPossiblePunctuations)
+            int totalPower = 0;
+
+            validEmoji.Reverse();
+
+            foreach (var emoji in validEmoji)
             {
-                return true;
+                int sum = 0;
+                for (int i = 1; i < emoji.Length - 1; i++)
+                {
+                    sum += emoji[i];
+                }
+
+                totalPower += sum;
+                if (sum == emojiCode)
+                {
+                    totalPower *= 2;
+                }
+
             }
 
-            return false;
-        }
-
-        private static bool HasPossiblePunctuation(string item)
-        {
-            throw new NotImplementedException();
-        }
-
-        private static bool HasFourAnyCharacters(string item)
-        {
-            //:sunny:
-            if (!IsStartWithColon(item) && item[item.Length - 1] != ':')
+            if (validEmoji.Count != 0)
             {
-                return false;
+                validEmoji.Reverse();
+                Console.WriteLine($"Emojis found: {string.Join(", ", validEmoji)}");
             }
 
-            item = item.Remove(0);
-
-            if (item[item.Length - 1] != ':')
-            {
-                item.Remove(item.Length - 1);
-            }
-
-        }
-
-        private static bool IsStartWithColon(string item)
-        {
-            return item.StartsWith(":");
+            Console.WriteLine($"Total Emoji Power: {totalPower}");
         }
     }
 }
