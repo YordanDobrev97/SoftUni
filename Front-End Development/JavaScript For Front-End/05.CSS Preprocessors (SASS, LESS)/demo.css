@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  margin: 170px;
+}
+
+.first {
+  background-color: #c20061;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  margin: 8px;
+}
+
+.second {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  margin: 8px;
+}
+
+.third {
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  margin: 8px;
+}
+
+.fourth {
+  background-color: #1bbe80;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  margin: 8px;
+}
+
+.fifth {
+  background-color: grey;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  margin: 8px;
+}
+/*# sourceMappingURL=demo.css.map */
