@@ -1,6 +1,6 @@
 function needMoneyBuyFruit(type, weight, pricePerKg) {
-      let totalMoney = weight * pricePerKg / 1000;
-      let moneyPerKg = totalMoney / pricePerKg;
+      let priceKg = weight * pricePerKg / 1000;
+      let moneyPerKg = priceKg / pricePerKg;
 
       console.log(`I need $${totalMoney.toFixed(2)} to buy ${moneyPerKg.toFixed(2)} kilograms ${type}.`);
 }
