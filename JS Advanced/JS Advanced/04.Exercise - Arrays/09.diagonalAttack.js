@@ -1,5 +1,5 @@
 function diagonalAttackMatrix(input) {
-    let  matrix = parseMatrixToNumber(input);
+    let matrix = parseMatrixToNumber(input);
 
     let firstSum = firstDiagonalSum(matrix);
     let secondSum = secondDiagonalSum(matrix);
