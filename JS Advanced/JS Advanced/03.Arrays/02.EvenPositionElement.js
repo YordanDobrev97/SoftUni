@@ -5,7 +5,6 @@ function getItemEvenIndex(array) {
             items.push(array[i]);
         }
     }
-
     return items.join(' ').trim();
 }
 
