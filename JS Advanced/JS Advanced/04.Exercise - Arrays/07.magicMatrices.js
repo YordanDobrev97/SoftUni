@@ -21,6 +21,8 @@ function magicMatrices(input) {
 
   let isMagic = true;
 
+  let sum = input[0].reduce((a,b) => a + b);
+
   for (let row = 0; row < input.length; row++) {
     const elementsCol = input[row];
     const elementsRow = arrayRow(input.length, input, row);
@@ -28,7 +30,7 @@ function magicMatrices(input) {
     let colSum = sumArray(input[row].length, elementsCol);
     let rowSum = sumArray(input.length, elementsRow);
 
-    if (colSum !== rowSum) {
+    if (colSum !== rowSum || colSum !== sum || rowSum !== sum) {
       isMagic = false;
       break;
     }
@@ -38,7 +40,7 @@ function magicMatrices(input) {
 }
 
 magicMatrices([
-  [11, 32, 45],
-  [21, 0, 1],
-  [21, 1, 1]
+  [1, 1, 0],
+  [0, 1, 1],
+  [1, 1, 0]
 ]);
