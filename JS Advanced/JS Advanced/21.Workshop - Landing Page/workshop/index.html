@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            body {
+                background: #000;
+            }
+
+            .stars {
+                z-index: 0;
+                background-image: url("/assets/stars-1.png");
+                background-repeat: repeat;
+                background-position: 0 0;
+                background-size: 40%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+
+            .stars+.stars {
+                background-image: url("/assets/stars-2.png");
+                background-size: 40%;
+            }
+
+            .stars+.stars+.stars {
+                background-image: url("/assets/stars-3.png");
+                background-size: 100%;
+            }
+
+            .ship {
+                display: block;
+                position: absolute;
+                height: 210px;
+                width: 210px;
+                background-repeat: no-repeat;
+                background-size: 420px 210px;
+
+                transition-delay: 0s;
+                transition-duration: 100ms;
+                transition-property: transform;
+                transition-timing-function: linear;
+
+                background-image: url(/assets/ship-sprite.gif);
+
+                top: 0;
+                left: 0;
+                background-position: 0 0;
+                transform: rotate(90deg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="far" class="stars"></div>
+        <div id="mid" class="stars"></div>
+        <div id="near" class="stars"></div>
+
+        <div class="ship"></div>
+
+        <script src="app.js" type="module"></script>
+    </body>
+
+</html>
