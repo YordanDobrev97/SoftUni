@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\07.magicMatrices.js"
+            "program": "${workspaceFolder}\\09.diagonalAttack.js"
         }
     ]
 }
