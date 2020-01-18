@@ -8,11 +8,26 @@ function ticTacToe(input) {
   let index = 0;
   const firstPlayer = "F";
   const secondPlayer = "S";
+  const maxCountMoved = 9;
 
   let winPlayer = undefined;
   let currentPlayer = firstPlayer;
-  
+  let countMoved = 0;
+
+  let printBoard = () => {
+    for (let row = 0; row < board.length; row++) {
+      const elements = board[row];
+      console.log(elements.join("	"));
+    }
+  };
+
   while (true) {
+    //Nobody wins
+    if (countMoved === maxCountMoved) {
+      console.log("The game ended! Nobody wins :(");
+      printBoard();
+      break;
+    }
     const playerCoordinates = input[index].split(" ");
     const row = Number(playerCoordinates[0]);
     const col = Number(playerCoordinates[1]);
@@ -29,12 +44,6 @@ function ticTacToe(input) {
 
     if (hasWin()) {
       console.log(`Player ${winPlayer} wins!`);
-      let printBoard = () => {
-        for (let row = 0; row < board.length; row++) {
-          const elements = board[row];
-          console.log(elements.join("	"));
-        }
-      };
       printBoard();
       break;
     }
@@ -45,15 +54,16 @@ function ticTacToe(input) {
       currentPlayer = firstPlayer;
     }
     index++;
+    countMoved++;
   }
 
   function hasWin() {
     if (isWinPlayer("X")) {
-      return true;
+       return true;
     }
 
     if (isWinPlayer("O")) {
-      return true;
+       return true;
     }
     return false;
   }
@@ -92,7 +102,7 @@ function ticTacToe(input) {
         X
         X
     */
-    count = 0;
+    count = 0; //reset
     for (let row = 0; row < board.length; row++) {
       const element = board[row][0];
 
@@ -106,7 +116,7 @@ function ticTacToe(input) {
       return true;
     }
 
-    //left diagonal 
+    //first diagonal
     /*
         X  
            X       
@@ -127,7 +137,7 @@ function ticTacToe(input) {
       return true;
     }
 
-    //right diagonal
+    //second diagonal
     /*
              X
           X
@@ -136,26 +146,29 @@ function ticTacToe(input) {
 
     let row = 0;
     for (let i = board.length - 1; i >= 0; i--) {
-        const element = board[row][i];
-        if (element === player) {
-            winPlayer = player;
-            count++;
-        }
-        row++;
+      const element = board[row][i];
+      if (element === player) {
+        winPlayer = player;
+        count++;
+      }
+      row++;
     }
+
+    // if (markHasWinner(count, maxCountForWin, player)) {
+    //   return true;
+    // }
 
     return false;
   }
 }
-ticTacToe([
-  "0 0",
-  "0 0",
-  "1 1",
-  "0 1",
-  "1 2",
-  "0 2",
-  "2 2",
-  "1 2",
-  "2 2",
-  "2 1"
-]);
+// ticTacToe(["0 1",
+// "0 0",
+// "0 2", 
+// "2 0",
+// "1 0",
+// "1 1",
+// "1 2",
+// "2 2",
+// "2 1",
+// "0 0"]
+// );
