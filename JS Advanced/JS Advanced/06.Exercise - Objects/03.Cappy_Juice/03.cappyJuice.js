@@ -1,43 +1,40 @@
 function solve(input) {
   const map = new Map();
-  const remaindMap = new Map();
+  const quantityProducts = new Map();
 
   for (let item of input) {
-    let [juiceName, quantity] = item.split(" => ");
-    quantity = Number(quantity);
+    const parts = item.split(" => ");
+    const juiceName = parts[0];
+    const quantity = Number(parts[1]);
 
-    if (quantity >= 1000) {
-      if (!map.has(juiceName)) {
-        map.set(juiceName, { quantity });
-      } else {
-        map.get(juiceName).quantity += quantity;
-      }
+    if (!quantityProducts.has(juiceName)) {
+      quantityProducts.set(juiceName, {quantity});
     } else {
-      if (!remaindMap.has(juiceName)) {
-        remaindMap.set(juiceName, { quantity });
-      } else {
-        remaindMap.get(juiceName).quantity += quantity;
-      }
+      quantityProducts.get(juiceName).quantity += quantity;
+    }
+
+    if (isCanMakeJuice(juiceName)) {
+       const bottles = Math.floor(quantityProducts.get(juiceName).quantity / 1000);
+       const remainder =  Math.floor(quantityProducts.get(juiceName).quantity % 1000);
+       quantityProducts.get(juiceName).quantity = remainder;
+       
+       if (!map.has(juiceName)) {
+         map.set(juiceName, {bottles});
+       } else {
+         map.get(juiceName).bottles += bottles;
+       }
     }
   }
 
-  for (let [key, value] of map.entries()) {
-    let bottles = Math.floor(value.quantity / 1000);
+  function isCanMakeJuice(juiceName) {
+    return quantityProducts.get(juiceName).quantity >= 1000;
+  }
 
-    for (let [juice, quantity] of remaindMap.entries()) {
-        if (juice === key) {
-           let rem = value.quantity % 1000;
-           let total = rem + quantity.quantity;
-           let additionally = Math.floor((rem + total) / 1000);
-           if (total >= 1000) {
-              bottles += additionally;
-           }
-        }
-    }
-
-    if (bottles > 0) {
-      console.log(`${key} => ${bottles}`);
-    }
+  const elements = map.entries();
+  for(let item of elements) {
+    let key = item[0];
+    let bottles = item[1].bottles;
+    console.log(`${key} => ${bottles}`);
   }
 }
 
@@ -47,4 +44,5 @@ solve(['Kiwi => 234',
 'Kiwi => 4567',
 'Pear => 5678',
 'Watermelon => 6789']
+
 );
