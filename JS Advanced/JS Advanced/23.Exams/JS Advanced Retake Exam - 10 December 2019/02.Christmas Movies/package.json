@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1"
+  }
+}
