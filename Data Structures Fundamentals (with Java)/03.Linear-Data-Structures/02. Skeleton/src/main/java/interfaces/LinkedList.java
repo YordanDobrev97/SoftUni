@@ -6,7 +6,7 @@ public interface LinkedList<E> extends Iterable<E> {
     E removeFirst();
     E removeLast();
     E getFirst();
-    E getLast();
+    E getEnd();
     int size();
     boolean isEmpty();
 }

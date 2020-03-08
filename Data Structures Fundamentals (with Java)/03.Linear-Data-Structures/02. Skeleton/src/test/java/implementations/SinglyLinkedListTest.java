@@ -31,7 +31,7 @@ public class SinglyLinkedListTest {
     public void testAddSingleElementInBack() {
         SinglyLinkedList<Integer> integers = new SinglyLinkedList<>();
         integers.addLast(73);
-        assertEquals(Integer.valueOf(73), integers.getLast());
+        assertEquals(Integer.valueOf(73), integers.getEnd());
     }
 
     @Test
@@ -43,7 +43,7 @@ public class SinglyLinkedListTest {
     @Test
     public void testAddLastShouldAddAtTheEnd() {
         this.list.addLast("Slayer");
-        assertEquals("Slayer", list.getLast());
+        assertEquals("Slayer", list.getEnd());
     }
 
     @Test
@@ -55,9 +55,9 @@ public class SinglyLinkedListTest {
 
     @Test
     public void testRemoveLastShouldRemoveTheLAstElement() {
-        assertEquals("99", list.getLast());
+        assertEquals("99", list.getEnd());
         assertEquals("99", list.removeLast());
-        assertEquals("98", list.getLast());
+        assertEquals("98", list.getEnd());
     }
 
     @Test
@@ -69,8 +69,8 @@ public class SinglyLinkedListTest {
 
     @Test
     public void testGetLastShouldReturnButNotRemove() {
-        assertEquals("99", list.getLast());
-        assertEquals("99", list.getLast());
+        assertEquals("99", list.getEnd());
+        assertEquals("99", list.getEnd());
         assertEquals(100, list.size());
     }
 
