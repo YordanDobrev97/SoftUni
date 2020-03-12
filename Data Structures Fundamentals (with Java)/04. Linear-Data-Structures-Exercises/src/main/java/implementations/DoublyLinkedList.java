@@ -40,6 +40,7 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
         Node<E> newNode = new Node<>(element);
         if (this.head == null) {
             this.head = newNode;
+            this.tail = newNode;
         } else {
             newNode.prev = this.tail;
             this.tail.next = newNode;
