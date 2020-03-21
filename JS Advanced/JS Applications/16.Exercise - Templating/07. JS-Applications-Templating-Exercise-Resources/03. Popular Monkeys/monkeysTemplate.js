@@ -13,13 +13,13 @@ async function monkeyTemplate() {
     monkeysDb.forEach(monkey => {
         const template = Handlebars.compile(templateSource);
         const result = template(monkey);
-    
-        document.querySelector('section').innerHTML += result;
+        console.log(result);
+        document.querySelector('.monkeys').innerHTML += result;
     });
 
     document.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', showInfo);
-    })
+    });
 
     function showInfo() {
         const parent = this.parentNode;
