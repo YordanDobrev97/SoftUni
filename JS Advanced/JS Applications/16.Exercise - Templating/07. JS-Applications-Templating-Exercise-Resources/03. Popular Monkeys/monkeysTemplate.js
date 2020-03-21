@@ -13,7 +13,7 @@ async function monkeyTemplate() {
     monkeysDb.forEach(monkey => {
         const template = Handlebars.compile(templateSource);
         const result = template(monkey);
-        console.log(result);
+
         document.querySelector('.monkeys').innerHTML += result;
     });
 
