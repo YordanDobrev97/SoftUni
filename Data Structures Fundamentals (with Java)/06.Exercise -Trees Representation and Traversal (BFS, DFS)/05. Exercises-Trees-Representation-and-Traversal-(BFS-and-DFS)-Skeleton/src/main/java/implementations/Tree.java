@@ -1,5 +1,5 @@
 package implementations;
-
+import java.util.ArrayDeque;
 import interfaces.AbstractTree;
 import java.util.List;
 import java.util.ArrayList;
@@ -13,6 +13,10 @@ public class Tree<E> implements AbstractTree<E> {
         this.value = value;
         this.children = new ArrayList<>();
         java.util.Collections.addAll(this.children, children);
+    }
+
+    public E getValue(){
+        return this.value;
     }
 
     @Override
@@ -104,12 +108,11 @@ public class Tree<E> implements AbstractTree<E> {
 
     @Override
     public Tree<E> getDeepestLeftmostNode() {
-
         Tree<E> deepestNode = null;
 
         List<Tree<E>> currentChildren = this.children;
         boolean isFound = false;
-        while (true) {
+        do {
             for (Tree<E> child : currentChildren) {
                 if (child.children.size() == 0) {
                     deepestNode = child;
@@ -120,23 +123,73 @@ public class Tree<E> implements AbstractTree<E> {
                 break;
             }
 
-            if (isFound) {
-                break;
-            }
-        }
+        } while (!isFound);
         return deepestNode;
     }
 
-
-
     @Override
     public List<E> getLongestPath() {
-        return null;
+        Tree<E> leftNode = this.getDeepestLeftmostNode();
+        ArrayDeque<E> longestPath = new ArrayDeque<>();
+
+        while (true) {
+            E currentNode = leftNode.value;
+            longestPath.push(currentNode);
+            Tree<E> upNode = leftNode.parent;
+            leftNode = upNode;
+
+            if (upNode.parent == null) {
+                longestPath.push(upNode.value); // root element
+                break;
+            }
+        }
+
+        return new ArrayList<>(longestPath);
+    }
+
+    private void longestPathNodes(Tree<E> node, List<Tree<E>> nodes) {
+        nodes.add(node);
+
+        for (Tree<E> tree : node.children) {
+            if (nodes.size() < tree.getChildren().size()) {
+                longestPathNodes(tree, nodes);
+            }
+        }
     }
 
     @Override
     public List<List<E>> pathsWithGivenSum(int sum) {
-        return null;
+        List<E> sums = new ArrayList<>();
+        List<List<E>> resultList = new ArrayList<>();
+        sums.add(this.value);
+        getSums(this.children, sums, sum, resultList);
+
+        return resultList;
+    }
+
+    private void getSums(List<Tree<E>> children, List<E> sums, int sum, List<List<E>> resultList) {
+        for (Tree<E> child : children) {
+            sums.add(child.value);
+
+            int currentSum = SumListGeneric.getSum((java.util.List<Integer>) sums);
+            if (currentSum == sum) {
+                ArrayList<E> cloneSum = new ArrayList<E>(sums);
+                resultList.add(cloneSum);
+                removeAllWithoutFirst(sums);
+                return;
+            }
+
+            if (currentSum > sum) {
+                sums.remove(child.value);
+            }
+            getSums(child.children, sums, sum, resultList);
+        }
+    }
+
+    private void removeAllWithoutFirst(List<E> sums) {
+        while (sums.size() > 1) {
+            sums.remove(1);
+        }
     }
 
     @Override

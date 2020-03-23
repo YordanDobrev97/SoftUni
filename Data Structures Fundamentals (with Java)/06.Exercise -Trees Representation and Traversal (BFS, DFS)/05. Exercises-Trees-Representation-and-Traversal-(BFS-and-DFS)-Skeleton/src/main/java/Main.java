@@ -16,7 +16,7 @@ public class Main {
 
         TreeFactory factory = new TreeFactory();
         Tree<Integer> result = factory.createTreeFromStrings(input);
-        Tree<Integer> tree = result.getDeepestLeftmostNode();
+        List<Integer> tree = result.getLongestPath();
         System.out.println(tree);
     }
 }
