@@ -1,0 +1,17 @@
+{
+  "name": "team-manager-skeleton",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "handlebars": "^4.7.3",
+    "jQuery": "^1.7.4",
+    "sammy": "^0.7.6"
+  }
+}
