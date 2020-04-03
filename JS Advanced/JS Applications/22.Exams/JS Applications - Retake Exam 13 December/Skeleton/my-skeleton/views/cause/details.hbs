@@ -1,0 +1,30 @@
+
+{{> header}}
+<!-- Details View (Become a donor) -->
+<div class="container home some">
+    <img class="det-img" src="{{imageURL}}" />
+    <div class="desc">
+      <h2 class="display-5">{{title}}</h2>
+      <p class="infoType">Description:</p>
+      <p class="idea-description">{{description}}</p>
+      <p class="infoType">Likes: <large>{{likes}}</large>
+      </p>
+      <p class="infoType">Comments:</p>
+      <ul>
+        {{#each comments}}
+           <li class="comment">{{comment}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="text-center">
+      <a class="btn detb" href="#/del/{{id}}">Delete</a>
+    </div>
+    <form class="text-center" method="post" action="#/create">
+      <textarea class="textarea-det" name="newComment" id=""></textarea>
+      <button type="submit" class="btn detb" >Comment</button>
+      <a class="btn detb" href="#/like">Like</a>
+    </form>
+  </div>
+<!-- ./Details View (Become a donor) -->
+
+{{> footer}}
