@@ -1,0 +1,73 @@
+{{> header}}
+<!-- Home page -->
+<div class="content">
+  <section class="js">
+    <h2>JavaScript</h2>
+    <div class="articles">
+      {{#if hasArticlesForJs}}
+          {{#each articlesJavaScript}}
+          <article>
+            <h3>{{title}}</h3>
+            <p>{{content}}</p>
+            <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+          </article>
+          {{/each}}
+      {{else}}
+      <h3 class="no-articles">No articles yet</h3>
+      {{/if}}
+    </div>
+  </section>
+
+  <section class="CSharp">
+    <h2>C#</h2>
+    <div class="articles">
+      {{#if hasArticlesCSharp}}
+          {{#each articlesCSharp}}
+          <article>
+            <h3>{{title}}</h3>
+            <p>{{content}}</p>
+            <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+          </article>
+          {{/each}}
+      {{else}}
+      <h3 class="no-articles">No articles yet</h3>
+      {{/if}}
+    </div>
+  </section>
+
+  <section class="Java">
+    <h2>Java</h2>
+    <div class="articles">
+      {{#if hasArticlesForJava}}
+        {{#each articlesJava}}
+            <article>
+              <h3>{{title}}</h3>
+              <p>{{content}}</p>
+              <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+        {{/each}}
+      {{else}}
+      <h3 class="no-articles">No articles yet</h3>
+      {{/if}}
+    </div>
+  </section>
+
+  <section class="Pyton">
+    <h2>Pyton</h2>
+    <div class="articles">
+       {{#if hasArticlesForPython}}
+          {{#each articlesPython}}
+              <article>
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+              </article>
+          {{/each}}
+      {{else}}
+        <h3 class="no-articles">No articles yet</h3>
+      {{/if}}
+    </div>
+  </section>
+</div>
+<!-- ./Home page -->
+{{> footer}}
