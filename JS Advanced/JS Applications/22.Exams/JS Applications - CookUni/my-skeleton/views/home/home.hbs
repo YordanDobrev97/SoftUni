@@ -1,0 +1,65 @@
+{{> header}}
+
+<main role="main" class="inner cover mt-5">
+    <h1 class="cover-heading">Coooooking University</h1>
+    <p class="lead">They say that food passes through the stomach, we say that food passes through CookUni...
+    </p>
+</main>
+
+{{#if hasRecipes}}
+<div id="sharedRecipes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{foodImageURL}}" />
+                        <h3>{{meal}}</h3>
+                        <p>{{category}}</p>
+                    </div>
+
+                    <div class="team-back">
+                        <div class="back-side-info">
+                            <h4>Ingredients</h4>
+                            <ul>
+                                {{#each ingredients}}
+                                    <li>{{ingredient}}</li>
+                                {{/each}}
+                            </ul>
+                            <a href="#">View the recepie</a>
+                        </div>
+
+                        <img class="foodImage"
+                            src="https://t3.ftcdn.net/jpg/00/25/90/48/240_F_25904887_fhZJ692ukng3vQxzHldvuN981OiYVlJ1.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <h1 class="text-center">Our Recipes</h1>
+
+    <div id='foodNotFound'>
+        <img src="https://t4.ftcdn.net/jpg/00/62/17/31/240_F_62173114_ozantkVtkPgzL0fxssAkTqKX1FHPr0UW.jpg" />
+        <h3>Food not found...</h3>
+    </div>
+    {{/if}}
+    <!-- Home page -->
+    {{!-- <div style="margin-top:3%; padding-top: 3%;" class="container">
+    <div class="row align-items-center my-5">
+        <div class="col-lg-12">
+            <img style="margin: 0 auto; display:block;" class="img-fluid rounded mb-4 mb-lg-0" src="https://www.firstmid.com/wp-content/uploads/OpenforBusiness_SBALoan-900x400.png" alt="">
+        </div>
+        <div style="text-align:center;margin-top:5%;" class="col-lg-12">
+            <h1 class="font-weight-light">Does your business need support?</h1>
+
+            {{#if isLogin}}
+                {{!-- <a class="btn btn-primary" href="#/create">Create your cause and seek for donors</a>
+             {{else}}
+                {{!-- <a class="btn btn-primary" href="#/register">Register</a> --}}
+    {{!--            
+        </div>
+    </div>
+</div>  --}}
+    <!-- ./Home page -->
+    {{> footer}}
