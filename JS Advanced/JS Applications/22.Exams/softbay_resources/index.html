@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SoftBay</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+
+    <!--Notifications (BONUS - Not required)-->
+    <section id="notifications">
+        <div class="p-3 mb-2 bg-success w-50 text-white text-center" id="successNotification">Success</div>
+        <div class="p-3 mb-2 bg-danger w-50 text-white text-center" id="errorNotification">Error</div>
+        <div class="p-3 mb-2 bg-info w-50 text-white text-center" id="loadingNotification">Loading...</div>
+    </section>
+    <!-- ./Notifications (BONUS - Not required)-->
+
+    <!-- header -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="">SoftBay</a>
+            <a class="navbar-item" href="">Dashboard</a>
+            <a class="navbar-item" href="">Create Offer</a>
+            <!--BONUS (NOT REQUIRED)--><a class="navbar-item" href="">Profile</a><!--BONUS (NOT REQUIRED)-->
+            <a class="navbar-item" href="">Logout</a>
+            <a class="btn btn-warning" href="">Login</a>
+        </div>
+    </nav>
+    <!-- ./header -->
+
+    <!-- Home-Page -->
+    <div style="margin-top:5%; margin-bottom: 5%;" class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-caption">
+                        <h1 style="padding: 9rem" class="page-title">Your Online Shop Center</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Home-Page-->
+
+    <!-- page-register-form -->
+    <div class="container" style="margin-top:5%; margin-bottom:5%">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Registration</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="" action="">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="username" class="form-control" placeholder="username">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="rePassword" class="form-control" placeholder="re-password">
+                        </div>
+
+                        <input type="submit" value="Register" class="btn float-right login_btn">
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Already have an account?<a class="text-warning" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-register-form -->
+
+    <!-- page-login-form -->
+    <div class="container" style="margin-top: 5%; margin-bottom: 5%;">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Login</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="" action="">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="username" class="form-control" placeholder="username">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="password" class="form-control" placeholder="password">
+                        </div>
+
+                        <input type="submit" value="Login" class="btn float-right login_btn">
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account?<a class="text-warning" href="">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-login-form -->
+
+    <!-- page-create-offer-form -->
+    <div class="container" style="margin-top:5%; margin-bottom:5%">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card" style="height: auto">
+                <div class="card-header">
+                    <h3>Create offer</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form action="#" method="">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="product" name="product">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <textarea style="height: auto; width: 85%; resize: none;" placeholder="description"
+                                name="description"></textarea>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="price" name="price">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="picture url" name="pictureUrl">
+                        </div>
+
+                        <input type="submit" value="Create" class="btn float-right login_btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-create-offer-form -->
+
+    <!-- page-Edit-offer-form -->
+    <div class="container" style="margin-top:2%; margin-bottom:2%">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card" style="height: auto">
+                <div class="card-header">
+                    <h3>Edit offer</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form style="width: 100%;" action="" method="">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="product" value="" name="product">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <textarea style="height: auto; width: 85%; resize: none;" placeholder="description"
+                                name="description"></textarea>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="price" value="" name="price">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="picture url" value=""
+                                name="pictureUrl">
+                        </div>
+
+                        <input type="submit" value="Edit" class="btn float-right login_btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-Edit-offer-form -->
+
+    <!-- page-Delete-offer-form -->
+    <div class="container" style="margin-top:5%; margin-bottom:5%">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card" style="height: auto">
+                <div class="card-header">
+                    <h3>Delete offer</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form action="" method="">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input disabled type="text" class="form-control" placeholder="product" value=""
+                                name="product">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <textarea disabled style="height: auto; width: 85%; resize: none;" placeholder="description"
+                                name="description"></textarea>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input disabled type="text" class="form-control" placeholder="price" value="" name="price">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input disabled type="text" class="form-control" placeholder="picture url" value=""
+                                name="pictureUrl">
+                        </div>
+
+                        <input type="submit" value="Delete" class="btn float-right login_btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page-Delete-offer-form -->
+
+    <!-- Dashboard -->
+    <table style="margin: 0 auto; margin-top:5%; margin-bottom: 5%; width: 95%;" class="table table-hover">
+        <thead>
+            <tr class="bg-warning">
+                <th>
+                    #
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Details
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="">0</td>
+                <td class="">Product Name</td>
+                <td class="description">Product Description</td>
+                <td class="">Product Price</td>
+                <td>
+                    <a href='' class="btn-primary btn">Order details</a>
+                </td>
+                <td>
+                    <a href='' class="btn-danger btn">Delete</a>
+                    <a href='' class="btn-info btn">Edit</a>
+                    <!--BONUS (Not-Required)--><a href="" class="btn-warning btn">Buy</a><!--BONUS (Not-Required)-->
+                </td>
+            </tr>
+            <tr>
+                <td class="">1</td>
+                <td class="">Product Name</td>
+                <td class="description">Product Description</td>
+                <td class="">Product Price</td>
+                <td>
+                    <a href='' class="btn-primary btn">Order details</a>
+                </td>
+                <td>
+                    <a href='' class="btn-danger btn">Delete</a>
+                    <a href='' class="btn-info btn">Edit</a>
+                    <a href="" class="btn-warning btn">Buy</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="">2</td>
+                <td class="">Product Name</td>
+                <td class="description">Product Description</td>
+                <td class="">Product Price</td>
+                <td>
+                    <a href='' class="btn-primary btn">Order details</a>
+                </td>
+                <td>
+                    <a href='' class="btn-danger btn">Delete</a>
+                    <a href='' class="btn-info btn">Edit</a>
+                    <a href="" class="btn-warning btn">Buy</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="6">
+                    <h2 style="font-style: italic;">There are no offers, we are very sorry...</h2>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <!-- /.Dashboard -->
+
+    <!-- Details -->
+    <div style="margin-top:3%; margin-bottom: 5%;"
+        class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <h2 class="display-5">Product name</h2>
+        <div class="shadow-sm mx-auto"
+            style="border: 1px solid gray; width: 50%; height: auto; border-radius: 21px 21px 0 0;">
+            <img src="./images/offerPicture.png" style="display: block; margin: 0 auto" />
+        </div>
+        <div class="container">
+            <label for=""></label>
+            <p class="text-dark">Description...</p>
+            <p class="text-dark font-weight-bold">Price: 700 BGN</p>
+        </div>
+    </div>
+    <!-- ./Details -->
+
+    <!--Profile-Page (Bonus - Not Required)-->
+    <div style="padding: 5%;" class="container">
+        <div class="row">
+            <div class="col-md-6 img">
+                <img style="text-align: center; max-width: 450px;" src="./images/userIcon.png" alt=""
+                    class="img-rounded">
+            </div>
+            <div style="border-left:3px solid #ded4da;" class="col-md-6 details">
+                <h2>Profile Page</h2>
+                <blockquote>
+                    <p>Username: <strong>USERNAME</strong></p>
+                    <p>Proffesion: <strong>JavaScript Web Developer</strong></p>
+                    <p>City: <strong>Sofia</strong></p>
+                    <p>Hobby: <strong>Coding (hyped) :0</strong></p>
+                    <p style="text-decoration: underline;">Number of purchases: <strong>74</strong></p>
+            </div>
+        </div>
+    </div>
+    <!--./Profile-Page (Bonus - Not Required)-->
+
+    <!-- footer -->
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#/home"> SoftBay.com</a>
+        </div>
+    </footer>
+    <!-- ./footer -->
+
+    <!-- Node Modules -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./node_modules/sammy/lib/sammy.js"></script>
+    <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- ./Node Modules -->
+
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+    <!--TODO: Link my other script-->
+</body>
+
+</html>
