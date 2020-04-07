@@ -2,8 +2,10 @@ package implementations;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
 
 public class QueueTest {
     private Queue<String> queue;
@@ -63,5 +65,19 @@ public class QueueTest {
         for (String s : queue) {
             assertEquals(String.valueOf(last++), s);
         }
+    }
+
+    @Test
+    public void testTimeWithList() {
+       int count = 1_000_000;
+        for (int i = 0; i < count; i++) {
+            queue.offer(i + "");
+        }
+        ArrayList<String> resultList = new ArrayList<>();
+        while (!queue.isEmpty()) {
+            String value = queue.poll();
+            resultList.add(value);
+        }
+        assertEquals(count + 100, resultList.size());
     }
 }
