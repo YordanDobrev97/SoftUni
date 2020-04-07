@@ -9,12 +9,12 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
     private int size;
 
     private static class Node<E> {
-        private E element;
-        private Node<E> next;
-        private Node<E> prev;
+        E value;
+        Node<E> next;
+        Node<E> prev;
 
-        public Node(E value) {
-            this.element = value;
+        Node(E value) {
+            this.value = value;
         }
     }
 
@@ -23,13 +23,13 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
 
     @Override
     public void addFirst(E element) {
-        Node<E> newNode = new Node<>(element);
         if (this.head == null) {
-            this.head = newNode;
-            this.tail = newNode;
+            this.head = new Node<E>(element);
+            this.tail = this.head;
         } else {
-            this.head.prev = newNode;
+            Node<E> newNode = new Node<E>(element);
             newNode.next = this.head;
+            this.head.prev = newNode;
             this.head = newNode;
         }
         this.size++;
@@ -37,90 +37,42 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
 
     @Override
     public void addLast(E element) {
-        Node<E> newNode = new Node<>(element);
         if (this.head == null) {
-            this.head = newNode;
-            this.tail = newNode;
+            this.head = new Node<>(element);
+            this.tail = this.head;
         } else {
+            Node<E> newNode = new Node<E>(element);
             newNode.prev = this.tail;
             this.tail.next = newNode;
             this.tail = newNode;
-            /*
-            Node<E> current = this.head;
-            while (current.next != null) {
-                current = current.next;
-            }
-            current.next = newNode;
-             */
         }
         this.size++;
     }
 
     @Override
     public E removeFirst() {
-        ensureNotEmpty();
-        E element = this.head.element;
-        if (this.size == 1) {
-            this.head = null;
-            this.tail = null;
-        } else {
-            Node<E> newHead = this.head.next;
-            this.head.next = null;
-            this.head.prev = null;
-            this.head = newHead;
-        }
+        E first = this.head.value;
+        this.head = this.head.next;
         this.size--;
-        return element;
-    }
-
-    private void ensureNotEmpty() {
-        if (this.size == 0) {
-            throw new IllegalStateException("Illegal remove for empty LinkedList");
-        }
+        return first;
     }
 
     @Override
     public E removeLast() {
-        ensureNotEmpty();
-        if (this.size == 1) {
-            return removeFirst();
-        }
-
-        E removedElement = this.tail.element;
-        Node<E> prevElement = this.tail.prev;
-        prevElement.next = null;
-        this.tail = prevElement;
-
-        /*
-        Node<E> current = this.head;
-        Node<E> prev = this.head;
-        while (current.next != null) {
-            prev = current;
-            current = current.next;
-        }
-        E element =  current.element;
-        prev.next = null;
-         */
+        E last = this.tail.value;
+        this.tail = this.tail.prev;
         this.size--;
-
-        return removedElement;
+        return last;
     }
 
     @Override
     public E getFirst() {
-        ensureNotEmpty();
-        return this.head.element;
+        return this.head.value;
     }
 
     @Override
     public E getLast() {
-        /*
-        Node<E> current = this.head;
-        while (current.next != null) {
-            current = current.next;
-        }
-         */
-        return this.tail.element;
+        return this.tail.value;
     }
 
     @Override
@@ -130,7 +82,7 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
 
     @Override
     public boolean isEmpty() {
-        return this.size == 0;
+        return this.size() == 0;
     }
 
 
@@ -146,7 +98,7 @@ public class DoublyLinkedList<E> implements LinkedList<E> {
 
             @Override
             public E next() {
-                E element = current.element;
+                E element = current.value;
                 current = current.next;
                 return element;
             }

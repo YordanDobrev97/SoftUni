@@ -1,45 +1,42 @@
 package implementations;
 import java.util.ArrayDeque;
 import interfaces.Solvable;
+import java.util.Set;
+import java.util.Map;
 
 public class BalancedParentheses implements Solvable {
+    private Set<Character> openBrackets = Set.of('{', '(', '[');
+    private Map<Character, Character> closingBrackets = Map.ofEntries(
+            Map.entry(')', '('),
+            Map.entry('}', '{'),
+            Map.entry(']', '[')
+    );
+
     private String parentheses;
-    private ArrayDeque<String> stack;
 
     public BalancedParentheses(String parentheses) {
         this.parentheses = parentheses;
-        this.stack = new ArrayDeque<>();
     }
 
     @Override
     public Boolean solve() {
-        boolean isBalanced = true;
+        ArrayDeque<Character> stack = new ArrayDeque<>();
 
-        int length = parentheses.length();
-        for (int i = 0; i < length; i++) {
-            char symbol = parentheses.charAt(i);
+        for (int i = 0; i < this.parentheses.length(); i++) {
+            char bracket = this.parentheses.charAt(i);
+            if (openBrackets.contains(bracket)) {
+                stack.push(bracket);
+                continue;
+            }
 
-            if (symbol == '{' || symbol == '[' || symbol == '(') {
-                stack.push("" + symbol);
-            } else if (symbol == '}' || symbol == ']' || symbol == ')') {
-                String last = stack.pop();
-
-                if (symbol == '}' && !last.equals("{")) {
-                    isBalanced = false;
-                    break;
-                } else if (symbol == ']' && !last.equals("[")) {
-                    isBalanced = false;
-                    break;
-                } else if (symbol == ')' && !last.equals("(")) {
-                    isBalanced = false;
-                    break;
+            if (closingBrackets.containsKey(bracket)) {
+                char topElement = stack.pop();
+                if (openBrackets.isEmpty() || !closingBrackets.get(bracket).equals(topElement)) {
+                    return false;
                 }
             }
         }
 
-        if (!this.stack.isEmpty() || this.parentheses.length() == 0) {
-            isBalanced = false;
-        }
-        return isBalanced;
+        return stack.isEmpty();
     }
 }

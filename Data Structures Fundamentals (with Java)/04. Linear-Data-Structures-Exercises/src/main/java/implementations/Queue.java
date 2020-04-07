@@ -1,63 +1,67 @@
 package implementations;
 import interfaces.AbstractQueue;
 import java.util.Iterator;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Queue<E> implements AbstractQueue<E> {
     private Node<E> head;
     private Node<E> tail;
     private int size;
 
-    private static class Node<E> {
-        private E element;
-        private Node<E> next;
-
-        private Node(E element) {
-            this.element = element;
-        }
-    }
+    private List<E> list;
 
     public Queue() {
+        this.list = new ArrayList<>();
+    }
+
+    private static final class Node<E> {
+        private E value;
+        Node<E> next;
+
+        Node(E value) {
+            this.value = value;
+        }
     }
 
     @Override
     public void offer(E element) {
-        Node<E> newNode = new Node<>(element);
+        //this.list.add(element);
+
         if (this.head == null) {
-            this.head = newNode;
-            this.tail = newNode;
+            this.head = new Node<>(element);
+            this.tail = this.head;
         } else {
+            Node<E> newNode = new Node<E>(element);
             this.tail.next = newNode;
             this.tail = newNode;
-            /*
-            Node<E> current = this.head;
-            while (current.next != null) {
-                current = current.next;
-            }
-            current.next = newNode;
-             */
         }
+
         this.size++;
     }
 
     @Override
     public E poll() {
-        ensureNonEmpty();
-        E element = this.head.element;
-        if (this.size == 1) {
-            this.head = null;
-        } else {
-            Node<E> next = this.head.next;
-            this.head.next = null;
-            this.head = next;
+        if (this.size() == 0) {
+            throw new IllegalStateException("Empty queue");
         }
+
+        E first = this.head.value;
+        this.head = this.head.next;
+
+        //E first = this.list.remove(0);
         this.size--;
-        return element;
+        return first;
     }
 
     @Override
     public E peek() {
-        ensureNonEmpty();
-        return this.head.element;
+        if (this.size() == 0) {
+            throw new IllegalStateException("Empty queue");
+        }
+
+        return this.head.value;
+        //return this.list.get(0);
     }
 
     @Override
@@ -67,31 +71,37 @@ public class Queue<E> implements AbstractQueue<E> {
 
     @Override
     public boolean isEmpty() {
-        return this.size == 0;
+        return this.size() == 0;
     }
 
     @Override
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
-            private Node<E> current = head;
+       return new Iterator<E>() {
+           private Node<E> current = head;
+           @Override
+           public boolean hasNext() {
+               return this.current.next != null;
+           }
 
-            @Override
-            public boolean hasNext() {
-                return this.current != null;
-            }
+           @Override
+           public E next() {
+               E value = current.value;
+               current = current.next;
+               return value;
+           }
 
-            @Override
-            public E next() {
-                E element = this.current.element;
-                this.current = this.current.next;
-                return element;
-            }
-        };
+           /*
+           @Override
+           public boolean hasNext() {
+               return list.size() > 0;
+           }
+
+           @Override
+           public E next() {
+               return list.remove(0);
+           }
+            */
+       };
     }
 
-    private void ensureNonEmpty() {
-        if (this.size == 0) {
-            throw new IllegalStateException("Illegal operation on empty stack");
-        }
-    }
 }
