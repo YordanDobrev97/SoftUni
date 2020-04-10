@@ -36,4 +36,19 @@ public class PriorityQueueTest {
             assertEquals(expected[index++], queue.poll());
         }
     }
+
+    @Test
+    public void testAddElements() {
+        Integer[] expected = {15, 4, 3};
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+
+        for (int i = 0; i < expected.length; i++) {
+            priorityQueue.add(expected[i]);
+        }
+
+        priorityQueue.add(20);
+
+        int top = priorityQueue.peek(); // 20
+        assertEquals(top, 20);
+    }
 }

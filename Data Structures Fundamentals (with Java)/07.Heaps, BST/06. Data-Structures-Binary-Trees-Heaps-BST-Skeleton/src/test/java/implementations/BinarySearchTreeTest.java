@@ -68,4 +68,18 @@ public class BinarySearchTreeTest {
         assertEquals(Integer.valueOf(1), left.value);
         assertEquals(Integer.valueOf(8), right.value);
     }
+
+    @Test
+    public void testExistContainsElement() {
+        boolean result = this.bst.contains(8);
+
+        assertTrue(result);
+    }
+
+    @Test
+    public void testNotExistContainsElement() {
+        boolean result = this.bst.contains(80);
+
+        assertFalse(result);
+    }
 }
