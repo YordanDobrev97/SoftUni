@@ -8,6 +8,9 @@ export default {
         },
         getById(id) {
             return firebase.firestore().collection('causes').doc(id).get();
+        },
+        close(id) {
+            return firebase.firestore().collection('causes').doc(id).delete();
         }
     }
 }

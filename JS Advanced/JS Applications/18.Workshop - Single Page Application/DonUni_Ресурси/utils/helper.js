@@ -1,7 +1,8 @@
 export default  {
    setCredentials(context) {
-        context.isLogin = !!sessionStorage.getItem('userId');
-        context.username = sessionStorage.getItem('username');
+        context.isLogin = !!localStorage.getItem('userId');
+        context.username = localStorage.getItem('username');
+        context.userId = localStorage.getItem('userId');
    },
    getDataWithId(d) {
       return {...d.data(), id: d.id};

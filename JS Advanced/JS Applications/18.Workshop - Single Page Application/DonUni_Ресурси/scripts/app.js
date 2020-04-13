@@ -11,11 +11,11 @@ const app = Sammy('#root', function(){
     this.get('#/logout', controllers.user.get.logout);
     this.get('#/dashboard', controllers.cause.get.dashboard);
     this.get('#/details/:id', controllers.cause.get.details);
-    this.post('#/login', controllers.user.post.login);
+    this.get('#/close/:id', controllers.cause.del.close);
 
+    this.post('#/login', controllers.user.post.login);
     this.post('#/register', controllers.user.post.register);
     this.post('#/create', controllers.cause.post.create);
-    this.get('#/remove/:id', controllers.cause.post.remove);
 });
 
 (() => {

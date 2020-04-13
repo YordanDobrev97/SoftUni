@@ -1,4 +1,5 @@
 import models from '../models/index.js';
+import helper from '../utils/helper.js';
 
 export default {
     get: {
@@ -7,6 +8,8 @@ export default {
                 header: await context.load('../views/common/headers.hbs'),
                 footer: await context.load('../views/common/footer.hbs'),
             }
+
+            helper.setCredentials(context);
             await this.partial('../views/user/login-form.hbs');
         },
         async register(context) {
@@ -27,8 +30,8 @@ export default {
            const {username, password} = this.params;
            models.user.login(username, password)
             .then(response => {
-                sessionStorage.setItem('userId', response.uid);
-                sessionStorage.setItem('username', response.user.email);
+                localStorage.setItem('userId', response.uid);
+                localStorage.setItem('username', response.user.email);
 
                 context.redirect('#/home')
             });

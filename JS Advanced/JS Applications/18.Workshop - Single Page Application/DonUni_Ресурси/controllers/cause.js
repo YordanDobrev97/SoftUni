@@ -31,20 +31,21 @@ export default {
                 footer: await context.load('../views/common/footer.hbs')
             }
             helper.setCredentials(context);
-           const {id} = this.params;
+            const {id} = this.params;
 
             const currentCause = await models.cause.getById(id).then(response => {
                 const cause = helper.getDataWithId(response);
                 return cause;
             });
+
             context.cause = currentCause.cause;
             context.description = currentCause.description;
             context.pictureUrl = currentCause.pictureUrl;
             context.neededFunds = currentCause.neededFunds;
             context.currentFunds = currentCause.currentFunds;
             context.donors = currentCause.donors;
-            console.log(currentCause);
-
+            context.canDonate = currentCause.id !== localStorage.getItem('causeId');
+           
             this.partial('../views/cause/details.hbs');
         }
     },
@@ -53,11 +54,15 @@ export default {
             const {cause, pictureUrl, neededFunds, description} = this.params;
             models.cause.create({cause, pictureUrl, neededFunds, description, currentFunds: 0, donors: []})
                 .then(response => {
+                    localStorage.setItem('causeId', response.id);
                     context.redirect('#/home');
                 });
-        },
-        remove(context) {
-            console.log('work');
+        }
+    },
+    del: {
+        close(context) {
+            // models.cause.close(id);
+            console.log(context);
         }
     }
 }
