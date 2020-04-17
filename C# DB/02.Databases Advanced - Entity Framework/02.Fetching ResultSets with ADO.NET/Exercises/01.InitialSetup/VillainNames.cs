@@ -1,7 +1,5 @@
 ﻿using Connection;
-using InitialSetup;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace VillainName
@@ -18,7 +16,7 @@ namespace VillainName
                            HAVING COUNT(mv.MinionId) > 3
                            ORDER BY COUNT(mv.MinionId) DESC";
 
-            SqlConnection connection = new SqlConnection(ConnectionString.String);
+            SqlConnection connection = new SqlConnection(Configuration.ConnectionString);
 
             connection.Open();
 
@@ -27,12 +25,15 @@ namespace VillainName
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataReader data = command.ExecuteReader();
 
-                while (data.Read())
+                using (data)
                 {
-                    string name = (string)data["Name"];
-                    int countMinions = (int)data["MinionsCount"];
+                    while (data.Read())
+                    {
+                        string name = (string)data["Name"];
+                        int countMinions = (int)data["MinionsCount"];
 
-                    Console.WriteLine($"{name} - {countMinions}");
+                        Console.WriteLine($"{name} - {countMinions}");
+                    }
                 }
             }
         }

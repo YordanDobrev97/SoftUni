@@ -1,8 +1,11 @@
-﻿using AddMinions;
+﻿using _06.RemoveVillain;
+using AddMinions;
 using ChangeTownNamesCasing;
 using Connection;
+using IncreaseMinionOfAge;
 using InitialSetup;
 using MinionName;
+using PrintMinionName;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using VillainName;
@@ -24,6 +27,15 @@ public class StartUp
         //AddMinion.Solution();
 
         //05.
-        CasingName.Solution();
+        //CasingName.Solution();
+
+        //06.
+        //RemoveVillain.Solution();
+
+        //07.
+        //PrintMinionsName.Solution();
+
+        //08.
+        //IncreaseMinionAge.Solution();
     }
 }

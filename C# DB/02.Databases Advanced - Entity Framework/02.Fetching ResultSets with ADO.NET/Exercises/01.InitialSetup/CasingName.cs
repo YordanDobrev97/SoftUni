@@ -12,7 +12,7 @@ namespace ChangeTownNamesCasing
         {
             string country = Console.ReadLine();
 
-            SqlConnection connection = new SqlConnection(ConnectionString.String);
+            SqlConnection connection = new SqlConnection(Configuration.ConnectionString);
             connection.Open();
 
             using (connection)

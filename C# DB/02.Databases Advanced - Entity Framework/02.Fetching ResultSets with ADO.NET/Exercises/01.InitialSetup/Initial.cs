@@ -10,7 +10,7 @@ namespace InitialSetup
     {
         public static void Solution()
         {
-            SqlConnection connection = new SqlConnection(ConnectionString.String);
+            SqlConnection connection = new SqlConnection(Configuration.ConnectionString);
 
             connection.Open();
 

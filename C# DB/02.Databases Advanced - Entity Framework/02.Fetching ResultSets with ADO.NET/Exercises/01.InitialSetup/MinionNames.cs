@@ -22,7 +22,7 @@ namespace MinionName
 
             string vilianQuery = @"SELECT [Name] FROM Villains WHERE Id = @Id";
 
-            SqlConnection connection = new SqlConnection(ConnectionString.String);
+            SqlConnection connection = new SqlConnection(Configuration.ConnectionString);
 
             connection.Open();
             using (connection)
