@@ -14,4 +14,5 @@
 <a href="https://softuni.bg/trainings/2453/csharp-oop-october-2019" > C# OOP - October 2019  </a>   | <a href="https://softuni.bg/certificates/details/75329/0e8b5e99"> Link</a> |
 <a href="https://softuni.bg/trainings/2615/train-the-trainers-november-2019" > Train the Trainers - November 2019  </a>   | <a href="https://softuni.bg/certificates/details/72758/fc0acea4"> Link</a> |
 <a href="https://softuni.bg/trainings/2609/js-advanced-january-2020" > JS Advanced - January 2020 </a> | <a href="https://softuni.bg/certificates/details/76439/0732ba16"> Link</a> |
+<a href="https://softuni.bg/trainings/2610/js-applications-february-2020" > JS Applications - February 2020 </a> | <a href="https://softuni.bg/certificates/details/80446/2b2142b5"> Link</a> |
 <a href="https://softuni.bg/trainings/2812/data-structures-fundamentals-with-java-march-2020" > Data Structures Fundamentals (with Java) - March 2020 </a> | <a href="https://softuni.bg/certificates/details/79570/aff36f0e"> Link</a> |
