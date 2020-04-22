@@ -6,24 +6,24 @@ namespace _02.NestedLoops
     {
         public static void Main()
         {
-            int n = 2;
-            int counter = 1;
-            NestedLoopRecursion(n);
-
-
+            int n = int.Parse(Console.ReadLine());
+            int[] array = new int[n];
+            int count = 1;
+            NestedLoopRecursion(array, count);
         }
 
-        public static void NestedLoopRecursion(int n)
+        public static void NestedLoopRecursion(int[] array, int count)
         {
-            if (n <= 0)
+            if (count > array.Length)
             {
+                Console.WriteLine(string.Join(" ", array));
                 return;
             }
 
-            for (int i = 0; i < n; i++)
+            for (int i = 1; i <= array.Length; i++)
             {
-                Console.WriteLine($"Iteration {i} in loop {n - 1} from center");
-                NestedLoopRecursion(n - 1);
+                array[count - 1] = i;
+                NestedLoopRecursion(array, count + 1);
             }
         }
     }
