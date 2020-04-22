@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ReverseArray", "01.ReverseArray\01.ReverseArray.csproj", "{E0A8E02C-9C84-4103-AD8E-FAC01C915443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.ReverseArray", "01.ReverseArray\01.ReverseArray.csproj", "{E0A8E02C-9C84-4103-AD8E-FAC01C915443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.NestedLoops", "02.NestedLoops\02.NestedLoops.csproj", "{6226DF1D-A900-44CC-B257-C5AD18A12903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.NestedLoops", "02.NestedLoops\02.NestedLoops.csproj", "{6226DF1D-A900-44CC-B257-C5AD18A12903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CombinationsWithRepetition", "03.CombinationsWithRepetition\03.CombinationsWithRepetition.csproj", "{CAB211DA-9197-43BA-B794-068A1078DC5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.TowerОfHanoi", "04.TowerОfHanoi\04.TowerОfHanoi.csproj", "{56A56C79-1448-4E58-9334-560F1452FAF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{6226DF1D-A900-44CC-B257-C5AD18A12903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6226DF1D-A900-44CC-B257-C5AD18A12903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6226DF1D-A900-44CC-B257-C5AD18A12903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB211DA-9197-43BA-B794-068A1078DC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB211DA-9197-43BA-B794-068A1078DC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB211DA-9197-43BA-B794-068A1078DC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB211DA-9197-43BA-B794-068A1078DC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A56C79-1448-4E58-9334-560F1452FAF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A56C79-1448-4E58-9334-560F1452FAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A56C79-1448-4E58-9334-560F1452FAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A56C79-1448-4E58-9334-560F1452FAF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
