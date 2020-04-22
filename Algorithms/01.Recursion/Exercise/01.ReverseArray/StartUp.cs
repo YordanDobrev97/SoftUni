@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace _01.ReverseArray
 {
-    public class ReverseArray
+    public class StartUp
     {
         public static void Main()
         {
@@ -12,10 +12,10 @@ namespace _01.ReverseArray
                 .Select(int.Parse)
                 .ToArray();
 
-            ReverseArr(array, 0);
+            ReverseArray(array, 0);
             Console.WriteLine();
         }
-        static void ReverseArr(int[] array, int index)
+        static void ReverseArray(int[] array, int index)
         {
             if (index == array.Length - 1)
             {
@@ -23,7 +23,7 @@ namespace _01.ReverseArray
                 return;
             }
 
-            ReverseArr(array, index + 1);
+            ReverseArray(array, index + 1);
             Console.Write($"{array[index]} ");
         }
     }
