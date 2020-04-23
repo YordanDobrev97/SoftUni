@@ -1,17 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _07.FindAllPathsInLabyrinth
+namespace PathsInLabyrinth
 {
-    class FindAllPathsInLabyrinth
+    public class FindAllPathsInLabyrinth
     {
         private static List<string> path = new List<string>();
 
-        static void Main()
+        public static void Main()
         {
             int row = int.Parse(Console.ReadLine());
             int col = int.Parse(Console.ReadLine());
+            char[,] labyrinth = ReadMatrix(row, col);
 
+            string currentPath = string.Empty;
+            int defaultRow = 0;
+            int defaultCol = 0;
+
+            Solve(labyrinth, defaultRow, defaultCol, currentPath);
+        }
+
+        private static char[,] ReadMatrix(int row, int col)
+        {
             char[,] labyrinth = new char[row, col];
 
             for (int rows = 0; rows < row; rows++)
@@ -24,11 +34,10 @@ namespace _07.FindAllPathsInLabyrinth
                 }
             }
 
-            Solve(labyrinth, 0, 0, "");
+            return labyrinth;
         }
 
-        private static void Solve(char[,] labyrinth,
-            int row, int col, string currentPath)
+        private static void Solve(char[,] labyrinth, int row, int col, string currentPath)
         {
             if (OutsideBorder(row, col, labyrinth))
             {
@@ -53,15 +62,13 @@ namespace _07.FindAllPathsInLabyrinth
                     UnmarkPath(row, col, labyrinth);
                 }
             }
+
             path.RemoveAt(path.Count - 1);
         }
 
         private static bool OutsideBorder(int row, int col, char[,] matrix)
         {
-            return row < 0 
-                || row >= matrix.GetLength(0)
-                || col >= matrix.GetLength(1)
-                || col < 0;
+            return row < 0  || row >= matrix.GetLength(0) || col >= matrix.GetLength(1) || col < 0;
         }
 
         private static void UnmarkPath(int row, int col, char[,] labyrinth)

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
 
-namespace _05.GenCombinations
+namespace GenerateCombinations
 {
-    class GenCombinations
+    public class GenCombinations
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             int[] nums = Console.ReadLine()
                 .Split(' ')
@@ -14,10 +14,13 @@ namespace _05.GenCombinations
 
             int k = int.Parse(Console.ReadLine());
             int[] data = new int[k];
-            Combination(nums, data, 0, -1);
+
+            int border = -1;
+            int index = 0;
+            Combination(nums, data, index, border);
         }
 
-        static void Combination(int[] set, int[] vector, int index, int border)
+        private static void Combination(int[] set, int[] vector, int index, int border)
         {
             if (index >= vector.Length)
             {

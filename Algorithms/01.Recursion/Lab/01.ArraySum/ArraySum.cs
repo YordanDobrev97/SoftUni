@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-namespace _01.ArraySum
+namespace SumOfArray
 {
-    class ArraySum
+    public class ArraySum
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int[] arr = Console.ReadLine()
+            int[] arrayInput = Console.ReadLine()
                 .Split(' ')
                 .Select(int.Parse)
                 .ToArray();
+            int index = 0;
 
-            int sum = GetSumArray(arr, 0);
+            int sum = GetSumArray(arrayInput, index);
             Console.WriteLine($"{sum}");
-
         }
 
         public static int GetSumArray(int[] array, int index)

@@ -1,17 +1,15 @@
 ﻿using System;
 
-namespace _02.RecursiveFactorial
+namespace Factorial
 {
-    class RecursiveFactorial
+    public class RecursiveFactorial
     {
-        static void Main()
+        public static void Main()
         {
-            //Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
 
-            int factorial = GetFactorial(n);
-            //Console.WriteLine($"Factorial = {factorial}");
-			Console.WriteLine($"{factorial}");
+            int resultFactorial = GetFactorial(n);
+			Console.WriteLine($"{resultFactorial}");
         }
 
         public static int GetFactorial(int n)

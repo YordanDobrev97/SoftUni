@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace _04.GenVec01
+namespace GenerateVector01
 {
-    class GenVec01
+   public class GenVec01
     {
-        static void Main()
+        public static void Main()
         {
-            //Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
 
             int[] array = new int[n];
@@ -15,16 +14,11 @@ namespace _04.GenVec01
             GenVector01(n, array, index);
         }
 
-        public static void GenVector01(int n, int[] array, int index)
+        private static void GenVector01(int n, int[] array, int index)
         {
             if (index == array.Length)
             {
-                foreach (var item in array)
-                {
-                    Console.Write($"{item}");
-                }
-
-                Console.WriteLine();
+                Print(array);
             }
             else
             {
@@ -34,6 +28,16 @@ namespace _04.GenVec01
                     GenVector01(n, array, index + 1);
                 }
             }
+        }
+
+        private static void Print(int[] array)
+        {
+            foreach (var item in array)
+            {
+                Console.Write($"{item}");
+            }
+
+            Console.WriteLine();
         }
     }
 }

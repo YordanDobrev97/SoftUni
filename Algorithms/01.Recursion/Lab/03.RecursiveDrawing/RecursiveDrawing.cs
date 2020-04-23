@@ -1,18 +1,16 @@
 ﻿using System;
 
-namespace _03.RecursiveDrawing
+namespace Drawing
 {
-    class RecursiveDrawing
+    public class RecursiveDrawing
     {
-        static void Main()
+        public static void Main()
         {
-            //Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
-
             Drawing(n);
         }
 
-        public static void Drawing(int n)
+        private static void Drawing(int n)
         {
             if (n == 0)
             {

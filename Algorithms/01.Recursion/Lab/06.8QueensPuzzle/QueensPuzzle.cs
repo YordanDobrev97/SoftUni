@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _06._8QueensPuzzle
+namespace QueensPuzzle
 {
     public class QueensPuzzle
     {
