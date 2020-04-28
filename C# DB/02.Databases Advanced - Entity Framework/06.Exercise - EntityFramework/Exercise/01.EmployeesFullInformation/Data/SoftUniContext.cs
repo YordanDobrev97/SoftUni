@@ -6,7 +6,7 @@ namespace SoftUni.Data
 {
     public class SoftUniContext : DbContext
     {
-        private const string ConnectionString = @"Server=YORDAN\SQLEXPRESS;Database=SoftUni.Models;Integrated Security=True;";
+        private const string ConnectionString = @"Server=.\SQLEXPRESS;Database=SoftUni;Integrated Security=True;";
         public SoftUniContext()
         {
         }
