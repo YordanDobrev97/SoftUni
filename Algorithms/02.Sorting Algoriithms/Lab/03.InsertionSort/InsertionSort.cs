@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace _03.InsertionSort
@@ -8,43 +7,24 @@ namespace _03.InsertionSort
     {
         static void Main()
         {
-            List<int> numbers = Console.ReadLine()
-                .Split(' ')
-                .Select(int.Parse)
-                .ToList();
+            int[] numbers = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            SortingInsertion(numbers);
-
-            Console.WriteLine(string.Join(" ", numbers));
-        }
-
-        public static void SortingInsertion(List<int> numbers)
-        {
-            for (int i = 0; i < numbers.Count; i++)
+            for (int i = 1; i < numbers.Length; i++)
             {
-                int markCurrentNumber = numbers[i];
+                int current = numbers[i]; 
+                int prev = i - 1;
                 int index = i;
 
-                while (index - 1 >= 0)
+                while (prev >= 0 && numbers[prev] > current)
                 {
-                    int backNumber = numbers[index - 1];
-
-                    if (markCurrentNumber < backNumber)
-                    {
-                        index--;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-
-                if (i != index)
-                {
-                    numbers.RemoveAt(i);
-                    numbers.Insert(index, markCurrentNumber);
+                    numbers[index] = numbers[prev];
+                    numbers[prev] = current;
+                    prev--;
+                    index--;
                 }
             }
+
+            Console.WriteLine(string.Join(", ", numbers));
         }
     }
 }
