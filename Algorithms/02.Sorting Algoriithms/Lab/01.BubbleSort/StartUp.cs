@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace _01.BubbleSort
@@ -8,52 +7,31 @@ namespace _01.BubbleSort
     {
         public static void Main()
         {
-            int[] numbers = { 10, 7, 0, 15, 2, 4, 9, 24 };
-            //List<int> sortedNumbers = new List<int>();
-            //sortedNumbers = BubbleSort(numbers, sortedNumbers);
-            BubbleSort(numbers);
-            Console.WriteLine(string.Join(" ", numbers));
+            int[] nums = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-
-        }
-        public static List<int> BubbleSort(int[] numbers, List<int> sortedNumbers)
-        {
-            List<int> copyNumbers = numbers.ToList();
-
-            while (copyNumbers.Count > 0)
+            int i = 0;
+            bool isSorted = false;
+            while (!isSorted)
             {
-                int max = copyNumbers.Max();
-                sortedNumbers.Add(max);
-                copyNumbers.Remove(max);
+                isSorted = true;
+                while (i < nums.Length - 1)
+                {
+                    int currentValue = nums[i];
+                    int nextValue = nums[i + 1];
+
+                    if (currentValue > nextValue)
+                    {
+                        isSorted = false;
+                        nums[i] = nextValue;
+                        nums[i + 1] = currentValue;
+                    }
+                    i++;
+                }
+                i = 0;
+
             }
 
-            sortedNumbers.Reverse();
-            return sortedNumbers;
-        }
-
-        public static void BubbleSort(int[] numbers)
-        {
-            bool isSwapped = true;
-
-            do
-            {
-                isSwapped = false;
-
-                for (int i = 0; i < numbers.Length - 1; i++)
-                {
-                    int currentNumber = numbers[i];
-                    int nextNumber = numbers[i + 1];
-
-                    if (currentNumber > nextNumber)
-                    {
-                        int temp = numbers[i];
-                        numbers[i] = numbers[i + 1];
-                        numbers[i + 1] = temp;
-                        isSwapped = true;
-                    }
-                }
-
-            } while (isSwapped);
+            Console.WriteLine(string.Join(" ", nums));
         }
     }
 }
