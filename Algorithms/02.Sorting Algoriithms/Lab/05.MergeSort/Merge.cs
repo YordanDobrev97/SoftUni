@@ -1,81 +1,73 @@
-﻿
-using System;
+﻿using System;
+using System.Linq;
 
-public class Merge<T> where T : IComparable
+namespace _05.MergeSort
 {
-    public void Merging(int[] arr, int l, int m, int r)
+    class Merge
     {
-        // Find sizes of two subarrays to be merged 
-        int n1 = m - l + 1;
-        int n2 = r - m;
-
-        /* Create temp arrays */
-        int[] L = new int[n1];
-        int[] R = new int[n2];
-
-        /*Copy data to temp arrays*/
-        for (int p = 0; p < n1; p++)
+        static void Main()
         {
-            L[p] = arr[l + p];
+            int[] numbers = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] sorted = MergeSort(numbers);
+
+            Console.WriteLine(string.Join(" ", sorted));
         }
 
-        for (int c = 0; c < n2; ++c)
+        public static int[] MergeSort(int[] collection)
         {
-            R[c] = arr[m + 1 + c];
-        }
-
-        /* Merge the temp arrays */
-
-        // Initial indexes of first and second subarrays 
-        int i = 0, j = 0;
-
-        // Initial index of merged subarry array 
-        int k = l;
-        while (i < n1 && j < n2)
-        {
-            if (L[i] <= R[j])
+            if (collection.Length <= 1)
             {
-                arr[k] = L[i];
+                return collection;
+            }
+
+            int middleIndex = collection.Length / 2;
+            int[] left = collection.Take(middleIndex).ToArray();
+            int[] right = collection.Skip(middleIndex).ToArray();
+
+            left = MergeSort(left);
+            right = MergeSort(right);
+
+            return Merging(left, right);
+        }
+
+        public static int[] Merging(int[] left, int[] right)
+        {
+            int[] newArray = new int[left.Length + right.Length];
+
+            int indexLeft = 0;
+            int indexRight = 0;
+            int i = 0;
+
+            while (indexLeft < left.Length && indexRight < right.Length)
+            {
+                if (left[indexLeft] > right[indexRight])
+                {
+                    newArray[i] = right[indexRight];
+                    indexRight++;
+                }
+                else
+                {
+                    newArray[i] = left[indexLeft];
+                    indexLeft++;
+                }
                 i++;
             }
-            else
+
+            while (indexLeft < left.Length)
             {
-                arr[k] = R[j];
-                j++;
+                newArray[i] = left[indexLeft];
+                i++;
+                indexLeft++;
             }
-            k++;
-        }
 
-        /* Copy remaining elements of L[] if any */
-        while (i < n1)
-        {
-            arr[k] = L[i];
-            i++;
-            k++;
-        }
+            while (indexRight < right.Length)
+            {
+                newArray[i] = right[indexRight];
+                i++;
+                indexRight++;
+            }
 
-        /* Copy remaining elements of R[] if any */
-        while (j < n2)
-        {
-            arr[k] = R[j];
-            j++;
-            k++;
-        }
-    }
-
-    public void Sort(int[] arr, int l, int r)
-    {
-        if (l < r)
-        {
-            // Find the middle point 
-            int m = (l + r) / 2;
-
-            Sort(arr, l, m);// sort left parts
-            Sort(arr, m + 1, r); // sort right parts
-
-            // Merge the sorted halves 
-            Merging(arr, l, m, r);
+            return newArray;
         }
     }
 }
-
