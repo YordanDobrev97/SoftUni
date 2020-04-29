@@ -7,39 +7,26 @@ namespace _02.SelectionSort
     {
         static void Main()
         {
-            int[] numbers = Console.ReadLine()
-                .Split(' ')
-                .Select(int.Parse)
-                .ToArray();
+            int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-            SortingSelection(numbers);
-
-            Console.WriteLine(string.Join(" ", numbers));
-        }
-
-        public static void SortingSelection(int[] numbers)
-        {
             for (int i = 0; i < numbers.Length; i++)
             {
-                int currentNumber = numbers[i];
-                int min = currentNumber;
+                int min = numbers[i];
                 int indexMin = i;
-
                 for (int j = i + 1; j < numbers.Length; j++)
                 {
-                    int nextNumber = numbers[j];
-
-                    if (nextNumber < min)
+                    if (numbers[j] < min)
                     {
-                        min = nextNumber;
+                        min = numbers[j];
                         indexMin = j;
                     }
                 }
-
                 int temp = numbers[i];
                 numbers[i] = numbers[indexMin];
                 numbers[indexMin] = temp;
             }
+
+            Console.WriteLine(string.Join(", ", numbers));
         }
     }
 }
