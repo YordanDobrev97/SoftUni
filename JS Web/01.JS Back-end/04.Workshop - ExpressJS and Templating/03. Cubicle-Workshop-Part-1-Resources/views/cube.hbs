@@ -1,0 +1,12 @@
+{{header}}
+
+<div class="cube">
+    {{#each cubes}}
+        <img class="cube" src="{{this.image}}">
+        <p class="name">{{this.name}}</p>
+        <p><span>Difficulty level:</span> {{this.level}}</p>
+        <a class="btn" href="/details/{{id}}">Details</a>     
+    {{/each}}
+</div>
+
+{{footer}}
