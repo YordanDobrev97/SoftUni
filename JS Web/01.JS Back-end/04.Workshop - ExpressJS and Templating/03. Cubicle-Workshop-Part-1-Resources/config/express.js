@@ -9,6 +9,7 @@ module.exports = (app) => {
     app.set('view engine', 'hbs');
     app.use(express.static('views'));
     app.use(express.static('static'));
+    app.use(bodyParser.urlencoded({ extended: true }));
 
     router(app);
 };

@@ -11,6 +11,19 @@ module.exports = (app) => {
         res.render('create', {layout: false});
     });
 
+    app.post('/create', (req, res) => {
+        const {name, description, imageUrl, difficultyLevel} = req.body;
+
+        cubes.push({
+            name,
+            description,
+            image: imageUrl,
+            level: difficultyLevel
+        });
+
+        res.redirect('/');
+    })
+
     app.get('/about', (req, res) => {
         res.render('about', {layout: false});
     })
