@@ -2,20 +2,27 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace HttpRequester
 {
     public class StartUp
     {
-        public static void Main()
+        public async static Task Main()
         {
-            string NewLine = "\r\n";
             TcpListener listener = new TcpListener(IPAddress.Loopback, 3000);
             listener.Start();
 
+            await CreateServer(listener);
+        }
+
+        private static async Task CreateServer(TcpListener listener)
+        {
+            string NewLine = "\r\n";
+
             while (true)
             {
-                TcpClient client = listener.AcceptTcpClient();
+                TcpClient client = await listener.AcceptTcpClientAsync();
                 NetworkStream stream = client.GetStream();
 
                 byte[] data = new byte[4096];
@@ -25,8 +32,8 @@ namespace HttpRequester
                 string responseText = "<h1>Hello</h1>";
                 string response = "HTTP/1.0 200 OK" + NewLine +
                                   "Server: MyServer" + NewLine +
-                                  "Content-Type: text/html" + NewLine + 
-                                  "Content-Length: " + responseText.Length + NewLine + NewLine + 
+                                  "Content-Type: text/html" + NewLine +
+                                  "Content-Length: " + responseText.Length + NewLine + NewLine +
                                   responseText;
 
                 byte[] bytesData = Encoding.UTF8.GetBytes(response);
