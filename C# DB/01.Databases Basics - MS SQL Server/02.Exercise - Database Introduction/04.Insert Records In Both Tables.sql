@@ -4,7 +4,7 @@ INSERT INTO Towns (Id, Name) VAlUES
 (3, 'Varna')
 
 INSERT INTO Minions (Id, Name, Age, TownId)
-VALUES 
+VALUES
 (1, 'Kevin', 22, 1),
-(2, 'Kevin', 22, 3),
+(2, 'Bob', 15, 3),
 (3, 'Steward', NULL, 2)
