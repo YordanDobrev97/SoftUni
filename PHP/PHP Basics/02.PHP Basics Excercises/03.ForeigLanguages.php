@@ -1,5 +1,5 @@
 <?php
-$language = "England";
+$language = readline();
 
 switch ($language){
     case "USA":

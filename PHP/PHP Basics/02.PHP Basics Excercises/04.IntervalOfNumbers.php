@@ -1,13 +1,13 @@
 <?php
-
-$start = 100;
-$end = 48;
+$start = intval(readline());
+$end = intval(readline());
 
 $min = min($start, $end);
 $max = max($start, $end);
 
 for($i = $min; $i <= $max; $i++){
-    echo $i."<br>";
+    echo $i.PHP_EOL;
 }
+
 ?>
 

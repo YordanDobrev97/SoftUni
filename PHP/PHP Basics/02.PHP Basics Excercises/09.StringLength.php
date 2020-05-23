@@ -1,8 +1,8 @@
 <?php
-
-$text = "PHP";
+$text = readline();
 $lengthMax = 20;
 $currentLengthOfText = strlen($text);
+
 for($i = 0; $i < $currentLengthOfText; $i++){
     echo $text[$i];
 }
