@@ -1,14 +1,12 @@
 <?php
-
 $months = ["January", "February", "March", "April", "May", "June", "July", "August","September", "October", "November", "December"];
 
-$numberMonth = 14;
+$number_month = intval(readline());
 
-if($numberMonth > 12 || $numberMonth < 0){
-    echo 'Invalid month';
+if($number_month > 12 || $number_month < 0){
+    echo 'Invalid month!';
 }else{
-    echo $months[$numberMonth - 1];
+    echo $months[$number_month - 1];
 }
-
 ?>
 

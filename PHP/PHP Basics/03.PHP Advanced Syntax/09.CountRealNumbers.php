@@ -1,9 +1,6 @@
 <?php
-
-$numbers = [8,2.5,2.5,8,2.5];
-
+$numbers = array_map('floatval', explode(' ', readline()));
 $countNumbers = [];
-
 
 for ($i = 0; $i < count($numbers); $i++) {
     $currentEl = $numbers[$i] . "";
@@ -14,9 +11,10 @@ for ($i = 0; $i < count($numbers); $i++) {
     }
 }
 
-foreach($countNumbers as $key => $value){
-    echo "$key => $value"."<br>";
+$keys = array_keys($countNumbers);
+sort($keys);
+
+foreach ($keys as $key) {
+    echo "$key => $countNumbers[$key]".PHP_EOL;
 }
-
 ?>
-

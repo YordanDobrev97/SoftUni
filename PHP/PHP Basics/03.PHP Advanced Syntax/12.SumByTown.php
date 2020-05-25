@@ -1,8 +1,6 @@
 <?php
-
-$line = "Plovdiv, 40, Pernik, 20, Vidin, 8, Sliven, 44, Plovdiv, 1, Vidin, 7, Chirpan, 0";
-$items = explode(", ", $line);
-
+$line = readline();
+$items = explode(', ', $line);
 $dict = [];
 
 for($i = 0; $i < count($items); $i+=2){
@@ -16,7 +14,6 @@ for($i = 0; $i < count($items); $i+=2){
 }
 
 foreach ($dict as $key => $value){
-    echo "$key -> $value"."<br>";
+    echo "$key -> $value".PHP_EOL;
 }
 ?>
-

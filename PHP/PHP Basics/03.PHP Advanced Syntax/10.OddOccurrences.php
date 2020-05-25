@@ -1,8 +1,7 @@
 <?php
-
-$line = "a a A SQL xx a xx a A a XX c";
+$line = readline();
 $line = strtolower($line);
-$elements = explode(" ", $line);
+$elements = explode(' ', $line);
 
 $oddOccurrences = [];
 
@@ -20,6 +19,4 @@ foreach ($oddOccurrences as $key => $value){
         echo "$key ";
     }
 }
-
 ?>
-
