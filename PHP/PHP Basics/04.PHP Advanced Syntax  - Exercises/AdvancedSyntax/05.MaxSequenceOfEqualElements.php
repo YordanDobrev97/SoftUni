@@ -1,7 +1,6 @@
 <?php
-
-$line = "1 1 1 2 3 3 3 3 3 3 3 10";
-$elements = array_map('intval', explode(" ", $line));
+$line = readline();
+$elements = array_map('intval', explode(' ', $line));
 
 $total_counter = 1;
 $current_counter = 1;
@@ -23,7 +22,8 @@ for($i = 0; $i < count($elements) - 1; $i++){
 if($current_counter > $total_counter){
     $total_counter = $current_counter;
 }
-echo $elements[$index];
 
+for ($i = 0; $i < $total_counter; $i++) {
+    echo $elements[$index] . ' ';
+}
 ?>
-

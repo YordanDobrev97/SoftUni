@@ -1,11 +1,5 @@
 <?php
-
-$line_numbers = "12 12 12";
-/*
- 123
- 321
- */
-$elements = explode(" ", $line_numbers);
+$elements = array_map('intval', explode(' ', readline()));
 
 $sum = 0;
 for($i = 0; $i < count($elements); $i++){
@@ -13,6 +7,5 @@ for($i = 0; $i < count($elements); $i++){
     $reversed = intval(strrev($element));
     $sum += $reversed;
 }
-echo "Sum: $sum";
+echo $sum;
 ?>
-

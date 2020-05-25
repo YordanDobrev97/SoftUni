@@ -1,5 +1,5 @@
 <?php
-$array = explode(" ", "7 7 7 0 2 2 2 0 10 10 10");
+$array = explode(' ', readline());
 $dictionary = [];
 
 for($i = 0; $i < count($array); $i++){
@@ -20,6 +20,5 @@ foreach($dictionary as $key => $value){
         $key_of_max_value = $key;
     }
 }
-echo "Most Frequent number: $key_of_max_value count: $max_value";
+echo $key_of_max_value;
 ?>
-
