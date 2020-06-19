@@ -1,8 +1,8 @@
-CREATE PROC usp_FindByExtension (@extension NVARCHAR(30))
+CREATE PROC usp_FindByExtension(@extension VARCHAR (20))
 AS
 BEGIN
-	SELECT f.Id, f.Name, CONCAT(f.Size, 'KB') AS [Size] 
-	FROM Files AS f
-	WHERE f.Name LIKE CONCAT('%', @extension, '%')
-	ORDER BY f.Id, f.Name, f.Size
+	SELECT Id, Name, CONCAT(Size, 'KB') AS [Size] 
+	FROM Files
+	WHERE Name LIKE '%' + @extension
+	ORDER BY Id, Name, [Size] DESC
 END

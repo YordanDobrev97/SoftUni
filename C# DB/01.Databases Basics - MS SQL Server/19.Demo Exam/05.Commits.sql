@@ -1,6 +1,3 @@
-SELECT c.Id, 
-	   c.Message, 
-	   c.RepositoryId, 
-	   c.ContributorId
-FROM Commits AS c
-ORDER BY c.Id, c.Message, c.RepositoryId, c.ContributorId
+SELECT Id, [Message], RepositoryId, ContributorId 
+FROM Commits
+ORDER BY Id, [Message], RepositoryId, ContributorId

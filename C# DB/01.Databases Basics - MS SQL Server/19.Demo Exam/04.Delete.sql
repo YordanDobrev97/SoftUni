@@ -1,2 +1,5 @@
+DELETE FROM RepositoriesContributors 
+WHERE RepositoryId = 3
+
 DELETE FROM Issues
-WHERE Issues.RepositoryId = 3
+WHERE RepositoryId = 3
