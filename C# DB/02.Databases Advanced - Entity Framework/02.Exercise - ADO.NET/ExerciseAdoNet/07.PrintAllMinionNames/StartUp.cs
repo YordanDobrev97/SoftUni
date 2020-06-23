@@ -1,5 +1,4 @@
-﻿using InitialSetup;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 
@@ -7,14 +6,16 @@ namespace PrintAllMinionNames
 {
     public class StartUp
     {
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
         public static void Main()
         {
-            var connection = new SqlConnection(DefaultSetting.StringConnection);
+            var connection = new SqlConnection(StringConnection);
             connection.Open();
 
             using (connection)
             {
-                var command = new SqlCommand(
+                using var command = new SqlCommand(
                     @"SELECT Name FROM Minions", connection);
 
                 var reader = command.ExecuteReader();

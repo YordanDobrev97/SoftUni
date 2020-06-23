@@ -1,5 +1,4 @@
-﻿using InitialSetup;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 
@@ -7,16 +6,18 @@ namespace ChangeTownNamesCasing
 {
     public class StartUp
     {
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
         public static void Main()
         {
             string countryName = Console.ReadLine();
 
-            SqlConnection connection = new SqlConnection(DefaultSetting.StringConnection);
+            using SqlConnection connection = new SqlConnection(StringConnection);
             connection.Open();
 
             using (connection)
             {
-                SqlCommand updateCommand = new SqlCommand(
+                using SqlCommand updateCommand = new SqlCommand(
                                             @"UPDATE Towns
                                                 SET Name = UPPER(Name)
                                             WHERE CountryCode = 
@@ -32,7 +33,7 @@ namespace ChangeTownNamesCasing
                 }
                 else
                 {
-                    SqlCommand getCountryCommand = new SqlCommand(
+                    using SqlCommand getCountryCommand = new SqlCommand(
                                            @"SELECT t.Name 
                                                 FROM Towns as t
                                                 JOIN Countries AS c ON c.Id = t.CountryCode

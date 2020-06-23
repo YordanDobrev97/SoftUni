@@ -1,14 +1,15 @@
 ﻿using System;
 using Microsoft.Data.SqlClient;
-using InitialSetup;
 
 namespace VillainNames
 {
     public class StartUp
     {
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
         public static void Main()
         {
-            SqlConnection connection = new SqlConnection(DefaultSetting.StringConnection);
+            SqlConnection connection = new SqlConnection(StringConnection);
             connection.Open();
 
             using (connection)
@@ -19,7 +20,7 @@ namespace VillainNames
                             GROUP BY v.Id, v.Name 
                               HAVING COUNT(mv.VillainId) > 3 
                             ORDER BY COUNT(mv.VillainId)";
-                SqlCommand sqlCommand = new SqlCommand(command, connection);
+                using SqlCommand sqlCommand = new SqlCommand(command, connection);
 
                 var reader = sqlCommand.ExecuteReader();
                 using (reader)

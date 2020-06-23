@@ -1,5 +1,4 @@
-﻿using InitialSetup;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Data;
 
@@ -7,31 +6,25 @@ namespace IncreaseAgeStoredProcedure
 {
     public class StartUp
     {
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
         public static void Main()
         {
             int minionId = int.Parse(Console.ReadLine());
 
-            var connection = new SqlConnection(DefaultSetting.StringConnection);
+            var connection = new SqlConnection(StringConnection);
             connection.Open();
 
             using (connection)
             {
-                var createStoredProcedure = new SqlCommand(
-                                            @"CREATE PROC usp_GetOlder @id INT AS
-                                                UPDATE Minions
-                                                SET Age += 1
-                                                WHERE Id = @id", connection);
-
-                createStoredProcedure.ExecuteNonQuery();
-
-                var executeStoredProcedure = new SqlCommand(@"usp_GetOlder", connection);
+                using var executeStoredProcedure = new SqlCommand(@"usp_GetOlder", connection);
 
                 executeStoredProcedure.CommandType = CommandType.StoredProcedure;
                 executeStoredProcedure.Parameters.AddWithValue("@id", minionId);
 
                 executeStoredProcedure.ExecuteNonQuery();
 
-                var selectCommand = new SqlCommand(
+                using var selectCommand = new SqlCommand(
                     @"SELECT Name, Age FROM Minions WHERE Id = @Id", connection);
 
                 selectCommand.Parameters.AddWithValue("@Id", minionId);

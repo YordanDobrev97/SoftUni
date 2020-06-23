@@ -1,5 +1,4 @@
-﻿using InitialSetup;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Linq;
 
@@ -7,18 +6,20 @@ namespace IncreaseMinionAge
 {
     public class StartUp
     {
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
         public static void Main()
         {
             var ids = Console.ReadLine().Split().Select(int.Parse).ToList();
 
-            var connection = new SqlConnection(DefaultSetting.StringConnection);
+            var connection = new SqlConnection(StringConnection);
             connection.Open();
 
             using (connection)
             {
                 foreach (var id in ids)
                 {
-                    var command = new SqlCommand(
+                    using var command = new SqlCommand(
                                     @"UPDATE Minions
                                     SET Name = UPPER(LEFT(Name, 1)) + SUBSTRING(Name, 2, LEN(Name)), Age += 1
                                     WHERE Id = @Id", 
@@ -29,7 +30,7 @@ namespace IncreaseMinionAge
                     command.ExecuteNonQuery();
                 }
 
-                var getCommand = new SqlCommand(
+                using var getCommand = new SqlCommand(
                     "SELECT Name, Age FROM Minions", connection);
 
                 var reader = getCommand.ExecuteReader();

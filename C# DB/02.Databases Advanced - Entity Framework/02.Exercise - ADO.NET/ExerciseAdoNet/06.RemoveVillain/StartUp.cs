@@ -1,21 +1,22 @@
-﻿using InitialSetup;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 
 namespace RemoveVillain
 {
     public class StartUp
     {
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
         public static void Main()
         {
             var villainId = int.Parse(Console.ReadLine());
 
-            var connection = new SqlConnection(DefaultSetting.StringConnection);
+            var connection = new SqlConnection(StringConnection);
             connection.Open();
 
             using (connection)
             {
-                SqlCommand command = new SqlCommand(
+                using SqlCommand command = new SqlCommand(
                     @"SELECT Name FROM Villains WHERE Id = @villainId", connection);
 
                 command.Parameters.AddWithValue("@villainId", villainId);
@@ -28,15 +29,14 @@ namespace RemoveVillain
                 }
                 else
                 {
-                    
-                    var deleteMappingTableCommand = new SqlCommand(
+                    using var deleteMappingTableCommand = new SqlCommand(
                         @"DELETE FROM MinionsVillains 
                             WHERE VillainId = @villainId", connection);
 
                     deleteMappingTableCommand.Parameters.AddWithValue("@villainId", villainId);
                     deleteMappingTableCommand.ExecuteNonQuery();
 
-                    var deleteVillainsTableCommand = new SqlCommand(
+                    using var deleteVillainsTableCommand = new SqlCommand(
                         @"DELETE FROM Villains
                             WHERE Id = @villainId", connection);
 

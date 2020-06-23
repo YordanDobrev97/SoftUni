@@ -1,15 +1,18 @@
-﻿using InitialSetup;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 
 namespace AddMinion
 {
     public class StartUp
     {
-        static SqlConnection connection = new SqlConnection(DefaultSetting.StringConnection);
+        private static string StringConnection = @"Server=.\SQLEXPRESS;Database=MinionsDB;Integrated Security=true;";
+
+        static SqlConnection connection = new SqlConnection(StringConnection);
 
         public static void Main()
         {
+            //Minion: Carry 20 Eindhoven
+            //Villain: Jimmy
             connection.Open();
 
             var minionData = Console.ReadLine().Split();
@@ -46,7 +49,7 @@ namespace AddMinion
                     var idMinion = GetIdMinion(minionName);
                     var idVillain = GetIdVillain(villainName);
 
-                    var insertMappingTableCommand = new SqlCommand(
+                    using var insertMappingTableCommand = new SqlCommand(
                         @"INSERT INTO MinionsVillains (MinionId, VillainId) VALUES (@minionId, @villainId)",
                         connection);
 
@@ -58,11 +61,13 @@ namespace AddMinion
                     Console.WriteLine($"Successfully added {minionName} to be minion of {villainName}.");
                 }
             }
+
+            connection.Close();
         }
 
         private static int GetIdVillain(string villainName)
         {
-            var villainCommand = new SqlCommand(
+            using var villainCommand = new SqlCommand(
                 @"SELECT Id FROM Villains WHERE Name = @name", connection);
 
             villainCommand.Parameters.AddWithValue("@name", villainName);
@@ -74,7 +79,7 @@ namespace AddMinion
         private static void InsertVillain(string villainName)
         {
             int defaultEvilnessFactors = 4;
-            var insertCommand = new SqlCommand(
+            using var insertCommand = new SqlCommand(
                 @"INSERT INTO Villains (Name, EvilnessFactorId)  VALUES (@villainName, @evilFactory)", 
                 connection);
 
@@ -96,7 +101,7 @@ namespace AddMinion
 
         private static void InsertTown(string town)
         {
-            var insertTownCommand = new SqlCommand(
+            using var insertTownCommand = new SqlCommand(
                 @"INSERT INTO Towns (Name) VALUES (@townName)", connection);
 
             insertTownCommand.Parameters.AddWithValue("@townName", town);
@@ -107,7 +112,7 @@ namespace AddMinion
         {
             var townId = GetIdTown(minionTown);
 
-            var insertMinionCommand = new SqlCommand(
+            using var insertMinionCommand = new SqlCommand(
                 @"INSERT INTO Minions (Name, Age, TownId) VALUES (@name, @age, @townId)", 
                 connection);
 
@@ -125,7 +130,7 @@ namespace AddMinion
 
         private static int GetIdMinion(string minion)
         {
-            var containsMinionCommand = new SqlCommand(
+            using var containsMinionCommand = new SqlCommand(
                     @"SELECT Id FROM Minions WHERE Name = @Name", connection);
 
             containsMinionCommand.Parameters.AddWithValue("@name", minion);
@@ -136,7 +141,7 @@ namespace AddMinion
 
         private static int GetIdTown(string town)
         {
-            var containsTownCommand = new SqlCommand(
+            using var containsTownCommand = new SqlCommand(
                 @"SELECT Id FROM Towns WHERE Name = @townName", connection);
 
             containsTownCommand.Parameters.AddWithValue("@townName", town);
