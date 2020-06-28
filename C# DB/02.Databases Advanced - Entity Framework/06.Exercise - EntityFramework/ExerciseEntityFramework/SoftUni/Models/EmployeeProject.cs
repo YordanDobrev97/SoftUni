@@ -1,13 +1,10 @@
-﻿namespace SoftUni.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace SoftUni.Models
 {
     public class EmployeeProject
     {
-        public EmployeeProject()
-        {
-            this.Employee = new Employee();
-            this.Project = new Project();
-        }
-
         public int EmployeeId { get; set; }
         public int ProjectId { get; set; }
 
