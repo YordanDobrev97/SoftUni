@@ -1,9 +1,0 @@
-C:\Users\DELL\Desktop\Demo\OPP\bin\Debug\netstandard2.0\OPP.deps.json
-C:\Users\DELL\Desktop\Demo\OPP\bin\Debug\netstandard2.0\OPP.dll
-C:\Users\DELL\Desktop\Demo\OPP\bin\Debug\netstandard2.0\OPP.pdb
-C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP.AssemblyInfo.cs
-C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP.dll
-C:\Users\DELL\Desktop\Demo\OPP\obj\Debug\netstandard2.0\OPP.pdb

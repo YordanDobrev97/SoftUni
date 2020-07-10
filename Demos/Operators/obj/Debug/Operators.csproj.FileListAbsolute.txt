@@ -1,7 +1,0 @@
-C:\Users\DELL\Desktop\Demo\Operators\bin\Debug\Operators.exe.config
-C:\Users\DELL\Desktop\Demo\Operators\bin\Debug\Operators.exe
-C:\Users\DELL\Desktop\Demo\Operators\bin\Debug\Operators.pdb
-C:\Users\DELL\Desktop\Demo\Operators\obj\Debug\Operators.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\Demo\Operators\obj\Debug\Operators.exe
-C:\Users\DELL\Desktop\Demo\Operators\obj\Debug\Operators.pdb
-C:\Users\DELL\Desktop\Demo\Operators\obj\Debug\Operators.csprojAssemblyReference.cache

@@ -1,7 +1,0 @@
-C:\Users\DELL\Desktop\Demo\Demo\obj\Debug\Demo.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\Demo\Demo\bin\Debug\Demo.exe.config
-C:\Users\DELL\Desktop\Demo\Demo\bin\Debug\Demo.exe
-C:\Users\DELL\Desktop\Demo\Demo\bin\Debug\Demo.pdb
-C:\Users\DELL\Desktop\Demo\Demo\obj\Debug\Demo.exe
-C:\Users\DELL\Desktop\Demo\Demo\obj\Debug\Demo.pdb
