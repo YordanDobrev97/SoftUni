@@ -9,12 +9,12 @@ namespace ProductShop.Dtos.Import
         public string Name { get; set; }
 
         [XmlElement(ElementName = "price")]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
         [XmlElement(ElementName = "sellerId")]
         public int SellerId { get; set; }
 
         [XmlElement(ElementName = "buyerId")]
-        public int BuyerId { get; set; }
+        public int? BuyerId { get; set; }
     }
 }

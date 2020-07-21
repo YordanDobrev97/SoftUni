@@ -17,10 +17,10 @@ namespace ProductShop
         public static void Main()
         {
             var db = new ProductShopContext();
-            EnsureCreatedDatabase(db);
+            //EnsureCreatedDatabase(db);
 
-            var users = File.ReadAllText(Path + "/users.xml");
-            var result = ImportUsers(db, users);
+            var users = File.ReadAllText(Path + "/products.xml");
+            var result = ImportProducts(db, users);
             Console.WriteLine(result);
         }
 
@@ -49,6 +49,27 @@ namespace ProductShop
             context.Users.AddRange(users);
             context.SaveChanges();
             return $"Successfully imported {users.Length}";
+        }
+
+        //02.ImportProducts
+        public static string ImportProducts(ProductShopContext context, string inputXml)
+        {
+            var root = "Products";
+            var data = XmlConverter.Deserializer<ImportProductDTO>(inputXml, root);
+
+            var products = data.Select(x => new Product
+            {
+                Name = x.Name,
+                Price = x.Price,
+                SellerId = x.SellerId,
+                BuyerId = x.BuyerId
+            })
+             .ToArray();
+
+            context.Products.AddRange(products);
+            context.SaveChanges();
+
+            return $"Successfully imported {products.Length}";
         }
     }
 }
