@@ -3,6 +3,7 @@ using ProductShop.Data;
 using ProductShop.Dtos.Import;
 using ProductShop.Models;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -19,8 +20,8 @@ namespace ProductShop
             var db = new ProductShopContext();
             //EnsureCreatedDatabase(db);
 
-            var users = File.ReadAllText(Path + "/categories.xml");
-            var result = ImportCategories(db, users);
+            var users = File.ReadAllText(Path + "/categories-products.xml");
+            var result = ImportCategoryProducts(db, users);
             Console.WriteLine(result);
         }
 
@@ -88,6 +89,45 @@ namespace ProductShop
             context.SaveChanges();
 
             return $"Successfully imported {categories.Length}";
+        }
+
+        //04.ImportCategoryProducts
+        public static string ImportCategoryProducts(ProductShopContext context, string inputXml)
+        {
+            var root = "CategoryProducts";
+            var data = XmlConverter.Deserializer<ImportCategoryProductDTO>(inputXml, root);
+
+            //var categoryProducts = data.Select(x => new CategoryProduct
+            //{
+            //    CategoryId = x.CategoryId,
+            //    ProductId = x.ProductId
+            //})
+            //.ToArray();
+
+            var categories = data.Select(x => new CategoryProduct
+            {
+                CategoryId = x.CategoryId,
+                ProductId = x.ProductId
+            })
+            .ToArray();
+
+            List<CategoryProduct> categoryProducts = new List<CategoryProduct>();
+            foreach (var item in categories)
+            {
+                var existCategory = context.Categories.Any(x => x.Id == item.CategoryId);
+                var existProduct = context.Products.Any(x => x.Id == item.ProductId);
+                if (!existCategory || !existProduct)
+                {
+                    continue;
+                }
+
+                categoryProducts.Add(item);
+            }
+
+            context.CategoryProducts.AddRange(categoryProducts);
+            context.SaveChanges();
+
+            return $"Successfully imported {categoryProducts.Count}";
         }
     }
 }
