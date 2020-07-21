@@ -5,8 +5,8 @@ using ProductShop.Models;
 using System;
 using System.Globalization;
 using System.IO;
-using System.Xml;
-using System.Xml.Serialization;
+using System.Linq;
+using XmlFacade;
 
 namespace ProductShop
 {
@@ -17,12 +17,11 @@ namespace ProductShop
         public static void Main()
         {
             var db = new ProductShopContext();
-            Mapper.Initialize(cng => cng.AddProfile(new ProductShopProfile()));
+            EnsureCreatedDatabase(db);
+
             var users = File.ReadAllText(Path + "/users.xml");
             var result = ImportUsers(db, users);
             Console.WriteLine(result);
-
-            //EnsureCreatedDatabase(db);
         }
 
         public static void EnsureCreatedDatabase(ProductShopContext db)
@@ -36,23 +35,20 @@ namespace ProductShop
         //01.ImportUsers
         public static string ImportUsers(ProductShopContext context, string inputXml)
         {
-            var root = new XmlRootAttribute("Users");
-            var serializer = new XmlSerializer(typeof(ImportUserDTO[]), root);
+            var root = "Users";
+            var data = XmlConverter.Deserializer<ImportUserDTO>(inputXml, root);
 
-            using (var reader = new StringReader(inputXml))
+            var users = data.Select(x => new User
             {
-                var users = (ImportUserDTO[])serializer.Deserialize(reader);
+                FirstName = x.FirstName,
+                LastName = x.LastName,
+                Age = x.Age
+            })
+            .ToArray();
 
-                foreach (var userDTO in users)
-                {
-                    var user = Mapper.Map<User>(userDTO);
-                    context.Users.Add(user);
-                }
-            }
-
-            int usersCount = context.SaveChanges();
-
-            return $"Successfully imported {usersCount}";
+            context.Users.AddRange(users);
+            context.SaveChanges();
+            return $"Successfully imported {users.Length}";
         }
     }
 }
