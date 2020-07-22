@@ -21,8 +21,8 @@ namespace ProductShop
             var db = new ProductShopContext();
             //EnsureCreatedDatabase(db);
 
-            var result = GetCategoriesByProductsCount(db);
-            File.WriteAllText(Path + "/Results/categories-by-products.xml", result);
+            var result = GetUsersWithProducts(db);
+            File.WriteAllText(Path + "/Results/users-and-products.xml", result);
         }
 
         public static void EnsureCreatedDatabase(ProductShopContext db)
@@ -193,6 +193,44 @@ namespace ProductShop
 
             var root = "Categories";
             var xml = XmlConverter.Serialize(categories, root);
+            return xml;
+        }
+
+        //08.
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            var users = context.Users
+                .AsEnumerable()
+                .Where(u => u.ProductsSold.Any())
+                .Select(u => new UserDTO
+                {
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    Age = u.Age,
+                    SoldProduct = new UserSoldProductDTO
+                    {
+                        Count = u.ProductsSold.Count,
+                        Products = u.ProductsSold.Select(ps => new ProductDTO
+                        {
+                            Name = ps.Name,
+                            Price = ps.Price
+                        })
+                        .OrderByDescending(p => p.Price)
+                        .ToArray()
+                    }
+                })
+                .OrderByDescending(p => p.SoldProduct.Count)
+                .Take(10)
+                .ToArray();
+
+            var result = new UserProductDTO
+            {
+                Count = context.Users.Count(u => u.ProductsSold.Any()),
+                Users = users
+            };
+
+            var root = "Users";
+            var xml = XmlConverter.Serialize(result, root);
             return xml;
         }
     }
