@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ProductShop.Data;
+using ProductShop.Dtos.Export;
 using ProductShop.Dtos.Import;
 using ProductShop.Models;
 using System;
@@ -20,9 +21,8 @@ namespace ProductShop
             var db = new ProductShopContext();
             //EnsureCreatedDatabase(db);
 
-            var users = File.ReadAllText(Path + "/categories-products.xml");
-            var result = ImportCategoryProducts(db, users);
-            Console.WriteLine(result);
+            var result = GetProductsInRange(db);
+            File.WriteAllText(Path + "/Results/products-in-range.xml", result);
         }
 
         public static void EnsureCreatedDatabase(ProductShopContext db)
@@ -128,6 +128,26 @@ namespace ProductShop
             context.SaveChanges();
 
             return $"Successfully imported {categoryProducts.Count}";
+        }
+
+        //05.
+        public static string GetProductsInRange(ProductShopContext context)
+        {
+            var products = context.Products
+                .Where(p => p.Price >= 500 && p.Price <= 1000)
+                .Select(p => new ExportProductDTO
+                {
+                    Name = p.Name,
+                    Price = p.Price,
+                    Buyer = $"{p.Buyer.FirstName} {p.Buyer.LastName}"
+                })
+                .OrderBy(p => p.Price)
+                .Take(10)
+                .ToArray();
+
+            var root = "Products";
+            var xmlProducts = XmlConverter.Serialize(products, root);
+            return xmlProducts;
         }
     }
 }
