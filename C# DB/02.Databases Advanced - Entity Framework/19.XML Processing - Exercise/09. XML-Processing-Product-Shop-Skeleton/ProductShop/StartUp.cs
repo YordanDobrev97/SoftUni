@@ -21,8 +21,8 @@ namespace ProductShop
             var db = new ProductShopContext();
             //EnsureCreatedDatabase(db);
 
-            var result = GetProductsInRange(db);
-            File.WriteAllText(Path + "/Results/products-in-range.xml", result);
+            var result = GetSoldProducts(db);
+            File.WriteAllText(Path + "/Results/users-sold-products.xml", result);
         }
 
         public static void EnsureCreatedDatabase(ProductShopContext db)
@@ -148,6 +148,32 @@ namespace ProductShop
             var root = "Products";
             var xmlProducts = XmlConverter.Serialize(products, root);
             return xmlProducts;
+        }
+
+        //06.
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+            var users = context.Users
+                .Where(u => u.ProductsSold.Any())
+                .Select(u => new ExportUserSoldProductDTO
+                {
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    SoldProducts = u.ProductsSold.Select(ps => new SoldProductDTO
+                    {
+                        Name = ps.Name,
+                        Price = ps.Price
+                    })
+                    .ToArray()
+                })
+                .OrderBy(l => l.LastName)
+                .ThenBy(f => f.FirstName)
+                .Take(5)
+                .ToArray();
+
+            var root = "Users";
+            var xml = XmlConverter.Serialize(users, root);
+            return xml;
         }
     }
 }
