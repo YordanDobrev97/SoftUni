@@ -19,16 +19,26 @@
 
             IMapper mapper = new Mapper(config);
             IPetService petService = new PetStoreService(db, mapper);
+            IOwnerService ownerService = new OwnerService(db, mapper);
+
+            var inputOwnerModel = new OwnerInputViewModelService
+            {
+                Name = "Pesho"
+            };
+
+            ownerService.CreateOwner(inputOwnerModel);
 
             var inputModel = new PetInputViewModelService
             {
+                Id = 1,
                 Name = "Sharo",
                 Age = 3,
                 Breed = "sweet cat breed",
-                Gender = "Female"
+                Gender = "Female",
+                OwnerId = 1
             };
 
-            petService.AddPet(inputModel);
+            ownerService.BuyPet(inputModel);
         }
     }
 }

@@ -9,6 +9,7 @@
         public PetStoreProfile()
         {
             this.CreateMap<PetInputViewModelService, Pet>();
+            this.CreateMap<OwnerInputViewModelService, Owner>();
         }
     }
 }
