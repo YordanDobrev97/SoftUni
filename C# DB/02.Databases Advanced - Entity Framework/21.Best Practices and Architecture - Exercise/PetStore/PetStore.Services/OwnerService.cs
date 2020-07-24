@@ -1,13 +1,13 @@
 ﻿namespace PetStore.Services
 {
     using AutoMapper;
+    using PetStore.Common;
     using PetStore.Data;
     using PetStore.Models;
     using PetStore.ServiceModels.InputModels;
     using PetStore.Services.Interfaces;
     using System;
     using System.Linq;
-    using System.Threading;
 
     public class OwnerService : IOwnerService
     {
@@ -38,14 +38,14 @@
 
             if (pet == null)
             {
-                throw new ArgumentException("Pet not exist, sorry!");
+                throw new ArgumentException(Constants.NotExistMessage);
             }
 
             var owner = db.Owners.FirstOrDefault(o => o.Id == model.OwnerId);
 
             if (owner == null)
             {
-                throw new ArgumentException("Owner not exist, sorry!");
+                throw new ArgumentException(String.Format(Constants.NotExistMessage, "Owner"));
             }
 
             pet.OwnerId = owner.Id;

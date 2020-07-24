@@ -1,6 +1,5 @@
 ﻿namespace PetStore.Data
 {
-    using Microsoft.Data.SqlClient;
     using Microsoft.EntityFrameworkCore;
     using PetStore.Common;
     using PetStore.Models;

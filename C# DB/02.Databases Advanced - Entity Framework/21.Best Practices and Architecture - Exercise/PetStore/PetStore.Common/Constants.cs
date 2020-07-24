@@ -13,5 +13,8 @@
         public const int PetMinLengthName = 4;
         public const int PetMaxAge = 200;
         public const int PetMinAge = 1;
+
+        //PetStoreService
+        public const string NotExistMessage = "{0} not exist, sorry";
     }
 }

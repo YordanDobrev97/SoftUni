@@ -1,10 +1,13 @@
 ﻿namespace PetStore.Services
 {
     using AutoMapper;
+    using PetStore.Common;
     using PetStore.Data;
     using PetStore.Models;
     using PetStore.ServiceModels.InputModels;
     using PetStore.Services.Interfaces;
+    using System;
+    using System.Linq;
 
     public class PetStoreService : IPetService
     {
@@ -27,7 +30,17 @@
 
         public bool Remove(int id)
         {
-            throw new System.NotImplementedException();
+            var pet = this.db.Pets.FirstOrDefault(p => p.Id == id);
+
+            if (pet == null)
+            {
+                throw new ArgumentException(String.Format(Constants.NotExistMessage, "Pet"));
+            }
+
+            this.db.Pets.Remove(pet);
+            int affected = this.db.SaveChanges();
+
+            return affected == 1;
         }
 
         public bool Remove(string name)
