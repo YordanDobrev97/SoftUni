@@ -2,10 +2,16 @@
 {
     using PetStore.Common;
     using PetStore.Models.Enums;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     public class Pet
     {
+        public Pet()
+        {
+            this.Foods = new HashSet<Food>();
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -30,5 +36,9 @@
         public Owner Owner { get; set; }
 
         public bool IsSold { get; set; }
+
+        public int QuantityFood { get; set; }
+
+        public virtual ICollection<Food> Foods { get; set; }
     }
 }

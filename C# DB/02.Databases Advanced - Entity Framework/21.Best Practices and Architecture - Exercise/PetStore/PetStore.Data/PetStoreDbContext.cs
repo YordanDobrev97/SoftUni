@@ -21,6 +21,8 @@
 
         public DbSet<OwnerPets> OwnerPets { get; set; }
 
+        public DbSet<Food> Foods { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             if (!options.IsConfigured)
