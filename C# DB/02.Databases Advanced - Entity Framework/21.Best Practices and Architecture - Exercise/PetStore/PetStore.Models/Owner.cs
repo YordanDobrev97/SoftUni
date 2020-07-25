@@ -9,6 +9,7 @@
         public Owner()
         {
             this.Pets = new HashSet<OwnerPets>();
+            this.Toys = new HashSet<Toy>();
         }
 
         [Key]
@@ -20,5 +21,7 @@
         public string Name { get; set; }
 
         public virtual ICollection<OwnerPets> Pets { get; set; }
+
+        public virtual ICollection<Toy> Toys { get; set; }
     }
 }

@@ -23,6 +23,8 @@
 
         public DbSet<Food> Foods { get; set; }
 
+        public DbSet<Toy> Toys { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             if (!options.IsConfigured)
