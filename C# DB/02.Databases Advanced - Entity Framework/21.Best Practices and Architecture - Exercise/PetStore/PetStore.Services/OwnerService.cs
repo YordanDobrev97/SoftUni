@@ -58,5 +58,12 @@
             owner.Pets.Add(ownerPet);
             this.db.SaveChanges();
         }
+
+        public void FeedPet(Pet pet, Food food)
+        {
+            pet.QuantityFood += food.Quantity;
+            pet.Foods.Add(food);
+            this.db.SaveChanges();
+        }
     }
 }

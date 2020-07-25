@@ -28,9 +28,23 @@
             db.SaveChanges();
         }
 
-        public bool Remove(int id)
+        public void Eat(int id, int quantity)
+        {
+            var pet = this.GetPetById(id);
+            pet.QuantityFood -= quantity;
+
+            this.db.SaveChanges();
+        }
+
+        public Pet GetPetById(int id)
         {
             var pet = this.db.Pets.FirstOrDefault(p => p.Id == id);
+            return pet;
+        }
+
+        public bool Remove(int id)
+        {
+            var pet = this.GetPetById(id);
             return Remove(pet);
         }
 

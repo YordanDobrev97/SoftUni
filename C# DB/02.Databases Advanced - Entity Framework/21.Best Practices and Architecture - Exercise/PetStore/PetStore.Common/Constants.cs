@@ -16,5 +16,8 @@
 
         //PetStoreService
         public const string NotExistMessage = "{0} not exist, sorry";
+
+        //Food
+        public const string NoEnoughQuantityFood = "No enough quantity food";
     }
 }
