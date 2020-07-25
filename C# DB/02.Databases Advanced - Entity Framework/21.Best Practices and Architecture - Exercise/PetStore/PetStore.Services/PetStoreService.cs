@@ -31,7 +31,17 @@
         public bool Remove(int id)
         {
             var pet = this.db.Pets.FirstOrDefault(p => p.Id == id);
+            return Remove(pet);
+        }
 
+        public bool Remove(string name)
+        {
+            var pet = this.db.Pets.FirstOrDefault(p => p.Name == name);
+            return Remove(pet);
+        }
+
+        private bool Remove(Pet pet)
+        {
             if (pet == null)
             {
                 throw new ArgumentException(String.Format(Constants.NotExistMessage, "Pet"));
@@ -41,11 +51,6 @@
             int affected = this.db.SaveChanges();
 
             return affected == 1;
-        }
-
-        public bool Remove(string name)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
