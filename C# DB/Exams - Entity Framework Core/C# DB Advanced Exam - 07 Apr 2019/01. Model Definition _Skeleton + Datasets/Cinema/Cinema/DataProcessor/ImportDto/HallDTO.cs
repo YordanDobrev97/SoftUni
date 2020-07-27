@@ -1,6 +1,4 @@
-﻿using Cinema.Data.Models;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Cinema.DataProcessor.ImportDto
 {
@@ -14,6 +12,7 @@ namespace Cinema.DataProcessor.ImportDto
 
         public bool Is3D { get; set; }
 
+        [Required]
         [Range(1, int.MaxValue)]
         public int Seats { get; set; }
     }
