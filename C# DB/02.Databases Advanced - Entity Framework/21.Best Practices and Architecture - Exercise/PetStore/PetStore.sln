@@ -11,21 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{83
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{BB609592-2C79-49B2-A31D-BFF8109F5D1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Models", "PetStore.Models\PetStore.Models.csproj", "{AF17CE19-76AE-4FDA-8439-C9561F7AC065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.Models", "PetStore.Models\PetStore.Models.csproj", "{AF17CE19-76AE-4FDA-8439-C9561F7AC065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Data", "PetStore.Data\PetStore.Data.csproj", "{01F961E2-4505-4C7C-99D4-C5E48E9B3318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.Data", "PetStore.Data\PetStore.Data.csproj", "{01F961E2-4505-4C7C-99D4-C5E48E9B3318}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5010E7F3-8FA1-4382-8C07-3990FFA7D012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Common", "PetStore.Common\PetStore.Common.csproj", "{8D499871-905B-4F20-9EB0-376A65C24E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.Common", "PetStore.Common\PetStore.Common.csproj", "{8D499871-905B-4F20-9EB0-376A65C24E2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{01C14264-08D0-452F-8B2B-5D99E004DC73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{01C14264-08D0-452F-8B2B-5D99E004DC73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Services", "PetStore.Services\PetStore.Services.csproj", "{B5070947-D8B6-4A25-8189-2BC753529D7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.Services", "PetStore.Services\PetStore.Services.csproj", "{B5070947-D8B6-4A25-8189-2BC753529D7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.ServiceModels", "PetStore.ServiceModels\PetStore.ServiceModels.csproj", "{ECEBB92F-B215-4B44-A459-F2C4FE8B708B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.ServiceModels", "PetStore.ServiceModels\PetStore.ServiceModels.csproj", "{ECEBB92F-B215-4B44-A459-F2C4FE8B708B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Services.Mapping", "PetStore.Services.Mapping\PetStore.Services.Mapping.csproj", "{AB47616C-7381-412D-8660-4B59394F90C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.Services.Mapping", "PetStore.Services.Mapping\PetStore.Services.Mapping.csproj", "{AB47616C-7381-412D-8660-4B59394F90C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,5 +19,12 @@
 
         //Food
         public const string NoEnoughQuantityFood = "No enough quantity food";
+
+        //Client
+        public const int MinLengthUsername = 5;
+        public const int MaxLengthUsername = 40;
+
+        public const int MinLengthPassword = 10;
+        public const int MaxLengthPassword = 100;
     }
 }
