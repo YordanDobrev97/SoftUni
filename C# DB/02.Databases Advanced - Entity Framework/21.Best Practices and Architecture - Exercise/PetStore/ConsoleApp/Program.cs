@@ -25,14 +25,14 @@
             IPetService petService = new PetStoreService(db, mapper);
             IOwnerService ownerService = new OwnerService(db, mapper);
 
-            var product = new ProductInputViewModelService
+            var toy = new ToyInputViewModelService
             {
-                Name = "Something...",
-                Price = 3000,
+                Name = "car",
+                Price = 30,
                 OwnerId = 1
             };
 
-            ownerService.BuyProduct(product);
+            ownerService.BuyToy(toy);
         }
     }
 }

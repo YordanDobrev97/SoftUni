@@ -13,6 +13,6 @@
 
         void BuyProduct(ProductInputViewModelService model);
 
-        void BuyToys(ToyInputViewModelService model);
+        void BuyToy(ToyInputViewModelService model);
     }
 }

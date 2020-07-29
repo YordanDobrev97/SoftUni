@@ -68,7 +68,7 @@
 
         public void BuyProduct(ProductInputViewModelService model)
         {
-            var ownerId = this.db.Owners.FirstOrDefault(o => o.Id == model.OwnerId);
+            Owner ownerId = ExistOwner(model.OwnerId);
 
             if (ownerId == null)
             {
@@ -86,9 +86,29 @@
             this.db.SaveChanges();
         }
 
-        public void BuyToys(ToyInputViewModelService model)
+        public void BuyToy(ToyInputViewModelService model)
         {
-            throw new NotImplementedException();
+            var owner = ExistOwner(model.OwnerId);
+
+            if (owner == null)
+            {
+                throw new ArgumentException();
+            }
+
+            var toy = new Toy
+            {
+                Name = model.Name,
+                Price = model.Price,
+                OwnerId = model.OwnerId
+            };
+
+            this.db.Toys.Add(toy);
+            this.db.SaveChanges();
+        }
+
+        private Owner ExistOwner(int id)
+        {
+            return this.db.Owners.FirstOrDefault(o => o.Id == id);
         }
     }
 }
