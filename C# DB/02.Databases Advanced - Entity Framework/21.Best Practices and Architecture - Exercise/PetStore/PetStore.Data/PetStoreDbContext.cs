@@ -25,8 +25,6 @@
 
         public DbSet<Toy> Toys { get; set; }
 
-        public DbSet<Client> Clients { get; set; }
-
         public DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
@@ -42,8 +40,6 @@
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<OwnerPets>().HasKey(op => new { op.OwnerId, op.PetId });
-
-            builder.Entity<ClientProduct>().HasKey(cp => new { cp.ClientId, cp.ProductId });
         }
     }
 }

@@ -15,6 +15,7 @@
         public static void Main()
         {
             var db = new PetStoreDbContext();
+
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<PetStoreProfile>();
@@ -27,7 +28,7 @@
 
             var first = petService.GetPetById(1);
             var food = foodService.GetFoodById(1);
-            
+
             petService.Eat(1, 200);
             ownerService.FeedPet(first, food);
         }
