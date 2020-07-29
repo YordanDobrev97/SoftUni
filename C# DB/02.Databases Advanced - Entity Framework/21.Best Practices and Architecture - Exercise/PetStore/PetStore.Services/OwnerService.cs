@@ -65,5 +65,30 @@
             pet.Foods.Add(food);
             this.db.SaveChanges();
         }
+
+        public void BuyProduct(ProductInputViewModelService model)
+        {
+            var ownerId = this.db.Owners.FirstOrDefault(o => o.Id == model.OwnerId);
+
+            if (ownerId == null)
+            {
+                throw new ArgumentException();
+            }
+
+            var product = new Product
+            {
+                Name = model.Name,
+                Price = model.Price,
+                OwnerId = model.OwnerId
+            };
+
+            this.db.Products.Add(product);
+            this.db.SaveChanges();
+        }
+
+        public void BuyToys(ToyInputViewModelService model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

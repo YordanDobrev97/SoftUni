@@ -10,5 +10,9 @@
         void BuyPet(PetInputViewModelService model);
 
         void FeedPet(Pet pet, Food food);
+
+        void BuyProduct(ProductInputViewModelService model);
+
+        void BuyToys(ToyInputViewModelService model);
     }
 }

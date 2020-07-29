@@ -24,13 +24,15 @@
             IMapper mapper = new Mapper(config);
             IPetService petService = new PetStoreService(db, mapper);
             IOwnerService ownerService = new OwnerService(db, mapper);
-            IFoodService foodService = new FoodService(db);
 
-            var first = petService.GetPetById(1);
-            var food = foodService.GetFoodById(1);
+            var product = new ProductInputViewModelService
+            {
+                Name = "Something...",
+                Price = 3000,
+                OwnerId = 1
+            };
 
-            petService.Eat(1, 200);
-            ownerService.FeedPet(first, food);
+            ownerService.BuyProduct(product);
         }
     }
 }

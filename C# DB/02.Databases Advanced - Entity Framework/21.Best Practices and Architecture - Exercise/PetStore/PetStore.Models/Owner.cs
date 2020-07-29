@@ -23,5 +23,7 @@
         public virtual ICollection<OwnerPets> Pets { get; set; }
 
         public virtual ICollection<Toy> Toys { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
