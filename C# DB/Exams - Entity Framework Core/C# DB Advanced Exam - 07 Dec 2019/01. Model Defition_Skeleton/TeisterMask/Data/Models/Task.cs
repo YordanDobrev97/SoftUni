@@ -17,26 +17,22 @@ namespace TeisterMask.Data.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(40, MinimumLength = 2)]
+        [MaxLength(40)]
         public string Name { get; set; }
 
-        [Required]
         public DateTime OpenDate { get; set; }
 
-        [Required]
         public DateTime DueDate { get; set; }
 
-        [Required]
         public ExecutionType ExecutionType { get; set; }
 
-        [Required]
         public LabelType LabelType { get; set; }
 
-        [Required]
+        [ForeignKey("Project")]
         public int ProjectId { get; set; }
 
         public Project Project { get; set; }
 
-        public ICollection<EmployeeTask> EmployeesTasks { get; set; }
+        public virtual ICollection<EmployeeTask> EmployeesTasks { get; set; }
     }
 }
