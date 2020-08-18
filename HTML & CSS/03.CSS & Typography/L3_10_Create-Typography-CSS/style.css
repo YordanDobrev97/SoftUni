@@ -1,0 +1,48 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.dist {
+    list-style-type: disc;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+table {
+    width: 100%;
+}
+
+table thead {
+    background-color: rgb(172, 169, 169);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(238, 238, 238);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 2px solid rgb(221,221,221);
+    padding: 2px;
+}
+
+.author {
+    margin-left: 95%;
+}
