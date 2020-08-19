@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+section {
+    border: 3px dotted greenyellow;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+    width: 100%;
+    border: 3px solid blue;
+}
