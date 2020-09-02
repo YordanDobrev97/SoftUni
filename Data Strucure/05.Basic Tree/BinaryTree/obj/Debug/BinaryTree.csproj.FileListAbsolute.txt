@@ -1,7 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\bin\Debug\BinaryTree.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\bin\Debug\BinaryTree.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\bin\Debug\BinaryTree.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\obj\Debug\BinaryTree.csprojAssemblyReference.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\obj\Debug\BinaryTree.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\obj\Debug\BinaryTree.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\05.BasicsTree\BinaryTree\obj\Debug\BinaryTree.pdb

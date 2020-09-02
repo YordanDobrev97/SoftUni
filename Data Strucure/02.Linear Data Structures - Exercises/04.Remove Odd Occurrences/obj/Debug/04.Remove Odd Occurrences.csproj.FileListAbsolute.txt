@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\04.Remove Odd Occurrences\bin\Debug\04.Remove Odd Occurrences.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\04.Remove Odd Occurrences\bin\Debug\04.Remove Odd Occurrences.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\04.Remove Odd Occurrences\bin\Debug\04.Remove Odd Occurrences.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\04.Remove Odd Occurrences\obj\Debug\04.Remove Odd Occurrences.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\04.Remove Odd Occurrences\obj\Debug\04.Remove Odd Occurrences.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\04.Remove Odd Occurrences\obj\Debug\04.Remove Odd Occurrences.csprojResolveAssemblyReference.cache

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -23,13 +24,13 @@ namespace HttpRequester
             while (true)
             {
                 TcpClient client = await listener.AcceptTcpClientAsync();
-                NetworkStream stream = client.GetStream();
+                using NetworkStream stream = client.GetStream();
 
                 byte[] data = new byte[4096];
                 int countReadBytes = stream.Read(data, 0, data.Length);
                 string request = Encoding.UTF8.GetString(data, 0, countReadBytes);
 
-                string responseText = "<h1>Hello</h1>";
+                string responseText = File.ReadAllText("../../../form.html");
                 string response = "HTTP/1.0 200 OK" + NewLine +
                                   "Server: MyServer" + NewLine +
                                   "Content-Type: text/html" + NewLine +

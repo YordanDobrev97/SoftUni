@@ -1,7 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\bin\Debug\01.Introduction.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\bin\Debug\01.Introduction.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\bin\Debug\01.Introduction.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\obj\Debug\01.Introduction.csprojAssemblyReference.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\obj\Debug\01.Introduction.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\obj\Debug\01.Introduction.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\06.Basic Tree Data Structure - Exercises\Homework\01.Introduction\obj\Debug\01.Introduction.pdb

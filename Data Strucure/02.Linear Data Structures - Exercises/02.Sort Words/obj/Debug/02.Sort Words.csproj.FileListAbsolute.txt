@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\02.Sort Words\bin\Debug\02.Sort Words.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\02.Sort Words\bin\Debug\02.Sort Words.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\02.Sort Words\bin\Debug\02.Sort Words.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\02.Sort Words\obj\Debug\02.Sort Words.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\02.Sort Words\obj\Debug\02.Sort Words.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\02.Sort Words\obj\Debug\02.Sort Words.csprojResolveAssemblyReference.cache

@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\03.Longest Subsequence\bin\Debug\03.Longest Subsequence.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\03.Longest Subsequence\bin\Debug\03.Longest Subsequence.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\03.Longest Subsequence\bin\Debug\03.Longest Subsequence.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\03.Longest Subsequence\obj\Debug\03.Longest Subsequence.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\03.Longest Subsequence\obj\Debug\03.Longest Subsequence.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\03.Longest Subsequence\obj\Debug\03.Longest Subsequence.csprojResolveAssemblyReference.cache

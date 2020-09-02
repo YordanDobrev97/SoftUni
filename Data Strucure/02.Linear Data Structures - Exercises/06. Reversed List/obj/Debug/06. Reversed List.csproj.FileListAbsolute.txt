@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\06. Reversed List\bin\Debug\_06.Reversed_List.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\06. Reversed List\obj\Debug\06. Reversed List.csprojResolveAssemblyReference.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\06. Reversed List\bin\Debug\_06.Reversed_List.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\06. Reversed List\bin\Debug\_06.Reversed_List.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\06. Reversed List\obj\Debug\_06.Reversed_List.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\02.Linear Data Structures - Exercises\Homework to CSharp\06. Reversed List\obj\Debug\_06.Reversed_List.pdb

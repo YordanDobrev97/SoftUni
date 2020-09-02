@@ -1,6 +1,0 @@
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\01.ReverseNumsStack\bin\Debug\01.ReverseNumsStack.exe.config
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\01.ReverseNumsStack\bin\Debug\01.ReverseNumsStack.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\01.ReverseNumsStack\bin\Debug\01.ReverseNumsStack.pdb
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\01.ReverseNumsStack\obj\Debug\01.ReverseNumsStack.csprojResolveAssemblyReference.cache
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\01.ReverseNumsStack\obj\Debug\01.ReverseNumsStack.exe
-C:\Users\DELL\Documents\Телерик\4.Date Strucures and Algorithms\04.Linear Data Strucutres - Stacks and Queues - Exercises\Homework\01.ReverseNumsStack\obj\Debug\01.ReverseNumsStack.pdb
