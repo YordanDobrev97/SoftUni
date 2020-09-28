@@ -89,6 +89,8 @@
                     bodyBuilder.AppendLine(line);
                 }
             }
+
+            this.Body = bodyBuilder.ToString();
         }
 
         public HttpMethodType HttpMethod { get; set; }
