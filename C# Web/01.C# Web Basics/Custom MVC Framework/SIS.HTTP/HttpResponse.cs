@@ -6,10 +6,10 @@
     public class HttpResponse
     {
         public HttpResponse(HttpResponseCode statusCode, byte[] body)
+            : this()
         {
             this.Version = HttpVersionType.Http10;
             this.StatusCode = statusCode;
-            this.Headers = new List<Header>();
             this.Body = body;
 
             if (this.Body?.Length > 0)
@@ -18,11 +18,20 @@
             }
         }
 
+        internal HttpResponse()
+        {
+            this.Headers = new List<Header>();
+            this.Cookies = new List<ResponseCookie>();
+        }
+
+
         public HttpVersionType Version { get; set; }
 
         public HttpResponseCode StatusCode { get; set; }
 
         public ICollection<Header> Headers { get; set; }
+
+        public ICollection<ResponseCookie> Cookies { get; set; }
 
         public byte[] Body { get; set; }
 
@@ -42,6 +51,11 @@
             foreach (var header in this.Headers)
             {
                 response.Append(header.ToString() + HttpConstants.NewLine);
+            }
+
+            foreach (var cookie in this.Cookies)
+            {
+                response.Append("Set-Cookie: " + cookie.ToString() + HttpConstants.NewLine);
             }
 
             response.Append(HttpConstants.NewLine);

@@ -10,4 +10,14 @@
     <ProjectReference Include="..\SIS.MvcFramework\SIS.MvcFramework.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="www.root\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="www.root\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

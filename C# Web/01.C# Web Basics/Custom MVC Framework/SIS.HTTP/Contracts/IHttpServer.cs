@@ -1,4 +1,4 @@
-﻿namespace SIS.HTTP
+﻿namespace SIS.HTTP.Contracts
 {
     using System.Threading.Tasks;
 

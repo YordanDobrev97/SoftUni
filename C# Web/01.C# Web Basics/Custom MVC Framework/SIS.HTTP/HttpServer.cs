@@ -1,23 +1,26 @@
 ﻿namespace SIS.HTTP
 {
+    using SIS.HTTP.Contracts;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Net;
     using System.Net.Sockets;
     using System.Text;
-    using System.Threading;
     using System.Threading.Tasks;
 
     public class HttpServer : IHttpServer
     {
         private readonly TcpListener tcpListener;
         private readonly IList<Route> routes;
+        private readonly IDictionary<string, IDictionary<string, string>>
+            sessions;
 
         public HttpServer(int port, IList<Route> routes)
         {
             this.tcpListener = new TcpListener(IPAddress.Loopback, port);
             this.routes = routes;
+            this.sessions = new Dictionary<string, IDictionary<string, string>>();
         }
 
         public async Task ResetAsync()
@@ -49,13 +52,10 @@
             using (var stream = client.GetStream())
             {
                 byte[] buffer = new byte[1000000];
-                Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                 var lenght = await stream.ReadAsync(buffer, 0, buffer.Length);
-                Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
-
+                
                 string requestString =
                     Encoding.UTF8.GetString(buffer, 0, lenght);
-                Console.WriteLine(requestString);
 
                 var request = new HttpRequest(requestString);
                 var route = routes.
@@ -75,9 +75,21 @@
                 response.Headers.Add(new Header("Server", "NikiServer 2020"));
                 response.Headers.Add(new Header("Content-Type", "text/html"));
 
-                byte[] responseBytes = Encoding.UTF8.GetBytes(response.ToString());
-                await stream.WriteAsync(response.Body);
+                var sessionCookie = request.Cookies.FirstOrDefault(c => c.Name == HttpConstants.SessionCookieName);
 
+                if (sessionCookie == null || !this.sessions.ContainsKey(sessionCookie.Value))
+                {
+                    var sessionId = Guid.NewGuid().ToString();
+                    this.sessions.Add(sessionId, new Dictionary<string, string>());
+
+                    response.Cookies.Add(new ResponseCookie(HttpConstants.SessionCookieName, sessionId) { HttpOnly = true, MaxAge = 30 * 3600 });
+                }
+                
+                byte[] responseBytes = Encoding.UTF8.GetBytes(response.ToString());
+                await stream.WriteAsync(responseBytes);
+                await stream.WriteAsync(response.Body);
+                
+                Console.WriteLine($"{request.HttpMethod} {request.Path}");
                 Console.WriteLine(new string('=', 70));
             }
         }
