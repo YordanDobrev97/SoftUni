@@ -1,6 +1,8 @@
 ﻿namespace SIS.HTTP
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Net;
     using System.Net.Sockets;
     using System.Text;
@@ -10,11 +12,12 @@
     public class HttpServer : IHttpServer
     {
         private readonly TcpListener tcpListener;
+        private readonly IList<Route> routes;
 
-        //TODO actions...
-        public HttpServer(int port)
+        public HttpServer(int port, IList<Route> routes)
         {
             this.tcpListener = new TcpListener(IPAddress.Loopback, port);
+            this.routes = routes;
         }
 
         public async Task ResetAsync()
@@ -54,9 +57,21 @@
                     Encoding.UTF8.GetString(buffer, 0, lenght);
                 Console.WriteLine(requestString);
 
-                var content = Encoding.UTF8.GetBytes("<h1>Hello, World!");
+                var request = new HttpRequest(requestString);
+                var route = routes.
+                    FirstOrDefault(r => r.Method == request.HttpMethod 
+                               && r.Path == request.Path);
 
-                var response = new HttpResponse(HttpResponseCode.Ok, content);
+                HttpResponse response;
+                if (route == null)
+                {
+                    response = new HttpResponse(HttpResponseCode.NotFound, null);
+                }
+                else
+                {
+                    response = route.Action(request);
+                }
+
                 response.Headers.Add(new Header("Server", "NikiServer 2020"));
                 response.Headers.Add(new Header("Content-Type", "text/html"));
 
