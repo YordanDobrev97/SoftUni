@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Text;
+    using System.Web;
 
     public class HttpRequest
     {
@@ -90,7 +91,7 @@
                 }
             }
 
-            this.Body = bodyBuilder.ToString();
+            this.Body = HttpUtility.UrlDecode(bodyBuilder.ToString().Trim('\r', '\r'));
         }
 
         public HttpMethodType HttpMethod { get; set; }
