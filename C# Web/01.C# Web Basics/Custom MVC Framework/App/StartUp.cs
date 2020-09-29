@@ -10,13 +10,11 @@
     {
         public static async Task Main()
         {
-            var routeTable = new List<Route>();
-            routeTable.Add(new Route(HttpMethodType.Get, "/", Index));
-            routeTable.Add(new Route(HttpMethodType.Get, "/login", Login));
-            routeTable.Add(new Route(HttpMethodType.Get, "/register", Register));
-            routeTable.Add(new Route(HttpMethodType.Get, "/favicon.ico", Favicon));
-
-            var http = new HttpServer(80, routeTable);
+            var http = new HttpServer(80);
+            http.AddRoute(HttpMethodType.Get, "/", Index);
+            http.AddRoute(HttpMethodType.Get, "/favicon.ico", Favicon);
+            http.AddRoute(HttpMethodType.Get, "/login", Login);
+            http.AddRoute(HttpMethodType.Get, "/register", Register);
 
             await http.StartAsync();
         }

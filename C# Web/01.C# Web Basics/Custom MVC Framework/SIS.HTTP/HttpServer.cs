@@ -11,16 +11,21 @@
 
     public class HttpServer : IHttpServer
     {
+        private List<Route> routeTable;
         private readonly TcpListener tcpListener;
-        private readonly IList<Route> routes;
         private readonly IDictionary<string, IDictionary<string, string>>
             sessions;
 
-        public HttpServer(int port, IList<Route> routes)
+        public HttpServer(int port)
         {
             this.tcpListener = new TcpListener(IPAddress.Loopback, port);
-            this.routes = routes;
             this.sessions = new Dictionary<string, IDictionary<string, string>>();
+            this.routeTable = new List<Route>();
+        }
+
+        public void AddRoute(HttpMethodType method, string path, Func<HttpRequest, HttpResponse> action)
+        {
+            routeTable.Add(new Route(method, path, action));
         }
 
         public async Task ResetAsync()
@@ -58,7 +63,7 @@
                     Encoding.UTF8.GetString(buffer, 0, lenght);
 
                 var request = new HttpRequest(requestString);
-                var route = routes.
+                var route = routeTable.
                     FirstOrDefault(r => r.Method == request.HttpMethod 
                                && r.Path == request.Path);
 
