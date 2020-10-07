@@ -3,6 +3,7 @@
     using App.Controllers;
     using SIS.HTTP;
     using SIS.HTTP.Response;
+    using SIS.MvcFramework;
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.IO;
@@ -16,8 +17,10 @@
             var http = new HttpServer(80);
             http.AddRoute(HttpMethodType.Get, "/", new HomeController().Index);
             http.AddRoute(HttpMethodType.Get, "/favicon.ico", new StaticFileController().Favicon);
-            http.AddRoute(HttpMethodType.Get, "/users/login", new UsersController().Login);
-            http.AddRoute(HttpMethodType.Get, "/users/register", new UsersController().Register);
+            http.AddRoute(HttpMethodType.Get, "/Users/Login", new UsersController().Login);
+            http.AddRoute(HttpMethodType.Get, "/Users/Register", new UsersController().Register);
+            http.AddRoute(HttpMethodType.Get, "/AboutController", new AboutController().Index);
+            http.AddRoute(HttpMethodType.Get, "/CardsController", new CardsController().Index);
 
             OpenBrowser("http://localhost/");
             await http.StartAsync();

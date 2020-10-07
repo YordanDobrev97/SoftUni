@@ -8,8 +8,7 @@ namespace App.Controllers
     {
         public HttpResponse Favicon(HttpRequest request)
         {
-            var favicon = File.ReadAllBytes("www.root/favicon.ico");
-            return new FileResponse(favicon, "image/x-icon");
+            return this.Favicon();
         }
     }
 }

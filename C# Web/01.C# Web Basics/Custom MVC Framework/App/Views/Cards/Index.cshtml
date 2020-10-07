@@ -1,0 +1,408 @@
+﻿<style>
+    body {
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+
+    a.list-group-item:before {
+        content: '';
+    }
+
+    .list-group-item {
+        margin-left: 0px;
+        padding-left: 15px;
+    }
+
+        .list-group-item .row > div.col-sm-5 {
+            margin-left: 10px;
+        }
+
+        .list-group-item .row > div.col-sm-6 {
+            margin-left: -10px;
+        }
+
+    .panel-title {
+        margin-top: 13px;
+        margin-right: 7px;
+    }
+
+    .list-group-item-heading,
+    .list-group-item-text {
+        padding-left: 3px;
+    }
+
+    .form-inline {
+        padding-right: 1.1em;
+    }
+
+        .form-inline .btn-primary {
+            margin-top: 0.5em;
+        }
+
+    @media only screen and (min-width: 768px) {
+        .form-inline {
+            padding-right: 0;
+        }
+
+            .form-inline .btn-primary {
+                margin-top: 0;
+                margin-left: 2em;
+            }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .list-group-item .row > div.col-sm-5 {
+            margin-left: 0px;
+            padding-left: 5px;
+        }
+
+        .list-group-item-heading {
+            margin-top: 3px;
+        }
+    }
+
+    @media (max-width: 250px) {
+        #search {
+            padding-left: 10px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="bootcards-list col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="sr-only" for="search">Search</label>
+                                    <input type="text" id="search" class="form-control" placeholder="Search Companies">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <a class="btn btn-primary btn-block" id="search" href="#">
+                                    <i class="fa fa-plus"></i> Search
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item" href="#apple" onclick="comp('#apple')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/apple-logo.png?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Apple Inc.</h4>
+                                <p class="list-group-item-text">Cupertino, California</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Electronics, Software</p>
+                                <p class="list-group-item-text">$233.7 Billion Revenue</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item" href="#google" onclick="comp('#google')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/google-logo.png?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Google</h4>
+                                <p class="list-group-item-text">Mountain Views, California</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Internet Services</p>
+                                <p class="list-group-item-text">$74.54 Billion Revenue</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item" href="#microsoft" onclick="comp('#microsoft')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/microsoft-logo.png?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Microsoft Corporation</h4>
+                                <p class="list-group-item-text">Redmond, Washington</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Electronics, Software</p>
+                                <p class="list-group-item-text">$93.58 Billion Revenue </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item" href="#oracle" onclick="comp('#oracle')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/oracle-logo.png?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Oracle Corporation</h4>
+                                <p class="list-group-item-text">Redwood City, California</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Database</p>
+                                <p class="list-group-item-text">$38.23 Billion Revenue</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item" href="#dropbox" onclick="comp('#dropbox')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/dropbox-logo.png?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Dropbox</h4>
+                                <p class="list-group-item-text">San Francisco, California</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">File Hosting</p>
+                                <p class="list-group-item-text">$400 Million Revenue</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item" id="fb" href="#facebook" onclick="comp('#facebook')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/facebook-logo.jpg?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Facebook</h4>
+                                <p class="list-group-item-text">Menlo Park, California</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Social Networking</p>
+                                <p class="list-group-item-text">$17.93 Billion Revenue</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item" href="#salesforce" onclick="comp('#salesforce')">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/salesforce-logo.png?raw=true">
+                            </div>
+                            <div class="col-sm-5">
+                                <h4 class="list-group-item-heading">Salesforce.com</h4>
+                                <p class="list-group-item-text">San Francisco, California</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">CRM</p>
+                                <p class="list-group-item-text">$6.7 Billion Revenue</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default companies" id="apple">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/apple-logo.png?raw=true">
+                    <h3 class="panel-title pull-left">Apple Inc.</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">Electronics, Software</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">Cupertino, California</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Apple's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer. Apple's consumer software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser etc.</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$233.7 Billion</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Apple Inc.</small>
+                </div>
+            </div>
+            <div class="panel panel-default companies hidden" id="google">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/google-logo.png?raw=true">
+                    <h3 class="panel-title pull-left">Google</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">Internet Services</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">Mountain Views, California</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Google is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, and software.</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$74.54 Billion</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Google</small>
+                </div>
+            </div>
+            <div class="panel panel-default companies hidden" id="microsoft">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/microsoft-logo.png?raw=true">
+                    <h3 class="panel-title pull-left">Microsoft Corporation</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">Electronics, Software</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">Redmond, Washington</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington, that develops, manufactures, licenses, supports and sells computer software, consumer electronics and personal computers and services.</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$93.58 Billion</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Microsoft Corporation</small>
+                </div>
+            </div>
+            <div class="panel panel-default companies hidden" id="oracle">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/oracle-logo.png?raw=true">
+                    <h3 class="panel-title pull-left">Oracle Corporation</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">Database</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">Redwood City, California</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Oracle Corporation primarily specializes in developing and marketing database software and technology, cloud engineered systems and enterprise software products—particularly its own brands of database management systems</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$38.23 Billion</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Oracle Corporation</small>
+                </div>
+            </div>
+            <div class="panel panel-default companies hidden" id="dropbox">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/dropbox-logo.png?raw=true">
+                    <h3 class="panel-title pull-left">Dropbox</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">File Hosting</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">San Francisco, California</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Dropbox is a file hosting service operated by American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$400 Million</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Dropbox</small>
+                </div>
+            </div>
+            <div class="panel panel-default companies hidden" id="facebook">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/facebook-logo.jpg?raw=true">
+                    <h3 class="panel-title pull-left">Facebook</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">Social Networking</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">Menlo Park, California</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Facebook is a for-profit corporation and online social networking service based in Menlo Park, California, United States. Its website was launched on February 4, 2004.</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$17.93 Billion</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Facebook</small>
+                </div>
+            </div>
+            <div class="panel panel-default companies hidden" id="salesforce">
+                <div class="panel-heading clearfix">
+                    <img src="https://github.com/taulantspahiu/Bootcards-Examples/blob/master/contact_list/images/salesforce-logo.png?raw=true">
+                    <h3 class="panel-title pull-left">Salesforce.com</h3>
+                    <a class="btn btn-primary pull-right" href="#">
+                        <i class="fa fa-pencil"></i> Edit
+                    </a>
+                </div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Industry</p>
+                        <h4 class="list-group-item-heading">CRM</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Headquarters</p>
+                        <h4 class="list-group-item-heading">San Francisco, California</h4>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Salesforce.com's revenue comes from a customer relationship management (CRM) product, Salesforce also capitalizes on commercial applications of social networking through acquisition,</p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text">Revenue</p>
+                        <h4 class="list-group-item-heading">$6.7 Billion</h4>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <small>Salesforce.com</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

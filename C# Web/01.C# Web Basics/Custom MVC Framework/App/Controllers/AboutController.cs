@@ -5,7 +5,7 @@ using System.IO;
 
 namespace App.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
         public HttpResponse Index(HttpRequest request)
         {

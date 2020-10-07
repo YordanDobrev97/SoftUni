@@ -1,11 +1,9 @@
 ﻿using SIS.HTTP;
-using SIS.HTTP.Response;
 using SIS.MvcFramework;
-using System.IO;
 
 namespace App.Controllers
 {
-    public class HomeController : Controller
+    public class CardsController : Controller
     {
         public HttpResponse Index(HttpRequest request)
         {

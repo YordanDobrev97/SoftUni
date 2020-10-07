@@ -8,12 +8,12 @@ namespace App.Controllers
     {
         public HttpResponse Register(HttpRequest request)
         {
-            return new HtmlResponse("<h1>Register Page</h1>");
+            return this.View();
         }
 
         public HttpResponse Login(HttpRequest request)
         {
-            return new HtmlResponse("<h1>Login Page</h1>");
+            return this.View();
         }
     }
 }
