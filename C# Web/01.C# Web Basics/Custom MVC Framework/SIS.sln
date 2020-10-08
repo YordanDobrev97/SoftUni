@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{FD72CAF7-000F-46FE-9E2A-1B79CF8DEFF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{FD72CAF7-000F-46FE-9E2A-1B79CF8DEFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.MvcFramework", "SIS.MvcFramework\SIS.MvcFramework.csproj", "{FD20DFCE-9ACC-4365-9279-F0D8BF295365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.MvcFramework", "SIS.MvcFramework\SIS.MvcFramework.csproj", "{FD20DFCE-9ACC-4365-9279-F0D8BF295365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{FF02C424-3757-403F-9BC3-C3BE47403CD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App.csproj", "{FF02C424-3757-403F-9BC3-C3BE47403CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc.Frameworks.Tests", "Mvc.Frameworks.Tests\Mvc.Frameworks.Tests.csproj", "{D11C6223-9B51-40BA-9595-577BEB859795}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FF02C424-3757-403F-9BC3-C3BE47403CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF02C424-3757-403F-9BC3-C3BE47403CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF02C424-3757-403F-9BC3-C3BE47403CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11C6223-9B51-40BA-9595-577BEB859795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11C6223-9B51-40BA-9595-577BEB859795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11C6223-9B51-40BA-9595-577BEB859795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11C6223-9B51-40BA-9595-577BEB859795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
