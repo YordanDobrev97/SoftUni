@@ -32,5 +32,22 @@ namespace Mvc.Frameworks.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        public void TestTemplateViewModel()
+        {
+            IViewEngine engine = new SusViewEngine();
+            var actual = engine.GetHtml(@"@foreach (var num in Model)
+{
+<span>@num</span>
+}", new List<int> { 1, 2, 3, 4 });
+
+            var expected = @"<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+";
+            Assert.Equal(expected, actual);
+        }
     }
 }

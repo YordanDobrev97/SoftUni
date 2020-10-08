@@ -73,7 +73,24 @@ namespace SIS.MvcFramework.ViewEngine
 
         private string GenerateCSharpFromTemplate(string template, object viewModel)
         {
-            var typeModel = viewModel.GetType().FullName;
+            var typeModel = "object";
+
+            if (viewModel != null)
+            {
+                if (viewModel.GetType().IsGenericType)
+                {
+                    var modelName = viewModel.GetType().FullName;
+                    var genericArgs = viewModel.GetType().GenericTypeArguments;
+
+                    typeModel = modelName.Substring(0, modelName.IndexOf('`')) + "<"
+                        + string.Join(",", genericArgs.Select(x => x.FullName)) + ">";
+
+                }
+                else
+                {
+                    viewModel = viewModel.GetType().FullName;
+                }
+            }
             string methodBody = GetMethodBody(template);
             var csharpCode = @"
 using System;
