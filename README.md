@@ -1,7 +1,6 @@
-# SoftUni
-**Successfully taken SoftUni courses**
+# Successfully taken SoftUni courses 
 
-![softuni-default-og](https://softuni.bg/Files/Images/SoftUni-Wallpaper-1440-900.png)
+![softuni](https://user-images.githubusercontent.com/42092212/95587214-70b99400-0a4a-11eb-9899-63d027ee54bd.png)
 
 **<h2>Certificates</h2>**
 
