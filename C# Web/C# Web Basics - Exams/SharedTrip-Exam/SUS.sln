@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUS.HTTP", "SUS.HTTP\SUS.HT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUS.MvcFramework", "SUS.MvcFramework\SUS.MvcFramework.csproj", "{A21101D2-3BD3-4B6A-A854-7D5176A43C44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D058481A-B479-499D-ADB8-9108A526A334}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUS.MvcFramework.Tests", "SUS.MvcFramework.Tests\SUS.MvcFramework.Tests.csproj", "{618B3213-02EA-4E28-B5D1-9F7BC2EDCFDB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BattleCards", "BattleCards\BattleCards.csproj", "{F536BF50-8FE2-4273-BDA5-0375CC1E6BA2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedTrip", "SharedTrip\SharedTrip.csproj", "{BA960B9E-D5DD-4271-83FB-486C215FB266}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedTrip", "Apps\SharedTrip\SharedTrip.csproj", "{09EE7718-304A-451C-9B4D-91F7B58A0880}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,17 +31,16 @@ Global
 		{618B3213-02EA-4E28-B5D1-9F7BC2EDCFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{618B3213-02EA-4E28-B5D1-9F7BC2EDCFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{618B3213-02EA-4E28-B5D1-9F7BC2EDCFDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F536BF50-8FE2-4273-BDA5-0375CC1E6BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F536BF50-8FE2-4273-BDA5-0375CC1E6BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F536BF50-8FE2-4273-BDA5-0375CC1E6BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F536BF50-8FE2-4273-BDA5-0375CC1E6BA2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA960B9E-D5DD-4271-83FB-486C215FB266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA960B9E-D5DD-4271-83FB-486C215FB266}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA960B9E-D5DD-4271-83FB-486C215FB266}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA960B9E-D5DD-4271-83FB-486C215FB266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EE7718-304A-451C-9B4D-91F7B58A0880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EE7718-304A-451C-9B4D-91F7B58A0880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EE7718-304A-451C-9B4D-91F7B58A0880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EE7718-304A-451C-9B4D-91F7B58A0880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09EE7718-304A-451C-9B4D-91F7B58A0880} = {D058481A-B479-499D-ADB8-9108A526A334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1DE8A1FE-A195-4206-8DF0-E23F1C7707C8}

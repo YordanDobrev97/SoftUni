@@ -23,7 +23,6 @@ namespace SUS.HTTP
 
             var headerLine = lines[0];
             var headerLineParts = headerLine.Split(' ');
-
             this.Method = (HttpMethod)Enum.Parse(typeof(HttpMethod), headerLineParts[0], true);
             this.Path = headerLineParts[1];
 
