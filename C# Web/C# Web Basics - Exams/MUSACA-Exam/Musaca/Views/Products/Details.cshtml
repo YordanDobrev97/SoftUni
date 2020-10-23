@@ -1,0 +1,19 @@
+﻿
+<div class="container">
+    <div class="product-details">
+        <div class="product-images">
+            <img src="@Model.Picture" />
+        </div>
+        
+        <div class="product-info">
+            <h1>@Model.Name</h1>
+
+            <p>@Model.Price</p>
+        </div>
+
+        <div>
+            <a href="/Products/Delete?productId=@Model.Id"
+               class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</div>
